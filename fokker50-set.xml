@@ -5,7 +5,7 @@
 
   <description>Fokker 50</description>
   <author>Erik Hofman</author>
-  <status>alpha</status>
+  <status>beta</status>
  
   <flight-model>jsb</flight-model>
   <aero>fokker50</aero>
