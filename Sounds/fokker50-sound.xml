@@ -7,7 +7,7 @@
   <engine0>
    <name>engine0</name>
    <mode>looped</mode>
-   <path>Aircraft/fokker50/Sounds/turboprop1.wav</path>
+   <path>Sounds/turboprop1.wav</path>
    <condition>
     <property>/engines/engine[0]/running</property>
    </condition>
@@ -19,7 +19,7 @@
   <engine1>
    <name>engine1</name>
    <mode>looped</mode>
-   <path>Aircraft/fokker50/Sounds/turboprop1.wav</path>
+   <path>Sounds/turboprop1.wav</path>
    <condition>
     <property>/engines/engine[1]/running</property>
    </condition>
