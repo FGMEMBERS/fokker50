@@ -12,7 +12,7 @@
 <animation>
  <type>rotate</type>
  <object-name>right_aileron</object-name>
- <property>/surface-positions/left-aileron-pos-norm</property>
+ <property>surface-positions/left-aileron-pos-norm</property>
  <factor>-30</factor>
  <center>
   <x-m>1.09</x-m>
@@ -29,7 +29,7 @@
 <animation>
  <type>rotate</type>
  <object-name>left_aileron</object-name>
- <property>/surface-positions/left-aileron-pos-norm</property>
+ <property>surface-positions/left-aileron-pos-norm</property>
  <factor>30</factor>
  <center>
   <x-m>1.09</x-m>
@@ -46,7 +46,7 @@
 <animation>
  <type>rotate</type>
  <object-name>right_inbound_flap</object-name>
- <property>/surface-positions/flap-pos-norm</property>
+ <property>surface-positions/flap-pos-norm</property>
  <factor>35</factor>
  <center>
   <x-m>1.47</x-m>
@@ -63,7 +63,7 @@
 <animation>
  <type>rotate</type>
  <object-name>left_inbound_flap</object-name>
- <property>/surface-positions/flap-pos-norm</property>
+ <property>surface-positions/flap-pos-norm</property>
  <factor>35</factor>
  <center>
   <x-m>1.47</x-m>
@@ -80,7 +80,7 @@
 <animation>
  <type>rotate</type>
  <object-name>right_outbound_flap</object-name>
- <property>/surface-positions/flap-pos-norm</property>
+ <property>surface-positions/flap-pos-norm</property>
  <factor>35</factor>
  <center>
   <x-m>1.32</x-m>
@@ -97,7 +97,7 @@
 <animation>
  <type>rotate</type>
  <object-name>left_outbound_flap</object-name>
- <property>/surface-positions/flap-pos-norm</property>
+ <property>surface-positions/flap-pos-norm</property>
  <factor>35</factor>
  <center>
   <x-m>1.31</x-m>
@@ -115,7 +115,7 @@
 <animation>
  <type>rotate</type>
  <object-name>rudder</object-name>
- <property>/surface-positions/rudder-pos-norm</property>
+ <property>surface-positions/rudder-pos-norm</property>
  <factor>25</factor>
  <center>
   <x-m>12.99</x-m>
@@ -132,7 +132,7 @@
 <animation>
  <type>rotate</type>
  <object-name>right_elevator</object-name>
- <property>/surface-positions/elevator-pos-norm</property>
+ <property>surface-positions/elevator-pos-norm</property>
  <factor>25</factor>
  <center>
   <x-m>12.30</x-m>
@@ -150,7 +150,7 @@
  <type>rotate</type>
 
  <object-name>left_elevator</object-name>
- <property>/surface-positions/elevator-pos-norm</property>
+ <property>surface-positions/elevator-pos-norm</property>
  <factor>25</factor>
  <center>
   <x-m>12.30</x-m>
@@ -170,7 +170,7 @@
  <object-name>nose_wheels</object-name>
  <object-name>nose_lower_strut</object-name>
  <object-name>nose_upper_strut</object-name>
- <property>/gear/gear[0]/position-norm</property>
+ <property>gear/gear[0]/position-norm</property>
  <factor>-108</factor>
  <offset-deg>108</offset-deg>
  <center>
@@ -190,7 +190,7 @@
  <object-name>nose_wheels</object-name>
  <object-name>nose_lower_strut</object-name>
  <object-name>nose_upper_strut</object-name>
- <property>/surface-positions/rudder-pos-norm</property>
+ <property>surface-positions/rudder-pos-norm</property>
  <factor>-35</factor>
  <center>
   <x-m>-8.48</x-m>
@@ -210,7 +210,7 @@
  <object-name>right_upper_strut</object-name>
  <object-name>right_lower_strut</object-name>
  <object-name>right_front_strut</object-name>
- <property>/gear/gear[1]/position-norm</property>
+ <property>gear/gear[1]/position-norm</property>
  <factor>68.0</factor>
  <offset-deg>-68.0</offset-deg>
  <center>
@@ -230,7 +230,7 @@
  <object-name>right_wheels</object-name>
  <object-name>right_upper_strut</object-name>
  <object-name>right_lower_strut</object-name>
- <property>/gear/gear[1]/position-norm</property>
+ <property>gear/gear[1]/position-norm</property>
  <factor>30.0</factor>
  <offset-deg>-30.0</offset-deg>
  <center>
@@ -251,7 +251,7 @@
  <object-name>left_lower_strut</object-name>
  <object-name>left_upper_strut</object-name>
  <object-name>left_front_strut</object-name>
- <property>/gear/gear[2]/position-norm</property>
+ <property>gear/gear[2]/position-norm</property>
  <factor>68.0</factor>
  <offset-deg>-68.0</offset-deg>
  <center>
@@ -271,7 +271,7 @@
  <object-name>left_wheels</object-name>
  <object-name>left_lower_strut</object-name>
  <object-name>left_upper_strut</object-name>
- <property>/gear/gear[2]/position-norm</property>
+ <property>gear/gear[2]/position-norm</property>
  <factor>30.0</factor>
  <offset-deg>-30.0</offset-deg>
  <center>
@@ -289,7 +289,7 @@
 <animation>
  <type>blend</type>
  <object-name>disk1</object-name>
- <property>/engines/engine[0]/N1</property>
+ <property>engines/engine[0]/N1</property>
  <factor>0.01</factor>
  <min>0.3</min>
 </animation>
@@ -297,7 +297,7 @@
 <animation>
  <type>spin</type>
  <object-name>disk1</object-name>
- <property>/engines/engine[0]/N1</property>
+ <property>engines/engine[0]/N1</property>
  <factor>-0.079</factor>
  <center>
   <x-m>-3.02</x-m>
@@ -314,7 +314,7 @@
 <animation>
  <type>blend</type>
  <object-name>disk2</object-name>
- <property>/engines/engine[1]/N1</property>
+ <property>engines/engine[1]/N1</property>
  <factor>0.01</factor>
  <min>0.3</min>
 </animation>
@@ -322,7 +322,7 @@
 <animation>
  <type>spin</type>
  <object-name>disk2</object-name>
- <property>/engines/engine[0]/N1</property>
+ <property>engines/engine[0]/N1</property>
  <factor>-0.083</factor>
  <center>
   <x-m>-3.02</x-m>
