@@ -286,4 +286,54 @@
  </axis>
 </animation>
 
+<animation>
+ <type>blend</type>
+ <object-name>disk1</object-name>
+ <property>/engines/engine[0]/N1</property>
+ <factor>0.01</factor>
+ <min>0.3</min>
+</animation>
+
+<animation>
+ <type>spin</type>
+ <object-name>disk1</object-name>
+ <property>/engines/engine[0]/N1</property>
+ <factor>-0.079</factor>
+ <center>
+  <x-m>-3.02</x-m>
+  <y-m>3.55</y-m>
+  <z-m>0.59</z-m>
+ </center>
+ <axis>
+  <x>1.0</x>
+  <y>0.0</y>
+  <z>0.0</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>blend</type>
+ <object-name>disk2</object-name>
+ <property>/engines/engine[1]/N1</property>
+ <factor>0.01</factor>
+ <min>0.3</min>
+</animation>
+
+<animation>
+ <type>spin</type>
+ <object-name>disk2</object-name>
+ <property>/engines/engine[0]/N1</property>
+ <factor>-0.083</factor>
+ <center>
+  <x-m>-3.02</x-m>
+  <y-m>-3.55</y-m>
+  <z-m>0.59</z-m>
+ </center>
+ <axis>
+  <x>1.0</x>
+  <y>0.0</y>
+  <z>0.0</z>
+ </axis>
+</animation>
+
 </PropertyList>
