@@ -4,6 +4,7 @@
  <sim>
 
   <description>Fokker 50</description>
+  <status>alpha</status>
  
   <flight-model>jsb</flight-model>
   <aero>fokker50</aero>
