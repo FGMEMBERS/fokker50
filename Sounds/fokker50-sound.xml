@@ -5,6 +5,21 @@
  <fx>
 
   <engine0>
+   <name>whine</name>
+   <path>Sounds/whine.wav</path>
+   <mode>looped</mode>
+   <property>/engines/engine[0]/running</property>
+   <volume>
+     <factor>0.5</factor>
+   </volume>
+   <pitch>
+    <property>/engines/engine[0]/n2</property>
+    <type>lin</type>
+    <factor>.008</factor>
+   </pitch>
+  </engine0>
+
+  <engine0>
    <name>engine0</name>
    <mode>looped</mode>
    <path>Sounds/turboprop1.wav</path>
@@ -12,9 +27,40 @@
     <property>/engines/engine[0]/running</property>
    </condition>
    <volume>
-    <max>0.7</max>
+    <property>/orientation/alpha-deg</property>
+    <type>abs</type>
+    <factor>0.0005</factor>
+    <min>0.8</min>
+    <max>1.0</max>
    </volume>
+   <volume>
+    <property>/engines/engine[0]/nozzle-pos-norm</property>
+    <factor>-0.7</factor>
+    <offset>0.7</offset>
+   </volume>
+   <pitch>
+    <property>/engines/engine[0]/thrust_lb</property>
+    <factor>0.0005</factor>
+    <offset>0.9</offset>
+    <min>0.9</min>
+    <max>1.0</max>
+   </pitch>
   </engine0>
+
+  <engine1>
+   <name>whine</name>
+   <path>Sounds/whine.wav</path>
+   <mode>looped</mode>
+   <property>/engines/engine[1]/running</property>
+   <volume>
+     <factor>0.5</factor>
+   </volume>
+   <pitch>
+    <property>/engines/engine[1]/n2</property>
+    <type>lin</type>
+    <factor>.008</factor>
+   </pitch>
+  </engine1>
 
   <engine1>
    <name>engine1</name>
@@ -24,8 +70,24 @@
     <property>/engines/engine[1]/running</property>
    </condition>
    <volume>
-    <max>0.7</max>
+    <property>/orientation/alpha-deg</property>
+    <type>abs</type>
+    <factor>0.0005</factor>
+    <min>0.8</min>
+    <max>1.0</max>
    </volume>
+   <volume>
+    <property>/engines/engine[1]/nozzle-pos-norm</property>
+    <factor>-0.7</factor>
+    <offset>0.7</offset>
+   </volume>
+   <pitch>
+    <property>/engines/engine[1]/thrust_lb</property>
+    <factor>0.0005</factor>
+    <offset>0.9</offset>
+    <min>0.9</min>
+    <max>1.0</max>
+   </pitch>
   </engine1>
 
   <tire-rumble>
