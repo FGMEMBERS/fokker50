@@ -9,21 +9,20 @@
 <pitch-deg>-1.0</pitch-deg>
 </offsets>
 
-<!--
 <animation>
  <type>rotate</type>
  <object-name>right_aileron</object-name>
  <property>surface-positions/left-aileron-pos-norm</property>
- <factor>-30</factor>
+ <factor>30</factor>
  <center>
-  <x-m>1.09</x-m>
-  <y-m>10.08</y-m>
-  <z-m>1.05</z-m>
+  <x-m>0.370000</x-m>
+  <y-m>12.305000</y-m>
+  <z-m>0.190000</z-m>
  </center>
  <axis>
-  <x>-0.5</x>
-  <y>10.9</y>
-  <z>0.4</z>
+  <x>-0.066658</x>
+  <y>0.997492</y>
+  <z>0.023806</z>
  </axis>
 </animation>
 
@@ -33,17 +32,18 @@
  <property>surface-positions/left-aileron-pos-norm</property>
  <factor>30</factor>
  <center>
-  <x-m>1.09</x-m>
-  <y-m>-10.08</y-m>
-  <z-m>1.05</z-m>
+  <x-m>0.370000</x-m>
+  <y-m>-12.305000</y-m>
+  <z-m>0.190000</z-m>
  </center>
  <axis>
-  <x>0.5</x>
-  <y>10.9</y>
-  <z>-0.4</z>
+  <x>-0.066658</x>
+  <y>-0.997492</y>
+  <z>0.023806</z>
  </axis>
 </animation>
 
+<!--
 <animation>
  <type>rotate</type>
  <object-name>right_inbound_flap</object-name>
@@ -111,7 +111,7 @@
   <z>-0.4</z>
  </axis>
 </animation>
-
+-->
 
 <animation>
  <type>rotate</type>
@@ -119,14 +119,14 @@
  <property>surface-positions/rudder-pos-norm</property>
  <factor>25</factor>
  <center>
-  <x-m>12.99</x-m>
-  <y-m>0.0</y-m>
-  <z-m>0.69</z-m>
+  <x-m>12.280001</x-m>
+  <y-m>0.000000</y-m>
+  <z-m>2.325000</z-m>
  </center>
  <axis>
-  <x>0.0</x>
-  <y>0.0</y>
-  <z>1.0</z>
+  <x>0.049813</x>
+  <y>0.000000</y>
+  <z>0.998759</z>
  </axis>
 </animation>
 
@@ -136,14 +136,14 @@
  <property>surface-positions/elevator-pos-norm</property>
  <factor>25</factor>
  <center>
-  <x-m>12.30</x-m>
-  <y-m>0.18</y-m>
-  <z-m>0.83</z-m>
+  <x-m>11.665000</x-m>
+  <y-m>2.345000</y-m>
+  <z-m>0.165000</z-m>
  </center>
  <axis>
-  <x>0.0</x>
-  <y>1.0</y>
-  <z>0.12</z>
+  <x>-0.002162</x>
+  <y>0.996792</y>
+  <z>0.080003</z>
  </axis>
 </animation>
 
@@ -152,20 +152,20 @@
 
  <object-name>left_elevator</object-name>
  <property>surface-positions/elevator-pos-norm</property>
- <factor>25</factor>
+ <factor>-25</factor>
  <center>
-  <x-m>12.30</x-m>
-  <y-m>-0.18</y-m>
-  <z-m>0.83</z-m>
+  <x-m>11.665000</x-m>
+  <y-m>-2.345000</y-m>
+  <z-m>0.165000</z-m>
  </center>
  <axis>
-  <x>0.0</x>
-  <y>1.0</y>
-  <z>-0.12</z>
+  <x>-0.002162</x>
+  <y>-0.996792</y>
+  <z>0.080003</z>
  </axis>
 </animation>
 
-
+<!--
 <animation>
  <type>rotate</type>
  <object-name>nose_wheels</object-name>
@@ -286,56 +286,56 @@
   <z>0</z>
  </axis>
 </animation>
+-->
 
 <animation>
  <type>blend</type>
- <object-name>disk1</object-name>
- <property>engines/engine[0]/n1</property>
+ <object-name>right_propeller</object-name>
+ <property>engines/engine[0]/n2</property>
  <factor>0.01</factor>
  <min>0.3</min>
 </animation>
 
 <animation>
  <type>spin</type>
- <object-name>disk1</object-name>
- <property>engines/engine[0]/n1</property>
+ <object-name>right_propeller</object-name>
+ <property>engines/engine[0]/n2</property>
  <factor>-0.079</factor>
  <center>
-  <x-m>-3.02</x-m>
-  <y-m>3.55</y-m>
-  <z-m>0.59</z-m>
+  <x-m>-3.530000</x-m>
+  <y-m>3.610000</y-m>
+  <z-m>-0.280000</z-m>
  </center>
  <axis>
-  <x>1.0</x>
-  <y>0.0</y>
-  <z>0.0</z>
+  <x>1.000000</x>
+  <y>0.000000</y>
+  <z>0.000000</z>
  </axis>
 </animation>
 
 <animation>
  <type>blend</type>
- <object-name>disk2</object-name>
- <property>engines/engine[1]/n1</property>
+ <object-name>left_propeller</object-name>
+ <property>engines/engine[1]/n2</property>
  <factor>0.01</factor>
  <min>0.3</min>
 </animation>
 
 <animation>
  <type>spin</type>
- <object-name>disk2</object-name>
- <property>engines/engine[0]/n1</property>
+ <object-name>left_propeller</object-name>
+ <property>engines/engine[0]/n2</property>
  <factor>-0.083</factor>
  <center>
-  <x-m>-3.02</x-m>
-  <y-m>-3.55</y-m>
-  <z-m>0.59</z-m>
+  <x-m>-3.530000</x-m>
+  <y-m>-3.610000</y-m>
+  <z-m>-0.280000</z-m>
  </center>
  <axis>
-  <x>1.0</x>
-  <y>0.0</y>
-  <z>0.0</z>
+  <x>1.000000</x>
+  <y>0.000000</y>
+  <z>0.000000</z>
  </axis>
 </animation>
--->
 
 </PropertyList>
