@@ -6,7 +6,7 @@
 
 <offsets>
   <z-m>1.25</z-m>
-<pitch-deg>-1.0</pitch-deg>
+  <pitch-deg>-1.0</pitch-deg>
 </offsets>
 
 <animation>
@@ -612,8 +612,8 @@
  <type>rotate</type>
  <object-name>left_fwd_door</object-name>
  <property>gear/gear[1]/position-norm</property>
- <factor>-90.0</factor>
- <offset-deg>0.0</offset-deg>
+ <factor>-101.0</factor>
+ <offset-deg>42.0</offset-deg>
  <min-deg>-60.0</min-deg>
  <max-deg>0.0</max-deg>
  <center>
@@ -672,8 +672,8 @@
  <type>rotate</type>
  <object-name>right_fwd_door</object-name>
  <property>gear/gear[2]/position-norm</property>
- <factor>90.0</factor>
- <offset-deg>0.0</offset-deg>
+ <factor>101.0</factor>
+ <offset-deg>-42.0</offset-deg>
  <min-deg>0.0</min-deg>
  <max-deg>60.0</max-deg>
  <center>
