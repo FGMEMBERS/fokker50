@@ -9,6 +9,7 @@
 <pitch-deg>-1.0</pitch-deg>
 </offsets>
 
+<!--
 <animation>
  <type>rotate</type>
  <object-name>right_aileron</object-name>
@@ -335,5 +336,6 @@
   <z>0.0</z>
  </axis>
 </animation>
+-->
 
 </PropertyList>
