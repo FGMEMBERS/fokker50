@@ -6,7 +6,7 @@ MATERIAL "ac3dmat12" rgb 0.267 0.267 0.267  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.
 MATERIAL "ac3dmat1" rgb 1 1 1  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.502 0.502 0.502  shi 26  trans 0
 MATERIAL "ac3dmat14" rgb 0.537 0.533 0.533  amb 0.2 0.2 0.2  emis 0 0 0  spec 1 1 1  shi 10  trans 0
 MATERIAL "ac3dmat12" rgb 0.071 0.071 0.071  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.51 0.51 0.51  shi 45  trans 0
-MATERIAL "ac3dmat12" rgb 0.071 0.071 0.071  amb 0 0 0  emis 0 0 0  spec 0.69 0.69 0.69  shi 17  trans 0.004
+MATERIAL "ac3dmat12" rgb 0.071 0.071 0.071  amb 0 0 0  emis 0 0 0  spec 0.69 0.69 0.69  shi 17  trans 0.224
 OBJECT world
 kids 59
 OBJECT poly

@@ -183,10 +183,11 @@
    </COMPONENT>
    <COMPONENT NAME="Flaps Control" TYPE="KINEMAT">
      INPUT   fcs/flap-cmd-norm
-     DETENTS 3
+     DETENTS 4
              0   0
-             15  4
-             30  3
+             10  2
+             25  2
+             35  3
      OUTPUT  fcs/flap-pos-deg
    </COMPONENT>
    <COMPONENT NAME="Gear Control" TYPE="KINEMAT">
@@ -213,19 +214,19 @@
          13
          aero/h_b-mac-ft
          none
-         0.0   1.203
-         0.1   1.127
-         0.15  1.090
-         0.2   1.073
-         0.3   1.046
-         0.4   1.055
-         0.5   1.019
-         0.6   1.013
-         0.7   1.008
-         0.8   1.006
-         0.9   1.003
-         1.0   1.002
-         1.1   1.0
+         0.0   1.328
+         0.1   1.232
+         0.15  1.187
+         0.2   1.164
+         0.3   1.125
+         0.4   1.124
+         0.5   1.076
+         0.6   1.060
+         0.7   1.045
+         0.8   1.035
+         0.9   1.021
+         1.0   1.011
+         1.1   1.000
       </FACTOR>
       <COEFFICIENT NAME="CLalpha" TYPE="VECTOR">
         Lift_due_to_alpha
@@ -234,13 +235,13 @@
         aero/qbar-psf|metrics/Sw-sqft
         -0.20   -0.740
          0.00    0.240
-         0.24    1.400
+         0.24    1.700
          0.60    0.704
       </COEFFICIENT>
       <COEFFICIENT NAME="dCLflap" TYPE="VALUE">
          Delta_Lift_due_to_flaps
          aero/qbar-psf|metrics/Sw-sqft|fcs/components/flaps-control/output-norm
-         0.6
+         0.9
       </COEFFICIENT>
     </GROUP>
     <COEFFICIENT NAME="dCLsb" TYPE="VALUE">

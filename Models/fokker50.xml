@@ -781,6 +781,17 @@
 </animation>
 
 <animation>
+ <type>select</type>
+ <object-name>right_propeller</object-name>
+ <condition>
+  <less-than>
+   <property>engines/engine[0]/n2</property>
+   <value>65.0</value>
+  </less-than>
+ </condition>
+</animation>
+
+<animation>
  <type>spin</type>
  <object-name>right_blade1</object-name>
  <object-name>right_blade2</object-name>
@@ -835,7 +846,7 @@
 <animation>
  <type>spin</type>
  <object-name>left_propdisk</object-name>
- <property>engines/engine[0]/n2</property>
+ <property>engines/engine[1]/n2</property>
  <factor>-0.083</factor>
  <center>
   <x-m>-3.530000</x-m>
@@ -850,6 +861,17 @@
 </animation>
 
 <animation>
+ <type>select</type>
+ <object-name>left_propeller</object-name>
+ <condition>
+  <less-than>
+   <property>engines/engine[1]/n2</property>
+   <value>65.0</value>
+  </less-than>
+ </condition>
+</animation>
+
+<animation>
  <type>spin</type>
  <object-name>left_blade1</object-name>
  <object-name>left_blade2</object-name>
@@ -857,7 +879,7 @@
  <object-name>left_blade4</object-name>
  <object-name>left_blade5</object-name>
  <object-name>left_blade6</object-name>
- <property>engines/engine[0]/n2</property>
+ <property>engines/engine[1]/n2</property>
  <factor>-1.0</factor>
  <center>
   <x-m>-3.530000</x-m>
