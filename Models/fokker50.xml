@@ -289,7 +289,7 @@
 <animation>
  <type>blend</type>
  <object-name>disk1</object-name>
- <property>engines/engine[0]/N1</property>
+ <property>engines/engine[0]/n1</property>
  <factor>0.01</factor>
  <min>0.3</min>
 </animation>
@@ -297,7 +297,7 @@
 <animation>
  <type>spin</type>
  <object-name>disk1</object-name>
- <property>engines/engine[0]/N1</property>
+ <property>engines/engine[0]/n1</property>
  <factor>-0.079</factor>
  <center>
   <x-m>-3.02</x-m>
@@ -314,7 +314,7 @@
 <animation>
  <type>blend</type>
  <object-name>disk2</object-name>
- <property>engines/engine[1]/N1</property>
+ <property>engines/engine[1]/n1</property>
  <factor>0.01</factor>
  <min>0.3</min>
 </animation>
@@ -322,7 +322,7 @@
 <animation>
  <type>spin</type>
  <object-name>disk2</object-name>
- <property>engines/engine[0]/N1</property>
+ <property>engines/engine[0]/n1</property>
  <factor>-0.083</factor>
  <center>
   <x-m>-3.02</x-m>
