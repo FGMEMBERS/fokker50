@@ -287,19 +287,19 @@
  </axis>
 </animation>
 
-<!--
 <animation>
  <type>rotate</type>
- <object-name>nose_wheels</object-name>
- <object-name>nose_lower_strut</object-name>
- <object-name>nose_upper_strut</object-name>
+ <object-name>nose_wheel</object-name>
+ <object-name>nose_strut</object-name>
  <property>gear/gear[0]/position-norm</property>
- <factor>-108</factor>
- <offset-deg>108</offset-deg>
+ <factor>-224</factor>
+ <offset-deg>160</offset-deg>
+ <min-deg>0.0</min-deg>
+ <max-deg>112.0</max-deg>
  <center>
-  <x-m>-8.48</x-m>
-  <y-m>0</y-m>
-  <z-m>-1.2</z-m>
+  <x-m>-9.410000</x-m>
+  <y-m>0.000000</y-m>
+  <z-m>-2.330000</z-m>
  </center>
  <axis>
   <x>0</x>
@@ -310,36 +310,126 @@
 
 <animation>
  <type>rotate</type>
- <object-name>nose_wheels</object-name>
- <object-name>nose_lower_strut</object-name>
- <object-name>nose_upper_strut</object-name>
+ <object-name>nose_wheel</object-name>
+ <object-name>nose_strut</object-name>
  <property>surface-positions/rudder-pos-norm</property>
  <factor>-35</factor>
  <center>
-  <x-m>-8.48</x-m>
-  <y-m>0.0</y-m>
-  <z-m>-1.2</z-m>
+  <x-m>-9.510000</x-m>
+  <y-m>0.000000</y-m>
+  <z-m>-2.735000</z-m>
  </center>
  <axis>
-  <x>0</x>
-  <y>0</y>
-  <z>1</z>
+  <x>0.239714</x>
+  <y>0.000000</y>
+  <z>0.970843</z>
  </axis>
 </animation>
 
 <animation>
  <type>rotate</type>
- <object-name>right_wheels</object-name>
+ <object-name>left_main_wheel</object-name>
+ <object-name>left_top_strut</object-name>
+ <object-name>left_upper_strut</object-name>
+ <object-name>left_lower_strut</object-name>
+ <object-name>left_fwd_strut</object-name>
+ <object-name>left_lock_bar</object-name>
+ <property>gear/gear[1]/position-norm</property>
+ <factor>98.0</factor>
+ <offset-deg>-98.0</offset-deg>
+ <min-deg>-67.2</min-deg>
+ <max-deg>0.0</max-deg>
+ <center>
+  <x-m>-0.870000</x-m>
+  <y-m>0.000000</y-m>
+  <z-m>-0.880000</z-m>
+ </center>
+ <axis>
+  <x>0</x>
+  <y>1</y>
+  <z>0</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>left_top_strut</object-name>
+ <object-name>left_upper_strut</object-name>
+ <object-name>left_lower_strut</object-name>
+ <property>gear/gear[1]/position-norm</property>
+ <factor>45.0</factor>
+ <offset-deg>-45.0</offset-deg>
+ <min-deg>-30.0</min-deg>
+ <max-deg>0.0</max-deg>
+ <center>
+  <x-m>0.170000</x-m>
+  <y-m>0.000000</y-m>
+  <z-m>-2.720000</z-m>
+ </center>
+ <axis>
+  <x>0</x>
+  <y>1</y>
+  <z>0</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>left_top_strut</object-name>
+ <property>gear/gear[1]/position-norm</property>
+ <factor>-255.0</factor>
+ <offset-deg>255.0</offset-deg>
+ <min-deg>0.0</min-deg>
+ <max-deg>170.0</max-deg>
+ <center>
+  <x-m>0.520000</x-m>
+  <y-m>0.000000</y-m>
+  <z-m>-1.170000</z-m>
+ </center>
+ <axis>
+  <x>0</x>
+  <y>1</y>
+  <z>0</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>left_lock_bar</object-name>
+ <property>gear/gear[1]/position-norm</property>
+ <factor>-100.0</factor>
+ <offset-deg>100.0</offset-deg>
+ <min-deg>0.0</min-deg>
+ <max-deg>60.0</max-deg>
+ <center>
+  <x-m>-0.690000</x-m>
+  <y-m>0.000000</y-m>
+  <z-m>-1.180000</z-m>
+ </center>
+ <axis>
+  <x>0</x>
+  <y>1</y>
+  <z>0</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>right_main_wheel</object-name>
+ <object-name>right_top_strut</object-name>
  <object-name>right_upper_strut</object-name>
  <object-name>right_lower_strut</object-name>
- <object-name>right_front_strut</object-name>
- <property>gear/gear[1]/position-norm</property>
- <factor>68.0</factor>
- <offset-deg>-68.0</offset-deg>
+ <object-name>right_fwd_strut</object-name>
+ <object-name>right_lock_bar</object-name>
+ <property>gear/gear[2]/position-norm</property>
+ <factor>98.0</factor>
+ <offset-deg>-98.0</offset-deg>
+ <min-deg>-67.2</min-deg>
+ <max-deg>0.0</max-deg>
  <center>
-  <x-m>0.0</x-m>
-  <y-m>3.70</y-m>
-  <z-m>0.0</z-m>
+  <x-m>-0.870000</x-m>
+  <y-m>0.000000</y-m>
+  <z-m>-0.880000</z-m>
  </center>
  <axis>
   <x>0</x>
@@ -350,37 +440,18 @@
 
 <animation>
  <type>rotate</type>
- <object-name>right_wheels</object-name>
+ <object-name>right_top_strut</object-name>
  <object-name>right_upper_strut</object-name>
  <object-name>right_lower_strut</object-name>
- <property>gear/gear[1]/position-norm</property>
- <factor>30.0</factor>
- <offset-deg>-30.0</offset-deg>
- <center>
-  <x-m>1.26</x-m>
-  <y-m>3.70</y-m>
-  <z-m>-2.15</z-m>
- </center>
- <axis>
-  <x>0</x>
-  <y>1</y>
-  <z>0</z>
- </axis>
-</animation>
-
-<animation>
- <type>rotate</type>
- <object-name>left_wheels</object-name>
- <object-name>left_lower_strut</object-name>
- <object-name>left_upper_strut</object-name>
- <object-name>left_front_strut</object-name>
  <property>gear/gear[2]/position-norm</property>
- <factor>68.0</factor>
- <offset-deg>-68.0</offset-deg>
+ <factor>45.0</factor>
+ <offset-deg>-45.0</offset-deg>
+ <min-deg>-30.0</min-deg>
+ <max-deg>0.0</max-deg>
  <center>
-  <x-m>0.0</x-m>
-  <y-m>-3.70</y-m>
-  <z-m>0.0</z-m>
+  <x-m>0.170000</x-m>
+  <y-m>0.000000</y-m>
+  <z-m>-2.720000</z-m>
  </center>
  <axis>
   <x>0</x>
@@ -391,16 +462,16 @@
 
 <animation>
  <type>rotate</type>
- <object-name>left_wheels</object-name>
- <object-name>left_lower_strut</object-name>
- <object-name>left_upper_strut</object-name>
+ <object-name>right_top_strut</object-name>
  <property>gear/gear[2]/position-norm</property>
- <factor>30.0</factor>
- <offset-deg>-30.0</offset-deg>
+ <factor>-255.0</factor>
+ <offset-deg>255.0</offset-deg>
+ <min-deg>0.0</min-deg>
+ <max-deg>170.0</max-deg>
  <center>
-  <x-m>1.26</x-m>
-  <y-m>-3.70</y-m>
-  <z-m>-2.15</z-m>
+  <x-m>0.520000</x-m>
+  <y-m>0.000000</y-m>
+  <z-m>-1.170000</z-m>
  </center>
  <axis>
   <x>0</x>
@@ -408,41 +479,24 @@
   <z>0</z>
  </axis>
 </animation>
--->
 
 <animation>
  <type>rotate</type>
- <object-name>left_fwd_front_door</object-name>
- <property>gear/gear[0]/position-norm</property>
- <offset>0.0</offset>
- <factor>90.0</factor>
+ <object-name>right_lock_bar</object-name>
+ <property>gear/gear[2]/position-norm</property>
+ <factor>-100.0</factor>
+ <offset-deg>100.0</offset-deg>
+ <min-deg>0.0</min-deg>
+ <max-deg>60.0</max-deg>
  <center>
-  <x-m>-9.505000</x-m>
-  <y-m>-0.250000</y-m>
-  <z-m>-2.435000</z-m>
+  <x-m>-0.690000</x-m>
+  <y-m>0.000000</y-m>
+  <z-m>-1.180000</z-m>
  </center>
  <axis>
-  <x>-0.977920</x>
-  <y>0.087575</y>
-  <z>0.189746</z>
- </axis>
-</animation>
-
-<animation>
- <type>rotate</type>
- <object-name>right_fwd_front_door</object-name>
- <property>gear/gear[0]/position-norm</property>
- <offset>0.0</offset>
- <factor>-90.0</factor>
- <center>
-  <x-m>-9.505000</x-m>
-  <y-m>0.250000</y-m>
-  <z-m>-2.435000</z-m>
- </center>
- <axis>
-  <x>-0.977920</x>
-  <y>-0.087575</y>
-  <z>0.189746</z>
+  <x>0</x>
+  <y>1</y>
+  <z>0</z>
  </axis>
 </animation>
 
@@ -450,39 +504,45 @@
  <type>rotate</type>
  <object-name>left_aft_front_door</object-name>
  <property>gear/gear[0]/position-norm</property>
- <interpolation>
-  <entry>
-   <ind>0.0</ind>
-   <dep>0.0</dep>
-  </entry>
-  <entry>
-   <ind>0.3</ind>
-   <dep>90.0</dep>
-  </entry>
-  <entry>
-   <ind>0.7</ind>
-   <dep>90.0</dep>
-  </entry>
-  <entry>
-   <ind>1.0</ind>
-   <dep>0.0</dep>
-  </entry>
- </interpolation>
+ <offset>0.0</offset>
+ <factor>300.0</factor>
+ <min-deg>0.0</min-deg>
+ <max-deg>100.0</max-deg>
  <center>
-  <x-m>-8.835000</x-m>
-  <y-m>-0.285000</y-m>
-  <z-m>-2.555000</z-m>
+  <x-m>-9.500000</x-m>
+  <y-m>-0.250000</y-m>
+  <z-m>-2.435000</z-m>
  </center>
  <axis>
-  <x>-0.986682</x>
-  <y>0.014727</y>
-  <z>0.161992</z>
+  <x>-0.977268</x>
+  <y>0.088843</y>
+  <z>0.192492</z>
  </axis>
 </animation>
 
 <animation>
  <type>rotate</type>
  <object-name>right_aft_front_door</object-name>
+ <property>gear/gear[0]/position-norm</property>
+ <offset>0.0</offset>
+ <factor>-300.0</factor>
+ <max-deg>0.0</max-deg>
+ <min-deg>-100.0</min-deg>
+ <center>
+  <x-m>-9.500000</x-m>
+  <y-m>0.250000</y-m>
+  <z-m>-2.435000</z-m>
+ </center>
+ <axis>
+  <x>-0.977268</x>
+  <y>-0.088843</y>
+  <z>0.192492</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>left_fwd_front_door</object-name>
  <property>gear/gear[0]/position-norm</property>
  <interpolation>
   <entry>
@@ -491,11 +551,11 @@
   </entry>
   <entry>
    <ind>0.3</ind>
-   <dep>-90.0</dep>
+   <dep>100.0</dep>
   </entry>
   <entry>
    <ind>0.7</ind>
-   <dep>-90.0</dep>
+   <dep>100.0</dep>
   </entry>
   <entry>
    <ind>1.0</ind>
@@ -503,14 +563,48 @@
   </entry>
  </interpolation>
  <center>
-  <x-m>-8.835000</x-m>
-  <y-m>0.285000</y-m>
-  <z-m>-2.555000</z-m>
+  <x-m>-10.330000</x-m>
+  <y-m>-0.245000</y-m>
+  <z-m>-2.215000</z-m>
  </center>
  <axis>
-  <x>-0.986682</x>
-  <y>-0.014727</y>
-  <z>0.161992</z>
+  <x>-0.965024</x>
+  <y>0.028951</y>
+  <z>0.260557</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>right_fwd_front_door</object-name>
+ <property>gear/gear[0]/position-norm</property>
+ <interpolation>
+  <entry>
+   <ind>0.0</ind>
+   <dep>0.0</dep>
+  </entry>
+  <entry>
+   <ind>0.3</ind>
+   <dep>-100.0</dep>
+  </entry>
+  <entry>
+   <ind>0.7</ind>
+   <dep>-100.0</dep>
+  </entry>
+  <entry>
+   <ind>1.0</ind>
+   <dep>0.0</dep>
+  </entry>
+ </interpolation>
+ <center>
+  <x-m>-10.330000</x-m>
+  <y-m>0.245000</y-m>
+  <z-m>-2.215000</z-m>
+ </center>
+ <axis>
+  <x>-0.965024</x>
+  <y>-0.028951</y>
+  <z>0.260557</z>
  </axis>
 </animation>
 
@@ -518,12 +612,14 @@
  <type>rotate</type>
  <object-name>left_fwd_door</object-name>
  <property>gear/gear[1]/position-norm</property>
- <factor>-60.0</factor>
+ <factor>-90.0</factor>
  <offset-deg>0.0</offset-deg>
+ <min-deg>-60.0</min-deg>
+ <max-deg>0.0</max-deg>
  <center>
-  <x-m>-1.060000</x-m>
+  <x-m>-0.860000</x-m>
   <y-m>-3.610000</y-m>
-  <z-m>-1.020000</z-m>
+  <z-m>-1.030000</z-m>
  </center>
  <axis>
   <x>0.000000</x>
@@ -536,8 +632,10 @@
  <type>rotate</type>
  <object-name>left_outbound_door</object-name>
  <property>gear/gear[1]/position-norm</property>
- <factor>-60.0</factor>
+ <factor>-200.0</factor>
  <offset-deg>0.0</offset-deg>
+ <min-deg>-60.0</min-deg>
+ <max-deg>0.0</max-deg>
  <center>
   <x-m>1.050000</x-m>
   <y-m>-3.980000</y-m>
@@ -554,8 +652,10 @@
  <type>rotate</type>
  <object-name>left_inbound_door</object-name>
  <property>gear/gear[1]/position-norm</property>
- <factor>60.0</factor>
+ <factor>200.0</factor>
  <offset-deg>0.0</offset-deg>
+ <min-deg>0.0</min-deg>
+ <max-deg>60.0</max-deg>
  <center>
   <x-m>1.050000</x-m>
   <y-m>-3.210000</y-m>
@@ -572,12 +672,14 @@
  <type>rotate</type>
  <object-name>right_fwd_door</object-name>
  <property>gear/gear[2]/position-norm</property>
- <factor>60.0</factor>
+ <factor>90.0</factor>
  <offset-deg>0.0</offset-deg>
+ <min-deg>0.0</min-deg>
+ <max-deg>60.0</max-deg>
  <center>
-  <x-m>-1.060000</x-m>
+  <x-m>-0.860000</x-m>
   <y-m>3.610000</y-m>
-  <z-m>-1.020000</z-m>
+  <z-m>-1.030000</z-m>
  </center>
  <axis>
   <x>0.000000</x>
@@ -590,8 +692,10 @@
  <type>rotate</type>
  <object-name>right_outbound_door</object-name>
  <property>gear/gear[2]/position-norm</property>
- <factor>60.0</factor>
+ <factor>200.0</factor>
  <offset-deg>0.0</offset-deg>
+ <min-deg>0.0</min-deg>
+ <max-deg>60.0</max-deg>
  <center>
   <x-m>1.050000</x-m>
   <y-m>3.980000</y-m>
@@ -608,8 +712,10 @@
  <type>rotate</type>
  <object-name>right_inbound_door</object-name>
  <property>gear/gear[2]/position-norm</property>
- <factor>-60.0</factor>
+ <factor>-200.0</factor>
  <offset-deg>0.0</offset-deg>
+ <min-deg>-60.0</min-deg>
+ <max-deg>0.0</max-deg>
  <center>
   <x-m>1.050000</x-m>
   <y-m>3.210000</y-m>
