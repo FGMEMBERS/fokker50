@@ -10,6 +10,11 @@
 </offsets>
 
 <animation>
+ <type>alpha-test</type>
+ <alpha-factor>0.01</alpha-factor>
+</animation>
+
+<animation>
  <type>rotate</type>
  <object-name>right_aileron</object-name>
  <property>surface-positions/left-aileron-pos-norm</property>
@@ -729,8 +734,30 @@
 </animation>
 
 <animation>
+ <object-name>right_propdisk</object-name>
+ <object-name>right_blade1</object-name>
+ <object-name>right_blade2</object-name>
+ <object-name>right_blade3</object-name>
+ <object-name>right_blade4</object-name>
+ <object-name>right_blade5</object-name>
+ <object-name>right_blade6</object-name>
+</animation>
+
+<animation>
  <type>blend</type>
- <object-name>right_propeller</object-name>
+ <object-name>right_blade1</object-name>
+ <object-name>right_blade2</object-name>
+ <object-name>right_blade3</object-name>
+ <object-name>right_blade4</object-name>
+ <object-name>right_blade5</object-name>
+ <object-name>right_blade6</object-name>
+ <property>engines/engine[0]/n2</property>
+ <factor>0.002</factor>
+</animation>
+
+<animation>
+ <type>blend</type>
+ <object-name>right_propdisk</object-name>
  <property>engines/engine[0]/n2</property>
  <factor>0.01</factor>
  <min>0.3</min>
@@ -738,7 +765,7 @@
 
 <animation>
  <type>spin</type>
- <object-name>right_propeller</object-name>
+ <object-name>right_propdisk</object-name>
  <property>engines/engine[0]/n2</property>
  <factor>-0.079</factor>
  <center>
@@ -754,8 +781,52 @@
 </animation>
 
 <animation>
+ <type>spin</type>
+ <object-name>right_blade1</object-name>
+ <object-name>right_blade2</object-name>
+ <object-name>right_blade3</object-name>
+ <object-name>right_blade4</object-name>
+ <object-name>right_blade5</object-name>
+ <object-name>right_blade6</object-name>
+ <property>engines/engine[0]/n2</property>
+ <factor>-1.0</factor>
+ <center>
+  <x-m>-3.530000</x-m>
+  <y-m>3.610000</y-m>
+  <z-m>-0.280000</z-m>
+ </center>
+ <axis>
+  <x>1.000000</x>
+  <y>0.000000</y>
+  <z>0.000000</z>
+ </axis>
+</animation>
+
+<animation>
+ <object-name>left_propdisk</object-name>
+ <object-name>left_blade1</object-name>
+ <object-name>left_blade2</object-name>
+ <object-name>left_blade3</object-name>
+ <object-name>left_blade4</object-name>
+ <object-name>left_blade5</object-name>
+ <object-name>left_blade6</object-name>
+</animation>
+
+<animation>
  <type>blend</type>
- <object-name>left_propeller</object-name>
+ <object-name>left_blade1</object-name>
+ <object-name>left_blade2</object-name>
+ <object-name>left_blade3</object-name>
+ <object-name>left_blade4</object-name>
+ <object-name>left_blade5</object-name>
+ <object-name>left_blade6</object-name>
+ <property>engines/engine[1]/n2</property>
+ <factor>0.002</factor>
+</animation>
+
+<animation>
+ <type>blend</type>
+ <object-name>left_propdisk</object-name>
  <property>engines/engine[1]/n2</property>
  <factor>0.01</factor>
  <min>0.3</min>
@@ -763,9 +834,31 @@
 
 <animation>
  <type>spin</type>
- <object-name>left_propeller</object-name>
+ <object-name>left_propdisk</object-name>
  <property>engines/engine[0]/n2</property>
  <factor>-0.083</factor>
+ <center>
+  <x-m>-3.530000</x-m>
+  <y-m>-3.610000</y-m>
+  <z-m>-0.280000</z-m>
+ </center>
+ <axis>
+  <x>1.000000</x>
+  <y>0.000000</y>
+  <z>0.000000</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>spin</type>
+ <object-name>left_blade1</object-name>
+ <object-name>left_blade2</object-name>
+ <object-name>left_blade3</object-name>
+ <object-name>left_blade4</object-name>
+ <object-name>left_blade5</object-name>
+ <object-name>left_blade6</object-name>
+ <property>engines/engine[0]/n2</property>
+ <factor>-1.0</factor>
  <center>
   <x-m>-3.530000</x-m>
   <y-m>-3.610000</y-m>
