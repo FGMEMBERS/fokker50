@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 
 <PropertyList>
 
@@ -17,7 +16,6 @@
   </systems> 
   
   <sound>
-   <audible>true</audible>
    <path>Aircraft/fokker50/Sounds/fokker50-sound.xml</path>
   </sound>
 
