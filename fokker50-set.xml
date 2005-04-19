@@ -26,6 +26,10 @@
   </model>
 
    <chase-distance-m type="double" archive="y">-50.0</chase-distance-m>
+
+  <help>
+   <title>Fokker 50</title>
+  </help>
  </sim>
 
  <input>
