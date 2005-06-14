@@ -11,12 +11,6 @@
   <aero>fokker50</aero>
   <fuel-fraction>0.5</fuel-fraction>
   
-  <systems>
-   <electrical>
-    <path>Aircraft/Generic/generic-electrical.xml</path>
-   </electrical>
-  </systems> 
-  
   <sound>
    <path>Aircraft/fokker50/Sounds/fokker50-sound.xml</path>
   </sound>
