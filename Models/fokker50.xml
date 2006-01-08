@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-<path>fokker50.ac</path>
+<path>fokker50E.ac</path>
 
 <offsets>
   <z-m>1.25</z-m>
@@ -13,6 +13,14 @@
  <type>alpha-test</type>
  <alpha-factor>0.01</alpha-factor>
 </animation>
+
+<!-- no shadows -->
+ <animation>
+  <type>noshadow</type>
+  <object-name>markings</object-name>
+  <object-name>left_propdisk</object-name>
+  <object-name>right_propdisk</object-name>
+ </animation>
 
 <animation>
  <type>rotate</type>
