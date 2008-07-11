@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>erp.ac</path>
+
+<!-- Lighting!  -->
+
+ <animation>
+  <type>material</type>
+    <object-name>TO</object-name> 
+    <object-name>GA</object-name>
+    <object-name>CLB</object-name> 
+    <object-name>CRZ</object-name>
+    <object-name>FLX</object-name> 
+    <object-name>MCT</object-name>
+  <emission>
+    <red>0.7</red>
+    <green>0.7</green>
+    <blue>0.7</blue>
+	<factor-prop>controls/lighting/instruments-norm</factor-prop>
+  </emission>
+</animation>
+ <animation>
+  <type>material</type>
+    <object-name>Casing</object-name>
+  <emission>
+    <red>0.07</red>
+    <green>.06</green>
+    <blue>0.05</blue>
+	<factor-prop>controls/lighting/dome-norm</factor-prop>
+  </emission>
+</animation>
+
+</PropertyList>
+

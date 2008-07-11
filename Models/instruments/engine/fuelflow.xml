@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>fuelflow.ac</path>
+
+<!-- Lighting!  -->
+
+ <animation>
+  <type>material</type>
+    <object-name>flow1digit1</object-name> 
+    <object-name>flow1digit2</object-name>
+    <object-name>flow1digit3</object-name> 
+    <object-name>flow1digit4</object-name>
+    <object-name>flow2digit1</object-name> 
+    <object-name>flow2digit2</object-name>
+    <object-name>flow2digit3</object-name> 
+    <object-name>flow2digit4</object-name>
+    <object-name>wtdigit1</object-name>
+    <object-name>wtdigit2</object-name> 
+    <object-name>wtdigit3</object-name>
+  <emission>
+    <red>0.7</red>
+    <green>0.7</green>
+    <blue>0.7</blue>
+	<factor-prop>controls/lighting/instruments-norm</factor-prop>
+  </emission>
+</animation>
+ <animation>
+  <type>material</type>
+    <object-name>Casing</object-name>
+  <emission>
+    <red>0.07</red>
+    <green>.06</green>
+    <blue>0.05</blue>
+	<factor-prop>controls/lighting/dome-norm</factor-prop>
+  </emission>
+</animation>
+
+	<animation>
+		<type>textranslate</type>
+		<object-name>flow1digit1</object-name>
+		<property>engines/engine/fuel-flow_pph[0]</property>
+		<factor>0.00004536</factor>
+		<step>2204.6</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	<animation>
+		<type>textranslate</type>
+		<object-name>flow1digit2</object-name>
+		<property>engines/engine/fuel-flow_pph[0]</property>
+		<factor>0.0004536</factor>
+		<step>220.46</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	<animation>
+		<type>textranslate</type>
+		<object-name>flow1digit3</object-name>
+		<property>engines/engine/fuel-flow_pph[0]</property>
+		<factor>0.004536</factor>
+		<step>22.046</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	<animation>
+		<type>textranslate</type>
+		<object-name>flow1digit4</object-name>
+		<property>engines/engine/fuel-flow_pph[0]</property>
+		<factor>0.04536</factor>
+		<step>2.2046</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	
+<!--  Engine 2 -->
+	<animation>
+		<type>textranslate</type>
+		<object-name>flow2digit1</object-name>
+		<property>engines/engine[1]/fuel-flow_pph[0]</property>
+		<factor>0.00004536</factor>
+		<step>2204.6</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	<animation>
+		<type>textranslate</type>
+		<object-name>flow2digit2</object-name>
+		<property>engines/engine[1]/fuel-flow_pph[0]</property>
+		<factor>0.0004536</factor>
+		<step>220.46</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	<animation>
+		<type>textranslate</type>
+		<object-name>flow2digit3</object-name>
+		<property>engines/engine[1]/fuel-flow_pph[0]</property>
+		<factor>0.004536</factor>
+		<step>22.046</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	<animation>
+		<type>textranslate</type>
+		<object-name>flow2digit4</object-name>
+		<property>engines/engine[1]/fuel-flow_pph[0]</property>
+		<factor>0.04536</factor>
+		<step>2.2046</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+<!-- Weight display -->
+
+	<animation>
+		<type>textranslate</type>
+		<object-name>wtdigit1</object-name>
+		<property>fdm/jsbsim/inertia/weight-lbs[0]</property>
+		<factor>0.000004536</factor>
+		<step>22046</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+		<animation>
+		<type>textranslate</type>
+		<object-name>wtdigit2</object-name>
+		<property>fdm/jsbsim/inertia/weight-lbs[0]</property>
+		<factor>0.00004536</factor>
+		<step>2204.6</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+		<animation>
+		<type>textranslate</type>
+		<object-name>wtdigit3</object-name>
+		<property>fdm/jsbsim/inertia/weight-lbs[0]</property>
+		<factor>0.0004536</factor>
+		<step>220.46</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	
+	<!-- LoD -->
+	<animation>
+		<type>range</type>
+		<min-m>0</min-m>
+		<max-m>30</max-m>
+	</animation>
+
+</PropertyList>
+

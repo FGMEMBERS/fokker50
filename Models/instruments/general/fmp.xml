@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>fmp.ac</path>
+
+<!-- Lighting!  -->
+ <animation>
+  <type>material</type>
+    <object-name>buttonborder</object-name>
+    <object-name>crs1</object-name>
+    <object-name>crs2</object-name>
+    <object-name>hdgknob</object-name>
+    <object-name>frame</object-name>
+  <emission>
+    <red>0.07</red>
+    <green>.06</green>
+    <blue>0.05</blue>
+	<factor-prop>controls/lighting/dome-norm</factor-prop>
+  </emission>
+</animation>
+
+ <animation>
+  <type>material</type>
+    <object-name>dig1</object-name>
+    <object-name>dig2</object-name>
+    <object-name>dig3</object-name>
+    <object-name>dig4</object-name>
+    <object-name>dig5</object-name>
+  <emission>
+    <red>0.9</red>
+    <green>.9</green>
+    <blue>0.9</blue>
+	<factor-prop>systems/electrical/serviceable</factor-prop>
+  </emission>
+</animation>
+ <animation>
+  <type>material</type>
+    <object-name>leftcommand</object-name>
+    <object-name>rightcommand</object-name>
+    <object-name>sby</object-name>
+    <object-name>hdg</object-name>
+    <object-name>nav</object-name>
+    <object-name>bc</object-name>
+    <object-name>vapp</object-name>
+    <object-name>asel</object-name>
+    <object-name>alt</object-name>
+    <object-name>gs</object-name>
+    <object-name>vs</object-name>
+    <object-name>ias</object-name>
+    <object-name>apengagebtn</object-name>
+  <emission>
+    <red>0.7</red>
+    <green>0.7</green>
+    <blue>0.7</blue>
+	<factor-prop>controls/lighting/instruments-norm</factor-prop>
+  </emission>
+</animation>
+
+<!-- Twiddle the knobs to make stuff happen- CRS1 first -->
+<animation>
+	<type>pick</type>
+	<object-name>crs1</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>instrumentation/nav/radials/selected-deg</property>
+			<step>1</step>
+			<min>0</min>
+			<max>359</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+	<action>
+		<button>1</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>instrumentation/nav/radials/selected-deg</property>
+			<step>-1</step>
+			<min>0</min>
+			<max>359</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+	<action>
+		<button>3</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>instrumentation/nav/radials/selected-deg</property>
+			<step>10</step>
+			<min>0</min>
+			<max>359</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+	<action>
+		<button>4</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>instrumentation/nav/radials/selected-deg</property>
+			<step>-10</step>
+			<min>0</min>
+			<max>359</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+</animation> 
+
+<!-- Now CRS2 -->
+<animation>
+	<type>pick</type>
+	<object-name>crs2</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>instrumentation/nav[1]/radials/selected-deg</property>
+			<step>1</step>
+			<min>0</min>
+			<max>359</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+	<action>
+		<button>1</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>instrumentation/nav[1]/radials/selected-deg</property>
+			<step>-1</step>
+			<min>0</min>
+			<max>359</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+	<action>
+		<button>3</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>instrumentation/nav[1]/radials/selected-deg</property>
+			<step>10</step>
+			<min>0</min>
+			<max>359</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+	<action>
+		<button>4</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>instrumentation/nav[1]/radials/selected-deg</property>
+			<step>-10</step>
+			<min>0</min>
+			<max>359</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+</animation>
+
+<!-- Now for the heading bug -->
+<animation>
+	<type>pick</type>
+	<object-name>hdgknob</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>autopilot/settings/heading-bug-deg</property>
+			<step>1</step>
+			<min>0</min>
+			<max>359</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+	<action>
+		<button>1</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>autopilot/settings/heading-bug-deg</property>
+			<step>-1</step>
+			<min>0</min>
+			<max>359</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+	<action>
+		<button>3</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>autopilot/settings/heading-bug-deg</property>
+			<step>10</step>
+			<min>0</min>
+			<max>359</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+	<action>
+		<button>4</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>autopilot/settings/heading-bug-deg</property>
+			<step>-10</step>
+			<min>0</min>
+			<max>359</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+</animation>
+
+<!-- Now let's rotate the pointers on the knobs for cosmetic effect -->
+
+  <animation>
+	<type>texrotate</type> 
+    	<object-name>crs1</object-name>
+    		<property>instrumentation/nav/radials/selected-deg</property>
+    		<center>
+     		<x>0.25</x>
+     		<y>0.75</y>
+   		</center>
+    		<axis>
+      		<x>0</x>
+      		<y>0</y>
+      		<z>100</z>
+    </axis>
+</animation>
+  <animation>
+	<type>texrotate</type> 
+    	<object-name>crs2</object-name>
+    		<property>instrumentation/nav[1]/radials/selected-deg</property>
+    		<center>
+     		<x>0.25</x>
+     		<y>0.75</y>
+   		</center>
+    		<axis>
+      		<x>0</x>
+      		<y>0</y>
+      		<z>100</z>
+    </axis>
+</animation>
+  <animation>
+	<type>texrotate</type> 
+    	<object-name>hdgknob</object-name>
+    		<property>autopilot/settings/heading-bug-deg</property>
+    		<center>
+     		<x>0.75</x>
+     		<y>0.25</y>
+   		</center>
+    		<axis>
+      		<x>0</x>
+      		<y>0</y>
+      		<z>100</z>
+    </axis>
+</animation>
+
+</PropertyList>
+

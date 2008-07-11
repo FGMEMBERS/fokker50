@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>sbyalt.ac</path>
+
+<!-- Lighting!  -->
+
+ <animation>
+  <type>material</type>
+    <object-name>needle</object-name> 
+    <object-name>mbthou</object-name>
+    <object-name>mbhund</object-name>
+    <object-name>mbten</object-name>
+    <object-name>mbunit</object-name>
+    <object-name>rotorthou</object-name>
+    <object-name>rototentho</object-name>
+    <object-name>face</object-name>
+  <emission>
+    <red>0.7</red>
+    <green>0.7</green>
+    <blue>0.7</blue>
+	<factor-prop>controls/lighting/instruments-norm</factor-prop>
+  </emission>
+</animation>
+ <animation>
+  <type>material</type>
+    <object-name>face</object-name>
+    <object-name>casing</object-name>
+  <emission>
+    <red>0.07</red>
+    <green>.06</green>
+    <blue>0.05</blue>
+	<factor-prop>controls/lighting/dome-norm</factor-prop>
+  </emission>
+</animation>
+
+
+
+	 <animation>
+  <type>rotate</type>
+  <object-name>needle</object-name>
+  <property>instrumentation/altimeter/indicated-altitude-ft[0]</property>
+  <factor>0.36</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ 	<animation>
+		<type>textranslate</type>
+		<object-name>rotorthou</object-name>
+		<property>instrumentation/altimeter/indicated-altitude-ft[0]</property>
+		<factor>0.0001</factor>
+		<step>1000</step>
+		<scroll>50</scroll>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	 <animation>
+		<type>textranslate</type>
+		<object-name>rotortenthou</object-name>
+		<property>instrumentation/altimeter/indicated-altitude-ft[0]</property>
+		<factor>0.00001</factor>
+		<step>10000</step>
+		<scroll>50</scroll>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+<!--  Animation for altimeter subscale setting  -->
+
+	<animation>
+		<type>textranslate</type>
+		<object-name>mbunit</object-name>
+		<property>instrumentation/altimeter/setting-inhg[0]</property>
+		<factor>3.38639</factor>
+	<!--<step>0.33863886667</step>  -->
+	<!--	<scroll></scroll>  -->
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>textranslate</type>
+		<object-name>mbten</object-name>
+		<property>instrumentation/altimeter/setting-inhg[0]</property>
+		<factor>0.338639</factor>
+		<step>0.2952998</step>
+	<!--	<scroll>0.033863886667</scroll>   -->
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>textranslate</type>
+		<object-name>mbhund</object-name>
+		<property>instrumentation/altimeter/setting-inhg[0]</property>
+		<factor>0.033863886</factor>
+		<step>2.9529983</step> 
+<!--		<scroll></scroll>  -->
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+		
+	<animation>
+		<type>textranslate</type>
+		<object-name>mbthou</object-name>
+		<property>instrumentation/altimeter/setting-inhg[0]</property>
+		<factor>0.003386</factor>
+		<step>29.5329983</step> 
+<!--		<scroll>1.0</scroll>   -->
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	
+	<!-- LoD -->
+	<animation>
+		<type>range</type>
+		<min-m>0</min-m>
+		<max-m>30</max-m>
+	</animation>
+
+</PropertyList>
+

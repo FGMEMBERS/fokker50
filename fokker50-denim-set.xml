@@ -1,0 +1,92 @@
+
+<PropertyList>
+
+ <sim>
+
+  <description>Fokker 50 - Denim</description>
+  <author>Erik Hofman</author>
+  <status>beta</status>
+
+  <flight-model>jsb</flight-model>
+  <aero>fokker50</aero>
+
+  <fuel-fraction>0.5</fuel-fraction>
+  
+  <sound>
+   <path>Aircraft/fokker50/Sounds/fokker50-sound.xml</path>
+  </sound>
+
+  <virtual-cockpit archive="y">true</virtual-cockpit>
+  <allow-toggle-cockpit archive="y">false</allow-toggle-cockpit>
+
+  <model>
+   <path>Aircraft/fokker50/Models/fokker50denim.xml</path>
+  </model>
+
+  <chase-distance-m type="double" archive="y">-50.0</chase-distance-m>
+  <view n="0">
+    <internal archive="y">true</internal>
+    <config>
+      <pitch-offset-deg>-5.0</pitch-offset-deg>
+      <x-offset-m archive="y">-0.47</x-offset-m> <!--Right - was -0.50-->
+      <y-offset-m archive="y">0.28</y-offset-m> <!--Up-->
+      <z-offset-m archive="y">-7.60</z-offset-m> <!--Forward-->
+    </config>
+  </view>
+
+  <help>
+   <title>Fokker 50</title>
+  </help>
+ </sim>
+
+ <input>
+ <!-- set 7% flap adjustment with each detent -->
+  <keyboard>
+   <key n="91">
+    <name>[</name>
+    <desc>Decrease flaps.</desc>
+    <binding>
+     <command>property-adjust</command>
+     <property>/controls/flight/flaps</property>
+     <step type="double">-0.143</step>
+    </binding>
+   </key>
+   <key n="93">
+    <name>]</name>
+    <desc>Increase flaps.</desc>
+    <binding>
+     <command>property-adjust</command>
+     <property>/controls/flight/flaps</property>
+     <step type="double">0.143</step>
+    </binding>
+   </key>
+  </keyboard>
+ </input>
+
+ <engines>
+  <engine n="0">
+    <running>true</running>
+  </engine>
+  <engine n="1">
+    <running>true</running>
+  </engine>
+ </engines>
+
+ <consumables>
+  <fuel> <!-- 13365 litres -->
+   <tank n="0">
+    <level-gal_us archive="y">497.0715</level-gal_us>
+   </tank>
+   <tank n="1">
+    <level-gal_us archive="y">497.0715</level-gal_us>
+   </tank>
+  </fuel>
+ </consumables>
+ 
+  <nasal>
+  <fokker50>
+   <file>Aircraft/fokker50/Systems/units.nas</file>
+  </fokker50>
+ </nasal>
+
+</PropertyList>
