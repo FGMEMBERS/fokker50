@@ -5,6 +5,9 @@
     xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
     <fileheader>
+        <author> External model, animations and FDM by Erik Hofman.  Cockpit model in progress, work by the FlightGear community. </author>
+        <filecreationdate> In progress January 2008 </filecreationdate>
+        <version> External model $Revision$   Cockpit model in development.</version>
         <author> Erik Hofman </author>
         <filecreationdate> 2002-01-01</filecreationdate>
         <version> $Revision$ </version>
@@ -19,21 +22,21 @@
         <htailarea unit="FT2"> 120.57 </htailarea>
         <htailarm unit="FT"> 41.42 </htailarm>
         <vtailarea unit="FT2"> 135.64 </vtailarea>
-        <vtailarm unit="FT"> 0 </vtailarm>
+        <vtailarm unit="FT"> 41.42 </vtailarm>
         <location name="AERORP" unit="IN">
-            <x> 497.1 </x>
+            <x> 497.1 </x> <!--491.1-->
             <y> 0 </y>
             <z> 0 </z>
         </location>
         <location name="EYEPOINT" unit="IN">
-            <x> 79.5 </x>
-            <y> -24 </y>
-            <z> 65 </z>
+            <x> 0 </x>  <!-- 79.5 -->
+            <y> 0 </y>	<!-- Original -24 -->
+            <z> 0 </z>   <!--original 65 -->
         </location>
         <location name="VRP" unit="IN">
-            <x> 497.1 </x>
+            <x> 497.1 </x> <!-- 497.1 -->
             <y> 0 </y>
-            <z> -24.9 </z>
+            <z> -24.9 </z>  <!-- original -24.9 -->
         </location>
     </metrics>
 
@@ -171,6 +174,8 @@
             <retractable>0</retractable>
         </contact>
     </ground_reactions>
+
+
     <propulsion>
         <engine file="PW125B">
             <location unit="IN">
@@ -222,6 +227,7 @@
                 </orient>
             </thruster>
         </engine>
+
         <tank type="FUEL">    <!-- Tank number 0 -->
             <location unit="IN">
                 <x> 497.072 </x>
@@ -251,6 +257,23 @@
         </tank>
     </propulsion>
     <flight_control name="Fokker50">
+
+        <channel name="Propeller">
+            <pure_gain name="prop eff left">
+                <input>propulsion/engine[0]/thrust</input>
+                <input>velocities/vc-kts</input>
+                <gian>0.0004</gian>		<!-- 1/Engine Horsepower -->
+                <gian>0.0030675</gian>
+            </pure_gain>
+
+            <pure_gain name="prop eff right">
+                <input>propulsion/engine[1]/thrust</input>
+                <input>velocities/vc-kts</input>
+                <gian>0.0004</gian>             <!-- 1/Engine Horsepower -->
+                <gian>0.0030675</gian>
+            </pure_gain>
+        </channel>
+
         <channel name="Pitch">
             <summer name="Pitch Trim Sum">
                 <input>fcs/elevator-cmd-norm</input>
@@ -575,7 +598,7 @@
                 <product>
                     <property>aero/qbar-psf</property>
                     <property>metrics/Sw-sqft</property>
-                    <property>fcs/elevator-pos-norm</property>
+                    <abs><property>fcs/elevator-pos-norm</property></abs>
                     <value>0.0350</value>
                 </product>
             </function>
