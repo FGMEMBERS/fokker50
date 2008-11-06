@@ -45,11 +45,11 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>needle</object-name>
-		<property>engines/engine[1]/egt_degf</property>
+		<property>engines/engine[1]/itt_degc</property>
 
 		<interpolation>
-			<entry><ind>32</ind><dep>0</dep></entry>
-			<entry><ind>2192</ind><dep>230</dep></entry>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1200</ind><dep>230</dep></entry>
 		</interpolation>
 
 		<center>
@@ -70,7 +70,7 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>digit1</object-name>
-		<property>engines/engine[1]/egt-degc[0]</property>
+		<property>engines/engine[1]/itt_degc</property>
 		<factor>0.0001</factor>
 		<step>1000</step>
 		<axis>
@@ -82,7 +82,7 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>digit2</object-name>
-		<property>engines/engine[1]/egt-degc[0]</property>
+		<property>engines/engine[1]/itt_degc</property>
 		<factor>0.001</factor>
 		<step>100</step>
 		<axis>
@@ -94,7 +94,7 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>digit3</object-name>
-		<property>engines/engine[1]/egt-degc[0]</property>
+		<property>engines/engine[1]/itt_degc</property>
 		<factor>0.01</factor>
 		<step>10</step>
 		<axis>
@@ -106,7 +106,7 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>digit4</object-name>
-		<property>engines/engine[1]/egt-degc[0]</property>
+		<property>engines/engine[1]/itt_degc</property>
 		<factor>0.1</factor>
 		<step>1</step>
 		<axis>

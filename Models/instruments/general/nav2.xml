@@ -41,7 +41,7 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>actdig1</object-name>
-		<property>instrumentation/nav[1]/frequencies/selected-mhz-fmt</property>
+		<property>instrumentation/nav[1]/frequencies/selected-mhz</property>
 		<factor>0.001</factor>
 		<step>100</step>
 		<scroll>0.0000001</scroll>
@@ -54,7 +54,7 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>actdig2</object-name>
-		<property>instrumentation/nav[1]/frequencies/selected-mhz-fmt</property>
+		<property>instrumentation/nav[1]/frequencies/selected-mhz</property>
 		<factor>0.01</factor>
 		<step>10</step>
 		<scroll>0.0000001</scroll>
@@ -67,7 +67,7 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>actdig3</object-name>
-		<property>instrumentation/nav[1]/frequencies/selected-mhz-fmt</property>
+		<property>instrumentation/nav[1]/frequencies/selected-mhz</property>
 		<factor>0.1</factor>
 		<step>1</step>
 		<scroll>0.0000001</scroll>
@@ -80,10 +80,10 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>actdig01</object-name>
-		<property>instrumentation/nav[1]/frequencies/selected-mhz-fmt</property>
+		<property>instrumentation/nav[1]/frequencies/selected-mhz</property>
 		<factor>1</factor>
 		<step>0.1</step>
-		<scroll>0.0000001</scroll>
+<!--		<scroll>0.0000001</scroll>  -->
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -93,10 +93,10 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>actdig02</object-name>
-		<property>instrumentation/nav[1]/frequencies/selected-mhz-fmt</property>
+		<property>instrumentation/nav[1]/frequencies/selected-mhz</property>
 		<factor>10</factor>
 		<step>0.01</step>
-		<scroll>0.0000001</scroll>
+<!--		<scroll>0.0000001</scroll>  -->
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -109,7 +109,7 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>sbydig1</object-name>
-		<property>instrumentation/nav[1]/frequencies/standby-mhz-fmt</property>
+		<property>instrumentation/nav[1]/frequencies/standby-mhz</property>
 		<factor>0.001</factor>
 		<step>100</step>
 		<scroll>0.0000001</scroll>
@@ -122,7 +122,7 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>sbydig2</object-name>
-		<property>instrumentation/nav[1]/frequencies/standby-mhz-fmt</property>
+		<property>instrumentation/nav[1]/frequencies/standby-mhz</property>
 		<factor>0.01</factor>
 		<step>10</step>
 		<scroll>0.0000001</scroll>
@@ -135,7 +135,7 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>sbydig3</object-name>
-		<property>instrumentation/nav[1]/frequencies/standby-mhz-fmt</property>
+		<property>instrumentation/nav[1]/frequencies/standby-mhz</property>
 		<factor>0.1</factor>
 		<step>1</step>
 		<scroll>0.0000001</scroll>
@@ -148,10 +148,10 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>sbydig01</object-name>
-		<property>instrumentation/nav[1]/frequencies/standby-mhz-fmt</property>
+		<property>instrumentation/nav[1]/frequencies/standby-mhz</property>
 		<factor>1</factor>
-		<step>0.1</step>
-		<scroll>0.0000001</scroll>
+		<step>0.1</step>  
+		<scroll>0.0000001</scroll>  
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -161,10 +161,10 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>sbydig02</object-name>
-		<property>instrumentation/nav[1]/frequencies/standby-mhz-fmt</property>
+		<property>instrumentation/nav[1]/frequencies/standby-mhz</property>
 		<factor>10</factor>
-		<step>0.01</step>
-		<scroll>0.0000001</scroll>
+	<!--	<step>0.01</step>  -->
+	<!--	<scroll>0.0001</scroll>   -->
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -175,7 +175,7 @@
 <!-- Here's some pick animations for adjusting freqs: -->
 <animation>
 	<type>pick</type>
-	<object-name>sbydig01</object-name>
+	<object-name>tuningknob</object-name>
 	<visible>true</visible>
 	<action>
 		<button>0</button>
@@ -196,166 +196,6 @@
 			<command>property-adjust</command>
 			<property>instrumentation/nav[1]/frequencies/standby-mhz</property>
 			<step>-0.05</step>
-			<min>108.0</min>
-			<max>117.95</max>
-			<wrap>true</wrap>
-		</binding>		
-	</action>
-	<action>
-		<button>3</button>
-		<repeatable>true</repeatable>
-		<binding>
-			<command>property-adjust</command>
-			<property>instrumentation/nav[1]/frequencies/standby-mhz</property>
-			<step>0.05</step>
-			<min>108.0</min>
-			<max>117.95</max>
-			<wrap>true</wrap>
-		</binding>	
-	</action>
-	<action>
-		<button>4</button>
-		<repeatable>true</repeatable>
-		<binding>
-			<command>property-adjust</command>
-			<property>instrumentation/nav[1]/frequencies/standby-mhz</property>
-			<step>-0.05</step>
-			<min>108.0</min>
-			<max>117.95</max>
-			<wrap>true</wrap>
-		</binding>	
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>sbydig02</object-name>
-	<visible>true</visible>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>
-		<binding>
-			<command>property-adjust</command>
-			<property>instrumentation/nav[1]/frequencies/standby-mhz</property>
-			<step>0.05</step>
-			<min>108.0</min>
-			<max>117.95</max>
-			<wrap>true</wrap>
-		</binding>	
-	</action>
-	<action>
-		<button>1</button>
-		<repeatable>false</repeatable>
-		<binding>
-			<command>property-adjust</command>
-			<property>instrumentation/nav[1]/frequencies/standby-mhz</property>
-			<step>-0.05</step>
-			<min>108.0</min>
-			<max>117.95</max>
-			<wrap>true</wrap>
-		</binding>		
-	</action>
-	<action>
-		<button>3</button>
-		<repeatable>true</repeatable>
-		<binding>
-			<command>property-adjust</command>
-			<property>instrumentation/nav[1]/frequencies/standby-mhz</property>
-			<step>0.05</step>
-			<min>108.0</min>
-			<max>117.95</max>
-			<wrap>true</wrap>
-		</binding>	
-	</action>
-	<action>
-		<button>4</button>
-		<repeatable>true</repeatable>
-		<binding>
-			<command>property-adjust</command>
-			<property>instrumentation/nav[1]/frequencies/standby-mhz</property>
-			<step>-0.05</step>
-			<min>108.0</min>
-			<max>117.95</max>
-			<wrap>true</wrap>
-		</binding>	
-	</action>
-</animation>
-
-<animation>
-	<type>pick</type>
-	<object-name>sbydig2</object-name>
-	<visible>true</visible>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>
-		<binding>
-			<command>property-adjust</command>
-			<property>instrumentation/nav[1]/frequencies/standby-mhz</property>
-			<step>1</step>
-			<min>108.0</min>
-			<max>117.95</max>
-			<wrap>true</wrap>
-		</binding>	
-	</action>
-	<action>
-		<button>1</button>
-		<repeatable>false</repeatable>
-		<binding>
-			<command>property-adjust</command>
-			<property>instrumentation/nav[1]/frequencies/standby-mhz</property>
-			<step>-1</step>
-			<min>108.0</min>
-			<max>117.95</max>
-			<wrap>true</wrap>
-		</binding>		
-	</action>
-	<action>
-		<button>3</button>
-		<repeatable>true</repeatable>
-		<binding>
-			<command>property-adjust</command>
-			<property>instrumentation/nav[1]/frequencies/standby-mhz</property>
-			<step>1</step>
-			<min>108.0</min>
-			<max>117.95</max>
-			<wrap>true</wrap>
-		</binding>	
-	</action>
-	<action>
-		<button>4</button>
-		<repeatable>true</repeatable>
-		<binding>
-			<command>property-adjust</command>
-			<property>instrumentation/nav[1]/frequencies/standby-mhz</property>
-			<step>-1</step>
-			<min>108.0</min>
-			<max>117.95</max>
-			<wrap>true</wrap>
-		</binding>	
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>sbydig3</object-name>
-	<visible>true</visible>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>
-		<binding>
-			<command>property-adjust</command>
-			<property>instrumentation/nav[1]/frequencies/standby-mhz</property>
-			<step>1</step>
-			<min>108.0</min>
-			<max>117.95</max>
-			<wrap>true</wrap>
-		</binding>	
-	</action>
-	<action>
-		<button>1</button>
-		<repeatable>false</repeatable>
-		<binding>
-			<command>property-adjust</command>
-			<property>instrumentation/nav[1]/frequencies/standby-mhz</property>
-			<step>-1</step>
 			<min>108.0</min>
 			<max>117.95</max>
 			<wrap>true</wrap>

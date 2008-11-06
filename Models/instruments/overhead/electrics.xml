@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>electrics.ac</path>
+
+<!-- Lighting  -->
+<!-- <animation>
+  <type>material</type>
+    <object-name>fixers</object-name>
+    <object-name>frame</object-name>
+    <object-name>knob</object-name>
+    <object-name>light</object-name>
+    <object-name>screw1</object-name>
+    <object-name>screw2</object-name>
+  <emission>
+    <red>0.07</red>
+    <green>.06</green>
+    <blue>0.05</blue>
+	<factor-prop>controls/lighting/dome-norm</factor-prop>
+  </emission>
+</animation>
+-->
+
+</PropertyList>
+

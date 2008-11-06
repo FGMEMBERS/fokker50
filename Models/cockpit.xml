@@ -24,6 +24,48 @@
   </emission>
 </animation>
 
+<!-- Overhead panel models -->
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/electrics.xml</path>
+	<offsets>
+		<x-m>-8.361</x-m>
+		<y-m>-0.228</y-m>
+		<z-m>-0.505</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/emerglights.xml</path>
+	<offsets>
+		<x-m>-8.422</x-m>
+		<y-m>-0.228</y-m>
+		<z-m>-0.527</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/pressure.xml</path>
+	<offsets>
+		<x-m>-8.511</x-m>
+		<y-m>-0.228</y-m>
+		<z-m>-0.559</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/lighting.xml</path>
+	<offsets>
+		<x-m>-8.577</x-m>
+		<y-m>0</y-m>
+		<z-m>-0.583</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
 <!-- panel models -->
 
 <model>
