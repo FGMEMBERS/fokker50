@@ -258,22 +258,6 @@
     </propulsion>
     <flight_control name="Fokker50">
 
-        <channel name="Propeller">
-            <pure_gain name="prop eff left">
-                <input>propulsion/engine[0]/thrust</input>
-                <input>velocities/vc-kts</input>
-                <gian>0.0004</gian>		<!-- 1/Engine Horsepower -->
-                <gian>0.0030675</gian>
-            </pure_gain>
-
-            <pure_gain name="prop eff right">
-                <input>propulsion/engine[1]/thrust</input>
-                <input>velocities/vc-kts</input>
-                <gian>0.0004</gian>             <!-- 1/Engine Horsepower -->
-                <gian>0.0030675</gian>
-            </pure_gain>
-        </channel>
-
         <channel name="Pitch">
             <summer name="Pitch Trim Sum">
                 <input>fcs/elevator-cmd-norm</input>

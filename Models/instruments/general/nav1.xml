@@ -44,7 +44,6 @@
 		<property>instrumentation/nav/frequencies/selected-mhz</property>
 		<factor>0.001</factor>
 		<step>100</step>
-		<scroll>0.0000001</scroll>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -57,7 +56,6 @@
 		<property>instrumentation/nav/frequencies/selected-mhz</property>
 		<factor>0.01</factor>
 		<step>10</step>
-		<scroll>0.0000001</scroll>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -67,10 +65,11 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>actdig3</object-name>
-		<property>instrumentation/nav/frequencies/selected-mhz</property>
+		<property>/instrumentation/nav/frequencies/selected-mhz</property>
 		<factor>0.1</factor>
 		<step>1</step>
-		<scroll>0.0000001</scroll>
+		<!-- <scroll>1</scroll>-->
+		<bias>0.0001</bias>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -83,7 +82,6 @@
 		<property>instrumentation/nav/frequencies/selected-mhz</property>
 		<factor>1</factor>
 		<step>0.1</step>
-<!--		<scroll>0.0000001</scroll>  -->
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -96,7 +94,6 @@
 		<property>instrumentation/nav/frequencies/selected-mhz</property>
 		<factor>10</factor>
 		<step>0.01</step>
-<!--		<scroll>0.001</scroll>  -->
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -112,7 +109,6 @@
 		<property>instrumentation/nav/frequencies/standby-mhz</property>
 		<factor>0.001</factor>
 		<step>100</step>
-		<scroll>0.0000001</scroll>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -125,7 +121,6 @@
 		<property>instrumentation/nav/frequencies/standby-mhz</property>
 		<factor>0.01</factor>
 		<step>10</step>
-		<scroll>0.0000001</scroll>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -138,7 +133,7 @@
 		<property>instrumentation/nav/frequencies/standby-mhz</property>
 		<factor>0.1</factor>
 		<step>1</step>
-		<scroll>0.0000001</scroll>
+		<bias>0.0001</bias>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -150,8 +145,8 @@
 		<object-name>sbydig01</object-name>
 		<property>instrumentation/nav/frequencies/standby-mhz</property>
 		<factor>1</factor>
-		<step>0.1</step>  
-		<!--<scroll>0.03</scroll>  -->
+		<step>0.1</step>
+		<bias>0.0001</bias>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -163,8 +158,6 @@
 		<object-name>sbydig02</object-name>
 		<property>instrumentation/nav/frequencies/standby-mhz</property>
 		<factor>10</factor>
-	<!--	<step>0.01</step>  -->
-	<!--	<scroll>0.0001</scroll>   -->
 		<axis>
 			<x>1</x>
 			<y>0</y>
