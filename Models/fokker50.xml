@@ -947,7 +947,7 @@
  <object-name>right_fwd_front_door</object-name>
  <object-name>left_elevator</object-name>
  <object-name>right_elevator</object-name>
- <object-name>horiz_stabilizer</object-name>
+ <object-name>hstabr</object-name>
  <object-name>fuselage</object-name>
  <object-name>rudder</object-name>
  <property-base>sim/model/livery</property-base>
