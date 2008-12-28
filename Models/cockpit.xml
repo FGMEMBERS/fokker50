@@ -27,6 +27,16 @@
 <!-- Overhead panel models -->
 
 <model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/avionics.xml</path>
+	<offsets>
+		<x-m>-8.138</x-m>
+		<y-m>-0.228</y-m>
+		<z-m>-0.425</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
 	<path>Aircraft/fokker50/Models/instruments/overhead/electrics.xml</path>
 	<offsets>
 		<x-m>-8.361</x-m>
