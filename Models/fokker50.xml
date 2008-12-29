@@ -950,6 +950,14 @@
  <object-name>hstabr</object-name>
  <object-name>fuselage</object-name>
  <object-name>rudder</object-name>
+ <object-name>rect</object-name>	<!-- need to find out which object -->
+ <object-name>rect.001</object-name>
+ <object-name>hstab</object-name>
+ <object-name>fuselage_wing_top</object-name>
+ <object-name>left_outer_gear_door</object-name>
+ <object-name>right_outer_gear_door</object-name>
+ <object-name>right_aft_nose_gear_door</object-name>
+ <object-name>left_aft_nose_gear_door</object-name>
  <property-base>sim/model/livery</property-base>
  <texture-prop>texture</texture-prop>
  <texture>fokker50.rgb</texture>
