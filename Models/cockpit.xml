@@ -27,6 +27,126 @@
 <!-- Overhead panel models -->
 
 <model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/aircon.xml</path>
+	<offsets>
+		<x-m>-8.252</x-m>
+		<y-m>0.078</y-m>
+		<z-m>-0.466</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/prop.xml</path>
+	<offsets>
+		<x-m>-8.307</x-m>
+		<y-m>-0.075</y-m>
+		<z-m>-0.486</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/engine.xml</path>
+	<offsets>
+		<x-m>-8.422</x-m>
+		<y-m>-0.075</y-m>
+		<z-m>-0.527</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/antiice.xml</path>
+	<offsets>
+		<x-m>-8.422</x-m>
+		<y-m>0.078</y-m>
+		<z-m>-0.527</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/autopilot.xml</path>
+	<offsets>
+		<x-m>-8.008</x-m>
+		<y-m>-0.075</y-m>
+		<z-m>-0.378</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/hydraulics.xml</path>
+	<offsets>
+		<x-m>-8.099</x-m>
+		<y-m>-0.075</y-m>
+		<z-m>-0.411</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/fuel.xml</path>
+	<offsets>
+		<x-m>-8.250</x-m>
+		<y-m>-0.075</y-m>
+		<z-m>-0.466</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/gpws.xml</path>
+	<offsets>
+		<x-m>-7.954</x-m>
+		<y-m>-0.228</y-m>
+		<z-m>-0.359</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/compass2.xml</path>
+	<offsets>
+		<x-m>-7.992</x-m>
+		<y-m>0.078</y-m>
+		<z-m>-0.373</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/compass1.xml</path>
+	<offsets>
+		<x-m>-7.992</x-m>
+		<y-m>-0.228</y-m>
+		<z-m>-0.373</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/fire2.xml</path>
+	<offsets>
+		<x-m>-8.064</x-m>
+		<y-m>0.078</y-m>
+		<z-m>-0.399</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/fire1.xml</path>
+	<offsets>
+		<x-m>-8.064</x-m>
+		<y-m>-0.228</y-m>
+		<z-m>-0.399</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
 	<path>Aircraft/fokker50/Models/instruments/overhead/avionics.xml</path>
 	<offsets>
 		<x-m>-8.138</x-m>
