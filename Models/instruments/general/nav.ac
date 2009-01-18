@@ -164,7 +164,6 @@ kids 2
 OBJECT poly
 name "frame_0"
 data 0
-
 crease 30.000000
 numvert 36
 0.009685 0.016231 -0.063114
@@ -462,8 +461,7 @@ kids 0
 OBJECT poly
 name "frame_1"
 data 0
-
-texture "NAV.RGB"
+texture "nav.rgb"
 texrep 1 1
 crease 30.000000
 numvert 8

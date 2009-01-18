@@ -223,7 +223,6 @@ kids 2
 OBJECT poly
 name "frame_0"
 data 0
-
 crease 30.000000
 numvert 44
 0.007488 -0.08248 -0.063221
@@ -606,7 +605,6 @@ kids 0
 OBJECT poly
 name "frame_1"
 data 0
-
 texture "com.rgb"
 texrep 1 1
 crease 30.000000
