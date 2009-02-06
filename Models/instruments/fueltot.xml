@@ -44,7 +44,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>needle</object-name>
-		<property>consumables/fuel/tank/level-lb[0]</property>
+		<property>consumables/fuel/tank/level-lbs[0]</property>
 
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
@@ -73,7 +73,7 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>digit1</object-name>
-		<property>consumables/fuel/tank/level-lb[0]</property>
+		<property>consumables/fuel/tank/level-lbs[0]</property>
 		<factor>0.00004536</factor>
 		<step>2204.6</step>
 		<axis>
@@ -85,7 +85,7 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>digit2</object-name>
-		<property>consumables/fuel/tank/level-lb[0]</property>
+		<property>consumables/fuel/tank/level-lbs[0]</property>
 		<factor>0.0004536</factor>
 		<step>220.46</step>
 		<axis>
@@ -97,7 +97,7 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>digit3</object-name>
-		<property>consumables/fuel/tank/level-lb[0]</property>
+		<property>consumables/fuel/tank/level-lbs[0]</property>
 		<factor>0.004536</factor>
 		<step>22.046</step>
 		<axis>
@@ -109,7 +109,7 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>digit4</object-name>
-		<property>consumables/fuel/tank/level-lb[0]</property>
+		<property>consumables/fuel/tank/level-lbs[0]</property>
 		<factor>0.04536</factor>
 		<step>2.2046</step>
 		<axis>
