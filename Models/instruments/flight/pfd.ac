@@ -1,10 +1,10 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "Gaugemetal" rgb 0.136111 0.127037 0.127037 amb 0 0 0 emis 0 0 0 spec 0.779111 0.779111 0.779111 shi 45 trans 0
-MATERIAL "Gaugemetal.001" rgb 0.505882 0.52549 0.596078 amb 0 0 0 emis 0 0 0 spec 0.779111 0.779111 0.779111 shi 45 trans 0
-MATERIAL "pfd" rgb 0 0 0 amb 0.02 0.02 0.02 emis 1 1 1 spec 0 0 0 shi 72 trans 0
-MATERIAL "Material.001" rgb 1 0.988889 0.988889 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Gaugemetal.002" rgb 1 1 1 amb 0 0 0 emis 0 0 0 spec 0.779111 0.779111 0.779111 shi 45 trans 0
+MATERIAL "Gaugemetal" rgb 0.136111 0.127037 0.127037 amb 0.136111 0.127037 0.127037 emis 0 0 0 spec 0.779111 0.779111 0.779111 shi 45 trans 0
+MATERIAL "Gaugemetal.001" rgb 0.505882 0.52549 0.596078 amb 0.505882 0.52549 0.596078 emis 0 0 0 spec 0.779111 0.779111 0.779111 shi 45 trans 0
+MATERIAL "pfd" rgb 0 0 0 amb 0 0 0 emis 1 1 1 spec 0 0 0 shi 72 trans 0
+MATERIAL "Material.001" rgb 1 0.988889 0.988889 amb 1 0.988889 0.988889 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Gaugemetal.002" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.779111 0.779111 0.779111 shi 45 trans 0
 OBJECT world
 kids 20
 OBJECT poly

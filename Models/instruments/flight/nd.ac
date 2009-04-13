@@ -1,11 +1,11 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "Material" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Gaugemetal" rgb 0.136111 0.127037 0.127037 amb 0 0 0 emis 0 0 0 spec 0.779111 0.779111 0.779111 shi 45 trans 0
-MATERIAL "Gaugemetal.001" rgb 0.505882 0.52549 0.596078 amb 0 0 0 emis 0 0 0 spec 0.779111 0.779111 0.779111 shi 45 trans 0
+MATERIAL "Material" rgb 0 0 0 amb 0 0 0 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Gaugemetal" rgb 0.136111 0.127037 0.127037 amb 0.136111 0.127037 0.127037 emis 0 0 0 spec 0.779111 0.779111 0.779111 shi 45 trans 0
+MATERIAL "Gaugemetal.001" rgb 0.505882 0.52549 0.596078 amb 0.505882 0.52549 0.596078 emis 0 0 0 spec 0.779111 0.779111 0.779111 shi 45 trans 0
 MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
 OBJECT world
-kids 34
+kids 35
 OBJECT poly
 name "Backgrnd"
 data 9
@@ -653,6 +653,27 @@ refs 4
 1 0.449281781912 0.800890028477
 kids 0
 OBJECT poly
+name "acsymbol.001"
+data 9
+Plane.032
+texture "cdibar.rgb"
+texrep 1 1
+crease 30.000000
+numvert 4
+0.014072 0.039651 -0.054915
+0.014072 -0.054568 -0.054915
+0.014072 -0.054568 0.055049
+0.014072 0.039651 0.055049
+numsurf 1
+SURF 0x00
+mat 0
+refs 4
+0 0.497177541256 0.987657546997
+3 0.268198668957 0.987657546997
+2 0.268198668957 0.758678555489
+1 0.497177541256 0.758678555489
+kids 0
+OBJECT poly
 name "adf1"
 data 9
 Plane.014
@@ -888,10 +909,10 @@ texture "cdibarfail.rgb"
 texrep 1 1
 crease 30.000000
 numvert 4
-0.010697 -0.014507 -0.018253
-0.010697 -0.050669 -0.018266
-0.010697 -0.050682 0.017895
-0.010697 -0.014521 0.017909
+0.010522 -0.014507 -0.018253
+0.010522 -0.050669 -0.018266
+0.010522 -0.050682 0.017895
+0.010522 -0.014521 0.017909
 numsurf 2
 SURF 0x00
 mat 0

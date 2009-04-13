@@ -60,11 +60,12 @@
     <back-right-direction-deg type="double">225</back-right-direction-deg>
     <right-direction-deg type="double">270</right-direction-deg>
     <front-right-direction-deg type="double">315</front-right-direction-deg>
-    <x-offset-m archive="y">-0.26921875</x-offset-m>
-    <y-offset-m archive="y">0.2834661355</y-offset-m>
-    <z-offset-m archive="y">-7.7</z-offset-m>
+    <x-offset-m archive="y">-0.27</x-offset-m>  <!-- -0.26921875 -->
+<!--    <y-offset-m archive="y">0.2834661355</y-offset-m>  -->
+    <y-offset-m archive="y">0.19</y-offset-m> <!-- Up  -->
+    <z-offset-m archive="y">-7.55</z-offset-m> <!-- Forward, 7.7-->
     <heading-offset-deg>0</heading-offset-deg>
-    <pitch-offset-deg>-10.17928287</pitch-offset-deg>
+    <pitch-offset-deg>-8</pitch-offset-deg>  <!---10.17928287 -->
     <roll-offset-deg type="double">0</roll-offset-deg>
    </config>
   </view>
@@ -94,13 +95,19 @@ If you'd like to contribute, then please make yourself known on the FlightGear f
 ---  General Handling  ---
 In the absence of a refined FDM, you can take off with flaps set 5.  Rotate at approx 95 kts.
 Vref (target speed for crossing the threshold on landing) will be fine at about 95 kts again, with flap 25.
-35 is the max flap setting, use it for steep approaches.
+35 is the max flap setting, use it for steep approaches, and/or short runways.
+
+---  The ERP  ---
+The ERP is located at the bottom centre of the main instrument panel ahead of you.
+
+Use the ERP to control engine power, and prop RPM.  You can set GA (go-around, max available) or TO (takeoff) for takeoff.  That will give you 100% Np, and 86-97% Tq at MSL.  At aroung 800', set ERP CLB (climb).  That will reduce Np to a less noisy and more efficient level for the climb.  It will also reduce thrust.  When you have levelled off in the cruise and finished accelerating, set ERP CRZ (cruise).  This will reduce power again, for cruising efficiency.
+
+Leave CRZ set until you are established on the glide path towards your destination, then set GA after you select landing gear down, ready for a go-around if required.  You'll also got higher Np, which offers more drag at low Tq settings.
 
 ---  Using the cockpit  ---
-The cockpit lighting can be switched on and off on the central console.  Look down and right!
-That only works in osg, as do the other clickable cockpit objects.
+The cockpit lighting can be switched on and off on the central console.  Look down and right!  You can also press 'l'
 
-To twiddle knobs (OSG only again, I'm afraid!):
+To twiddle knobs:
 Use LMB to increment by 1, MMB to decrement by 1.  The scroll wheel increases and decreases in larger steps.
 At least it will if your mouse buttons are mapped in the same way that mine are!
 Hold the mouse cursor over the standby digits of NAV/COM/ADF boxes to adjust, then press the button to flip the freqs.  You can also adjust CDIs and the heading bug using the FMP on the glareshield.
@@ -178,6 +185,12 @@ Have fun!</text>
    </tank>
   </fuel>
  </consumables>
+
+    <controls>
+    <gear>
+      <brake-parking>1</brake-parking>
+    </gear>
+    </controls>
  
   <nasal>
   <fokker50>
@@ -186,6 +199,8 @@ Have fun!</text>
    <file>Aircraft/fokker50/Systems/radionav.nas</file>
    <file>Aircraft/fokker50/Systems/instruments.nas</file>
    <file>Aircraft/fokker50/Models/liveries.nas</file>
+   <file>Aircraft/fokker50/Systems/eec.nas</file>
+<!--   <file>Aircraft/fokker50/Systems/pec.nas</file> -->
   </fokker50>
  </nasal>
 

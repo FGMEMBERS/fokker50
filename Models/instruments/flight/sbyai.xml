@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>sbyai.ac</path>
+
+<!-- Lighting!  -->
+
+ <animation>
+  <type>material</type>
+    <object-name>gyro</object-name> 
+    <object-name>gimbal1</object-name>
+    <object-name>face</object-name> 
+    <object-name>wings</object-name>
+  <emission>
+    <red>0.6</red>
+    <green>0.6</green>
+    <blue>0.6</blue>
+	<factor-prop>controls/lighting/instruments-norm</factor-prop>
+  </emission>
+</animation>
+ <animation>
+  <type>material</type>
+    <object-name>casing</object-name>
+  <emission>
+    <red>0.07</red>
+    <green>.06</green>
+    <blue>0.05</blue>
+	<factor-prop>controls/lighting/dome-norm</factor-prop>
+  </emission>
+</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>gyro</object-name>
+		<property>/orientation/roll-deg[0]</property>
+		<interpolation>
+			<entry><ind>-180</ind><dep>-180</dep></entry>
+			<entry><ind>180</ind><dep>180</dep></entry>
+		</interpolation>
+		<center>
+            <x-m>-0.014</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+		<axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>  <!--
+		<type>rotate</type>
+		<object-name>gyro</object-name>  -->
+	</animation>
+	
+		<animation>
+		<type>rotate</type>
+		<object-name>gimbal1</object-name>
+		<property>/orientation/roll-deg[0]</property>
+		<interpolation>
+			<entry><ind>-180</ind><dep>-180</dep></entry>
+			<entry><ind>180</ind><dep>180</dep></entry>
+		</interpolation>
+		<center>
+            <x-m>-.14</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+		<axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>  <!--
+		<type>rotate</type>
+		<object-name>gyro</object-name>  -->
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>gyro</object-name>
+		<property>/orientation/pitch-deg[0]</property>
+		<interpolation>
+			<entry><ind>-180</ind><dep>-180</dep></entry>
+			<entry><ind>180</ind><dep>180</dep></entry>
+		</interpolation>
+		<center>
+            <x-m>-0.014</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+		<axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+	</animation> 
+</PropertyList>

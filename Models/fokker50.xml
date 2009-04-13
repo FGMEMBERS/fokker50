@@ -761,6 +761,17 @@
  </axis>
 </animation>
 
+    <animation>
+    <type>select</type>
+    <object-name>right_propdisk</object-name>
+    <condition>
+      <greater-than>
+       <property>engines/engine[1]/thruster/rpm</property>
+       <value>350</value>
+      </greater-than>
+    </condition>
+    </animation>
+
 <animation>
  <object-name>right_propdisk</object-name>
  <object-name>right_blade1</object-name>
@@ -779,23 +790,23 @@
  <object-name>right_blade4</object-name>
  <object-name>right_blade5</object-name>
  <object-name>right_blade6</object-name>
- <property>engines/engine[0]/n2</property>
- <factor>0.002</factor>
+ <property>engines/engine[1]/n2</property>
+ <factor>0.07</factor>
 </animation>
 
 <animation>
  <type>blend</type>
  <object-name>right_propdisk</object-name>
- <property>engines/engine[0]/n2</property>
- <factor>0.01</factor>
- <min>0.3</min>
+ <property>engines/engine[1]/thruster/rpm</property>
+ <factor>0.0007</factor>
+ <min>0.03</min>
 </animation>
 
 <animation>
  <type>spin</type>
  <object-name>right_propdisk</object-name>
- <property>engines/engine[0]/n2</property>
- <factor>-0.079</factor>
+ <property>engines/engine[1]/thruster/rpm</property>
+ <factor>-0.08</factor>
  <center>
   <x-m>-3.530000</x-m>
   <y-m>3.610000</y-m>
@@ -813,8 +824,8 @@
  <object-name>right_propeller</object-name>
  <condition>
   <less-than>
-   <property>engines/engine[0]/n2</property>
-   <value>65.0</value>
+   <property>engines/engine[1]/thruster/rpm</property>
+   <value>350</value>
   </less-than>
  </condition>
 </animation>
@@ -827,8 +838,8 @@
  <object-name>right_blade4</object-name>
  <object-name>right_blade5</object-name>
  <object-name>right_blade6</object-name>
- <property>engines/engine[0]/n2</property>
- <factor>-1.0</factor>
+ <property>engines/engine[1]/thruster/rpm</property>
+ <factor>-0.6</factor>
  <center>
   <x-m>-3.530000</x-m>
   <y-m>3.610000</y-m>
@@ -841,6 +852,17 @@
  </axis>
 </animation>
 
+    <animation>
+    <type>select</type>
+    <object-name>left_propdisk</object-name>
+    <condition>
+      <greater-than>
+       <property>engines/engine/thruster/rpm</property>
+       <value>350</value>
+      </greater-than>
+    </condition>
+    </animation>
+
 <animation>
  <object-name>left_propdisk</object-name>
  <object-name>left_blade1</object-name>
@@ -859,23 +881,23 @@
  <object-name>left_blade4</object-name>
  <object-name>left_blade5</object-name>
  <object-name>left_blade6</object-name>
- <property>engines/engine[1]/n2</property>
- <factor>0.002</factor>
+ <property>engines/engine/n2</property>
+ <factor>0.007</factor>
 </animation>
 
 <animation>
  <type>blend</type>
  <object-name>left_propdisk</object-name>
- <property>engines/engine[1]/n2</property>
- <factor>0.01</factor>
- <min>0.3</min>
+ <property>engines/engine/thruster/rpm</property>
+ <factor>0.0007</factor>
+ <min>0.03</min>
 </animation>
 
 <animation>
  <type>spin</type>
  <object-name>left_propdisk</object-name>
- <property>engines/engine[1]/n2</property>
- <factor>-0.083</factor>
+ <property>engines/engine/thruster/rpm</property>
+ <factor>-0.08</factor>
  <center>
   <x-m>-3.530000</x-m>
   <y-m>-3.610000</y-m>
@@ -893,8 +915,8 @@
  <object-name>left_propeller</object-name>
  <condition>
   <less-than>
-   <property>engines/engine[1]/n2</property>
-   <value>65.0</value>
+   <property>engines/engine/thruster/rpm</property>
+   <value>350</value>
   </less-than>
  </condition>
 </animation>
@@ -907,8 +929,8 @@
  <object-name>left_blade4</object-name>
  <object-name>left_blade5</object-name>
  <object-name>left_blade6</object-name>
- <property>engines/engine[1]/n2</property>
- <factor>-1.0</factor>
+ <property>engines/engine/thruster/rpm</property>
+ <factor>-0.6</factor>
  <center>
   <x-m>-3.530000</x-m>
   <y-m>-3.610000</y-m>

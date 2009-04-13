@@ -82,6 +82,7 @@
 		<property>instrumentation/nav/frequencies/selected-mhz</property>
 		<factor>1</factor>
 		<step>0.1</step>
+		<bias>0.0001</bias>
 		<axis>
 			<x>1</x>
 			<y>0</y>

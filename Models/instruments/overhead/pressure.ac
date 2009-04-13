@@ -1,23 +1,23 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "Material" rgb 0.596078 0.345098 0.396078 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.015" rgb 0.870813 0.870813 0.870813 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.008" rgb 0.263748 0.34221 0.298935 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.013" rgb 0.165313 0.165313 0.165313 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.014" rgb 0.205628 0.205628 0.205628 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.007" rgb 0.505882 0.52549 0.596078 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.016" rgb 0.88089 0.88089 0.88089 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.017" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.001" rgb 0.505882 0.52549 0.596078 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.009" rgb 0.850656 0.850656 0.850656 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.011" rgb 0.847059 0.847059 0.847059 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.010" rgb 0.847059 0.847059 0.847059 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.012" rgb 0.225785 0.225785 0.225785 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.002" rgb 0.856848 0.856848 0.856848 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.004" rgb 1 0.568581 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.005" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.003" rgb 0.854902 0.854902 0.854902 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.006" rgb 0.505882 0.52549 0.596078 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material" rgb 0.596078 0.345098 0.396078 amb 0.596078 0.345098 0.396078 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.015" rgb 0.870813 0.870813 0.870813 amb 0.870813 0.870813 0.870813 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.008" rgb 0.263748 0.34221 0.298935 amb 0.263748 0.34221 0.298935 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.013" rgb 0.165313 0.165313 0.165313 amb 0.165313 0.165313 0.165313 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.014" rgb 0.205628 0.205628 0.205628 amb 0.205628 0.205628 0.205628 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.007" rgb 0.505882 0.52549 0.596078 amb 0.505882 0.52549 0.596078 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.016" rgb 0.88089 0.88089 0.88089 amb 0.88089 0.88089 0.88089 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.017" rgb 0 0 0 amb 0 0 0 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.001" rgb 0.505882 0.52549 0.596078 amb 0.505882 0.52549 0.596078 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.009" rgb 0.850656 0.850656 0.850656 amb 0.850656 0.850656 0.850656 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.011" rgb 0.847059 0.847059 0.847059 amb 0.847059 0.847059 0.847059 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.010" rgb 0.847059 0.847059 0.847059 amb 0.847059 0.847059 0.847059 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.012" rgb 0.225785 0.225785 0.225785 amb 0.225785 0.225785 0.225785 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.002" rgb 0.856848 0.856848 0.856848 amb 0.856848 0.856848 0.856848 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.004" rgb 1 0.568581 0 amb 1 0.568581 0 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.005" rgb 0 0 0 amb 0 0 0 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.003" rgb 0.854902 0.854902 0.854902 amb 0.854902 0.854902 0.854902 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.006" rgb 0.505882 0.52549 0.596078 amb 0.505882 0.52549 0.596078 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 OBJECT world
 kids 19
 OBJECT poly

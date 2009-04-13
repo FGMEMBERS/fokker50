@@ -2,9 +2,22 @@
 
 var StartConf = func{
 
-#Sets up some properties for the Fokker when the sim is started
+#Sets up some properties for the Fokker when the sim is started.
+
+#Select ERP to TO
 
 	setprop("engines/engine/damaged", "false");
+	setprop("systems/fokker50/erp/selected", "TO");
+	setprop("systems/fokker50/erp/to", 1);
+	setprop("systems/fokker50/erp/ga", 0);
+	setprop("systems/fokker50/erp/crz", 0);
+	setprop("systems/fokker50/erp/clb", 0);
+	setprop("systems/fokker50/erp/mct", 0);
+	setprop("systems/fokker50/erp/settingn", 2);
+
+#Steal the propeller pitch control away from the pilot.
+    controls.propellerAxis = func { }
+
 
 #Sets the QNH for you
 

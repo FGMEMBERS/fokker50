@@ -75,7 +75,7 @@
 			<z>0</z>
 		</axis>
 	</animation>
-	<animation>
+<!--	<animation>
 		<type>textranslate</type>
 		<object-name>actdig01</object-name>
 		<property>instrumentation/adf/frequencies/selected-khz</property>
@@ -87,7 +87,7 @@
 			<y>0</y>
 			<z>0</z>
 		</axis>
-	</animation>
+	</animation> -->
 
 <!-- Standby frequency: -->  
 	<animation>
@@ -129,7 +129,7 @@
 			<z>0</z>
 		</axis>
 	</animation>
-	<animation>
+<!--	<animation>
 		<type>textranslate</type>
 		<object-name>sbydig01</object-name>
 		<property>instrumentation/adf/frequencies/standby-khz</property>
@@ -141,7 +141,7 @@
 			<y>0</y>
 			<z>0</z>
 		</axis>
-	</animation>
+	</animation>  -->
 
 
 <!-- Here's some pick animations for adjusting freqs: -->

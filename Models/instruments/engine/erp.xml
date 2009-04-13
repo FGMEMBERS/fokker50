@@ -31,5 +31,384 @@
   </emission>
 </animation>
 
+<!-- Now make the ERP buttons work. -->
+
+<animation>
+	<type>pick</type>
+	<object-name>TO</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/selected</property>
+			<value>TO</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/settingn</property>
+			<value>2</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/to</property>
+			<value>1</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/clb</property>
+			<value>0</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/crz</property>
+			<value>0</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/ga</property>
+			<value>0</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/mct</property>
+			<value>0</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/pec/target_rpm</property>
+			<value>1200</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/maxtq</property>
+			<value>2250</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/tq100-lbft</property>
+			<value>10942</value>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>GA</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/selected</property>
+			<value>GA</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/settingn</property>
+			<value>1</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/pec/target_rpm</property>
+			<value>1200</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/ga</property>
+			<value>1</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/clb</property>
+			<value>0</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/crz</property>
+			<value>0</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/mct</property>
+			<value>0</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/to</property>
+			<value>0</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/maxtq</property>
+			<value>2500</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/tq100-lbft</property>
+			<value>10942</value>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>CLB</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/selected</property>
+			<value>CLB</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/settingn</property>
+			<value>4</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/pec/target_rpm</property>
+			<value>1020</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/clb</property>
+			<value>1</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/crz</property>
+			<value>0</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/ga</property>
+			<value>0</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/mct</property>
+			<value>0</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/to</property>
+			<value>0</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/maxtq</property>
+			<value>2088</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/tq100-lbft</property>
+			<value>10751</value>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>CRZ</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/selected</property>
+			<value>CRZ</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/settingn</property>
+			<value>5</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/pec/target_rpm</property>
+			<value>1020</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/crz</property>
+			<value>1</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/clb</property>
+			<value>0</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/ga</property>
+			<value>0</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/mct</property>
+			<value>0</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/to</property>
+			<value>0</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/maxtq</property>
+			<value>1725</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/tq100-lbft</property>
+			<value>10751</value>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>MCT</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/selected</property>
+			<value>MCT</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/settingn</property>
+			<value>3</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/pec/target_rpm</property>
+			<value>1200</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/mct</property>
+			<value>1</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/clb</property>
+			<value>0</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/crz</property>
+			<value>0</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/ga</property>
+			<value>0</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/to</property>
+			<value>0</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/maxtq</property>
+			<value>2150</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>systems/fokker50/erp/tq100-lbft</property>
+			<value>10942</value>
+		</binding>
+	</action>
+</animation>
+
+<!-- Now to illuminate the correct button -->
+
+<animation>
+	<type>textranslate</type>
+	<object-name>GA</object-name>
+	<property>systems/fokker50/erp/ga</property>
+	<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>0.5</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>textranslate</type>
+	<object-name>TO</object-name>
+	<property>systems/fokker50/erp/to</property>
+	<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>0.5</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>textranslate</type>
+	<object-name>CLB</object-name>
+	<property>systems/fokker50/erp/clb</property>
+	<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>0.5</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>textranslate</type>
+	<object-name>CRZ</object-name>
+	<property>systems/fokker50/erp/crz</property>
+	<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>0.5</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>textranslate</type>
+	<object-name>MCT</object-name>
+	<property>systems/fokker50/erp/mct</property>
+	<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>0.5</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
 </PropertyList>
 

@@ -16,7 +16,7 @@ var HeadingBug = func{
 	var HdgTgt = getprop("autopilot/settings/heading-bug-deg");
 	var BugOff = (hdg - HdgTgt);
 	setprop("autopilot/settings/bugoff-deg", BugOff);
-	settimer(HeadingBug, 0.1);
+	settimer(HeadingBug, 0.1);
 
 }
 
@@ -27,4 +27,4 @@ init = func {
 setlistener("sim/signals/fdm-initialized", SetHdg);
 setlistener("sim/signals/fdm-initialized", HeadingBug);
 
-init();
+#init();

@@ -611,7 +611,7 @@
  </model> 
  
 <model>
-	<path>Aircraft/fokker50/Models/instruments/asi.xml</path>
+	<path>Aircraft/fokker50/Models/instruments/flight/asi.xml</path>
 	<offsets>
 		<x-m>-8.902</x-m>
 		<y-m>-0.617</y-m>
@@ -621,7 +621,7 @@
  </model>
  
     <model>
-	<path>Aircraft/fokker50/Models/instruments/asifo.xml</path>
+	<path>Aircraft/fokker50/Models/instruments/flight/asifo.xml</path>
 	<offsets>
 		<x-m>-8.915</x-m>
 		<y-m>0.360</y-m>
@@ -631,7 +631,7 @@
  </model>
  
    <model>
-	<path>Aircraft/fokker50/Models/instruments/nh1.xml</path>
+	<path>Aircraft/fokker50/Models/instruments/engine/nh1.xml</path>
 	<offsets>
 		<x-m>-8.907</x-m>
 		<y-m>-0.084</y-m>
@@ -641,7 +641,7 @@
  </model>
  
   <model>
-	<path>Aircraft/fokker50/Models/instruments/nh2.xml</path>
+	<path>Aircraft/fokker50/Models/instruments/engine/nh2.xml</path>
 	<offsets>
 		<x-m>-8.907</x-m>
 		<y-m>0.084</y-m>
@@ -654,7 +654,7 @@
  
 
   <model>
-	<path>Aircraft/fokker50/Models/instruments/nl1.xml</path>
+	<path>Aircraft/fokker50/Models/instruments/engine/nl1.xml</path>
 	<offsets>
 		<x-m>-8.898</x-m>
 		<y-m>-0.084</y-m>
@@ -664,7 +664,7 @@
  </model>
  
    <model>
-	<path>Aircraft/fokker50/Models/instruments/nl2.xml</path>
+	<path>Aircraft/fokker50/Models/instruments/engine/nl2.xml</path>
 	<offsets>
 		<x-m>-8.898</x-m>
 		<y-m>0.084</y-m>
@@ -675,7 +675,7 @@
  
 
   <model>
-	<path>Aircraft/fokker50/Models/instruments/np1.xml</path>
+	<path>Aircraft/fokker50/Models/instruments/engine/np1.xml</path>
 	<offsets>
 		<x-m>-8.924</x-m>
 		<y-m>-0.084</y-m>
@@ -685,7 +685,7 @@
  </model>
  
    <model>
-	<path>Aircraft/fokker50/Models/instruments/np2.xml</path>
+	<path>Aircraft/fokker50/Models/instruments/engine/np2.xml</path>
 	<offsets>
 		<x-m>-8.924</x-m>
 		<y-m>0.084</y-m>
@@ -696,7 +696,7 @@
  
  
   <model>
-  <path>Aircraft/fokker50/Models/instruments/fueltot.xml</path>
+  <path>Aircraft/fokker50/Models/instruments/engine/fueltot.xml</path>
   <offsets>
    <x-m>-8.899</x-m>
    <y-m>0.155</y-m>
@@ -718,7 +718,7 @@
  
  
   <model>
-  <path>Aircraft/fokker50/Models/instruments/sbyasi.xml</path>
+  <path>Aircraft/fokker50/Models/instruments/flight/sbyasi.xml</path>
   <offsets>
    <x-m>-8.925</x-m>
    <y-m>-0.282</y-m>
@@ -728,7 +728,7 @@
  </model>
  
   <model>
-  <path>Aircraft/fokker50/Models/instruments/itt1.xml</path>
+  <path>Aircraft/fokker50/Models/instruments/engine/itt1.xml</path>
   <offsets>
    <x-m>-8.915</x-m>
    <y-m>-0.083</y-m>
@@ -738,7 +738,7 @@
  </model>
  
   <model>
-  <path>Aircraft/fokker50/Models/instruments/itt2.xml</path>
+  <path>Aircraft/fokker50/Models/instruments/engine/itt2.xml</path>
   <offsets>
    <x-m>-8.915</x-m>
    <y-m>0.083</y-m>
@@ -748,7 +748,7 @@
  </model>
  
  <model>
-  <path>Aircraft/fokker50/Models/instruments/sbyai.xml</path>
+  <path>Aircraft/fokker50/Models/instruments/flight/sbyai.xml</path>
   <offsets>
    <x-m>-8.925</x-m>
    <y-m>-0.182</y-m>
@@ -759,7 +759,7 @@
  
  
  <model>
-	<path>Aircraft/fokker50/Models/instruments/chrono.xml</path>
+	<path>Aircraft/fokker50/Models/instruments/general/chrono.xml</path>
 	<offsets>
 		<x-m>-8.891</x-m>
 		<y-m>-0.291</y-m>
@@ -770,7 +770,7 @@
 
  
   <model>
-	<path>Aircraft/fokker50/Models/instruments/chronofo.xml</path>
+	<path>Aircraft/fokker50/Models/instruments/general/chronofo.xml</path>
 	<offsets>
 		<x-m>-8.891</x-m>
 		<y-m>0.706</y-m>

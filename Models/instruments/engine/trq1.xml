@@ -43,7 +43,7 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>tape</object-name>
-		<property>controls/engines/engine/throttle</property>
+		<property>systems/fokker50/erp/acttqpc[0]</property>
 		<factor>0.289</factor>
 		<axis>
 			<x>-1</x>
@@ -57,7 +57,7 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>digit1</object-name>
-		<property>controls/engines/engine/throttle</property>
+		<property>systems/fokker50/erp/acttqpc[0]</property>
 		<factor>0.1</factor>
 		<step>1</step>
 		<axis>
@@ -69,7 +69,7 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>digit2</object-name>
-		<property>controls/engines/engine/throttle</property>
+		<property>systems/fokker50/erp/acttqpc[0]</property>
 		<factor>1</factor>
 		<step>.1</step>
 		<axis>
@@ -81,7 +81,7 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>digit3</object-name>
-		<property>controls/engines/engine/throttle</property>
+		<property>systems/fokker50/erp/acttqpc[0]</property>
 		<factor>10</factor>
 		<step>0.01</step>
 		<axis>
@@ -93,7 +93,7 @@
 	<animation>
 		<type>textranslate</type>
 		<object-name>digit4</object-name>
-		<property>controls/engines/engine/throttle</property>
+		<property>systems/fokker50/erp/acttqpc[0]</property>
 		<factor>100</factor>
 		<step>0.001</step>
 		<axis>

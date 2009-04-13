@@ -83,6 +83,7 @@
 		<property>instrumentation/comm[1]/frequencies/selected-mhz</property>
 		<factor>1</factor>
 		<step>0.1</step>
+		<bias>0.0001</bias>
 		<scroll>0.0000001</scroll>
 		<axis>
 			<x>1</x>
@@ -96,6 +97,7 @@
 		<property>instrumentation/comm[1]/frequencies/selected-mhz</property>
 		<factor>10</factor>
 		<step>0.01</step>
+		<bias>0.0001</bias>
 		<scroll>0.0000001</scroll>
 		<axis>
 			<x>1</x>
@@ -151,6 +153,7 @@
 		<property>instrumentation/comm[1]/frequencies/standby-mhz</property>
 		<factor>1</factor>
 		<step>0.1</step>
+		<bias>0.0001</bias>
 		<scroll>0.0000001</scroll>
 		<axis>
 			<x>1</x>
@@ -164,6 +167,7 @@
 		<property>instrumentation/comm[1]/frequencies/standby-mhz</property>
 		<factor>10</factor>
 		<step>0.01</step>
+		<bias>0.0001</bias>
 		<scroll>0.0000001</scroll>
 		<axis>
 			<x>1</x>
