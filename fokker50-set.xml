@@ -23,6 +23,12 @@
   <virtual-cockpit archive="y">true</virtual-cockpit>
   <allow-toggle-cockpit archive="y">false</allow-toggle-cockpit>
 
+		<systems>
+			<autopilot>
+				<path>Aircraft/fokker50/Systems/autopilot.xml</path>
+			</autopilot>
+		</systems>
+
   <model>
    <path>Aircraft/fokker50/Models/fokker50.xml</path>
    <livery>
@@ -60,7 +66,7 @@
     <back-right-direction-deg type="double">225</back-right-direction-deg>
     <right-direction-deg type="double">270</right-direction-deg>
     <front-right-direction-deg type="double">315</front-right-direction-deg>
-    <x-offset-m archive="y">-0.27</x-offset-m>  <!-- -0.26921875 -->
+    <x-offset-m archive="y">-0.23</x-offset-m>  <!-- -0.26921875 -->
 <!--    <y-offset-m archive="y">0.2834661355</y-offset-m>  -->
     <y-offset-m archive="y">0.19</y-offset-m> <!-- Up  -->
     <z-offset-m archive="y">-7.55</z-offset-m> <!-- Forward, 7.7-->
@@ -112,6 +118,26 @@ Use LMB to increment by 1, MMB to decrement by 1.  The scroll wheel increases an
 At least it will if your mouse buttons are mapped in the same way that mine are!
 Hold the mouse cursor over the standby digits of NAV/COM/ADF boxes to adjust, then press the button to flip the freqs.  You can also adjust CDIs and the heading bug using the FMP on the glareshield.
 I invite feedback on this.
+
+---  The Autopilot ---
+The AP in the Fokker 50 is controlled using the Flight Mode Panel (FMP) in the centre of the glareshield.  The flight director can work for you (commanding pitch and roll via the pink X-bars on the PFD) whether or not the AP is engaged.  Click on the mode buttons to arm AP modes:
+
+SBY - clears all FMP modes, clears the FD command bars.
+HDG - commands roll to fly heading set with bug (in centre of FMP)
+NAV - when armed (white), will monitor the CDI.  When the selected course is approached, will become acitve (green) and command roll to maintain the selected radial.  Will also track an ILS localiser course.  Maintains previously set lateral mode until radial is established.
+BC / VAPP - as NAV mode, but for tracking ILS back-course and a VOR approach to an airfield respectively.
+ASEL - Alitude select mode.  When white, will compare your current altitude with the selected altitude (in the window, set using knob below).  When the altitude is approached, will go green, and command pitch to level at the selected altitude.  Will then set ALT hold mode.
+ALT - Maintains current altitude.  Only maintains the alt in the window if used with ASEL.
+GS - Only when an ILS frequency is tuned in NAV 1.  Button also arms 'LOC' for ILS tracking.  When established on an ILS inbound track, will monitor glideslope information.  Maintains previously set vertical mode until glideslope is intercepted.
+VS - Vertical speed hold.  Commands pitch to maintain current vertical speed, displayed in bottom left corner of PFD.  Target VS can be adjusted with your trim controls when AP is engaged.
+IAS - Indicated airspeed hold.  As VS, but with IAS!
+
+Engage / disengage AP with button in centre of FMP.
+
+- TCS mode -
+In the air, your brake button/key changes function to control TCS - touch-control-steering.
+When you hold down the TCS button, the AP is disengaged.  When you release the button, the AP is re-engaged and returns to previously selected lateral settings, but maintains new new vertical datum.  A good way of changing target VS / IAS / pitch.
+
 
 ---  Some keys  ---
 l	Adjust internal lighting.
@@ -200,6 +226,9 @@ Have fun!</text>
    <file>Aircraft/fokker50/Systems/instruments.nas</file>
    <file>Aircraft/fokker50/Models/liveries.nas</file>
    <file>Aircraft/fokker50/Systems/eec.nas</file>
+   <file>Aircraft/fokker50/Systems/alerts.nas</file>
+   <file>Aircraft/fokker50/Systems/fmp.nas</file>
+   <file>Aircraft/fokker50/Systems/efis.nas</file>
 <!--   <file>Aircraft/fokker50/Systems/pec.nas</file> -->
   </fokker50>
  </nasal>

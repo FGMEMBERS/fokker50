@@ -20,11 +20,49 @@ var HeadingBug = func{
 
 }
 
-init = func {
-   settimer(HeadingBug, 1.0);
+var cmdDigits = func{
+#Updates the VS and IAS display on the PFD.
+
+    var vsSet = getprop ("systems/fokker50/fmp/vs");
+    var iasSet = getprop ("systems/fokker50/fmp/ias");
+    var last2 = 0;    
+    var output = 0;
+
+    if (vsSet > 0) {
+        var currvs = getprop("autopilot/settings/vertical-speed-fpm");
+        last2 = 1;
+        output = int (currvs / 100) * 100; }
+    if (iasSet > 0) {
+        var currias = getprop("autopilot/settings/target-speed-kt");
+        last2 = 1;
+        output = currias  }
+
+    var outputsq = output * output;
+    if (outputsq > 1000000) {
+        setprop("systems/fokker50/efis/dig1exist",1); }
+    else {
+                setprop("systems/fokker50/efis/dig1exist",0); }
+
+    setprop ("systems/fokker50/efis/cmd", output);
+    setprop ("systems/fokker50/efis/abscmd", abs(output));
+    setprop ("systems/fokker50/efis/last2", last2);
+
+    var tcs = getprop ("systems/fokker50/fmp/tcs");
+    if (tcs > 0) {
+            setprop ("systems/fokker50/efis/cmd", 0);
+        setprop ("systems/fokker50/efis/abscmd", 0);
+        setprop ("systems/fokker50/efis/last2", 0);
+        setprop("systems/fokker50/efis/dig1exist",0);  }
+
+    settimer (cmdDigits,0.1);
 }
 
-setlistener("sim/signals/fdm-initialized", SetHdg);
-setlistener("sim/signals/fdm-initialized", HeadingBug);
+init = func {
+#   settimer(HeadingBug, 1.0);
+    cmdDigits ();
+}
+
+setlistener("sim/signals/fdm-initialized", init);
+#setlistener("sim/signals/fdm-initialized", HeadingBug);
 
 #init();
