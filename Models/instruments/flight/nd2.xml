@@ -63,8 +63,8 @@
     <object-name>compass</object-name>
     <property>orientation/heading-magnetic-deg</property>
     <center>
-     <x>0.746</x>
-     <y>0.746</y>
+     <x>0.5</x>
+     <y>0.5</y>
    </center>
     <axis>
       <x>0</x>
@@ -110,7 +110,7 @@
   <animation>
     <type>texrotate</type>
     <object-name>hdgbug</object-name>
-    <property>autopilot/settings/bugoff-deg</property>
+    <property>autopilot/internal/fdm-heading-bug-error-deg</property>
 		<interpolation>
 			<entry><ind>-180</ind><dep>-120</dep></entry>
 			<entry><ind>-35.01</ind><dep>-120</dep></entry>
@@ -126,7 +126,7 @@
     <axis>
       <x>0</x>
       <y>0</y>
-      <z>-1</z>
+      <z>1</z>
     </axis>
   </animation>
 
@@ -393,7 +393,7 @@
 	<object-name>dmedig1</object-name> 
 	<transform>     
 		<subtype>textranslate</subtype>
-			<property>instrumentation/dme/indicated-distance-nm</property>
+			<property>instrumentation/dme[1]/indicated-distance-nm</property>
 			<interpolation>
     				<entry>
      				<ind>0</ind>
@@ -428,7 +428,7 @@
 	</transform>
     <transform>
     <subtype>textranslate</subtype>
-    <property>instrumentation/dme/indicated-distance-nm</property>
+    <property>instrumentation/dme[1]/indicated-distance-nm</property>
         <factor>0.001</factor>
         <step>100</step>
     <axis>
@@ -444,7 +444,7 @@
 	<object-name>dmedig2</object-name> 
 	<transform>     
 		<subtype>textranslate</subtype>
-			<property>instrumentation/dme/indicated-distance-nm</property>
+			<property>instrumentation/dme[1]/indicated-distance-nm</property>
 			<interpolation>
     				<entry>
      				<ind>0</ind>
@@ -479,7 +479,7 @@
 	</transform>
     <transform>
     <subtype>textranslate</subtype>
-    <property>instrumentation/dme/indicated-distance-nm</property>
+    <property>instrumentation/dme[1]/indicated-distance-nm</property>
         <factor>0.01</factor>
         <step>10</step>
     <axis>
@@ -495,7 +495,7 @@
 	<object-name>dmedig3</object-name> 
 	<transform>     
 		<subtype>textranslate</subtype>
-			<property>instrumentation/dme/indicated-distance-nm</property>
+			<property>instrumentation/dme[1]/indicated-distance-nm</property>
 			<interpolation>
     				<entry>
      				<ind>0</ind>
@@ -522,7 +522,7 @@
 	</transform>
     <transform>
     <subtype>textranslate</subtype>
-    <property>instrumentation/dme/indicated-distance-nm</property>
+    <property>instrumentation/dme[1]/indicated-distance-nm</property>
         <factor>0.1</factor>
         <step>1</step>
     <axis>
@@ -538,7 +538,7 @@
 	<object-name>dmedig01</object-name> 
 	<transform>     
 		<subtype>textranslate</subtype>
-			<property>instrumentation/dme/indicated-distance-nm</property>
+			<property>instrumentation/dme[1]/indicated-distance-nm</property>
 			<interpolation>
     				<entry>
      				<ind>0</ind>
@@ -565,7 +565,7 @@
 	</transform>
     <transform>
     <subtype>textranslate</subtype>
-    <property>instrumentation/dme/indicated-distance-nm</property>
+    <property>instrumentation/dme[1]/indicated-distance-nm</property>
         <factor>1</factor>
         <step>0.1</step>
     <axis>
