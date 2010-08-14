@@ -982,7 +982,7 @@
  <object-name>left_aft_nose_gear_door</object-name>
  <property-base>sim/model/livery</property-base>
  <texture-prop>texture</texture-prop>
- <texture>fokker50.rgb</texture>
+ <texture>Liveries/KLC.png</texture>
 </animation>
 
 <animation>
@@ -997,7 +997,7 @@
  <object-name>rect.003</object-name>
  <property-base>sim/model/livery-logo</property-base>
  <texture-prop>texture</texture-prop>
- <texture>fokker50_trans.rgb</texture>
+ <texture>Liveries/KLC_trans.rgb</texture>
 </animation>
 
 </PropertyList>

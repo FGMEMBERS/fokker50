@@ -8373,7 +8373,7 @@ name "leftdoorlogo"
 loc 0.978709 -0.00795701 0
 data 9
 Plane.001
-texture "fokker50_trans.rgb"
+texture "Liveries/KLC_trans.png"
 texrep 0.21 0.5
 texoff -0.21 0
 numvert 10
@@ -8421,7 +8421,7 @@ OBJECT poly
 name "Cityleft"
 data 9
 Plane.003
-texture "fokker50_trans.rgb"
+texture "Liveries/KLC_trans.png"
 texrep 0.33 0.25
 texoff -0.54 -0.01
 numvert 8
@@ -8460,7 +8460,7 @@ OBJECT poly
 name "Cityright"
 data 9
 Plane.006
-texture "fokker50_trans.rgb"
+texture "Liveries/KLC_trans.png"
 texrep -0.33 0.25
 texoff -0.21 -0.01
 numvert 8
@@ -8500,7 +8500,7 @@ name "rightdoorlogo"
 loc 0.978709 -0.00795701 0
 data 9
 Plane.002
-texture "fokker50_trans.rgb"
+texture "Liveries/KLC_trans.png"
 texrep -0.21 0.5
 texoff 0 -0.5
 numvert 10
@@ -8548,7 +8548,7 @@ OBJECT poly
 name "rect.002"
 data 8
 Mesh.076
-texture "fokker50_trans.rgb"
+texture "Liveries/KLC_trans.png"
 texrep 0.12 0.5
 texoff 0.00075 0.51
 numvert 6
@@ -8588,7 +8588,7 @@ OBJECT poly
 name "rect.003"
 data 8
 Mesh.077
-texture "fokker50_trans.rgb"
+texture "Liveries/KLC_trans.png"
 texrep -0.12 0.5
 texoff 0.12075 0.5
 numvert 6
@@ -8628,7 +8628,7 @@ OBJECT poly
 name "regleft"
 data 9
 Plane.005
-texture "fokker50_trans.rgb"
+texture "Liveries/KLC_trans.png"
 texrep 0.33 0.25
 texoff 0.46 0.25
 numvert 10
@@ -8676,7 +8676,7 @@ OBJECT poly
 name "regright"
 data 5
 Plane
-texture "fokker50_trans.rgb"
+texture "Liveries/KLC_trans.png"
 texrep -0.33 0.25
 texoff -0.21 0.25
 numvert 10
@@ -11099,7 +11099,7 @@ kids 0
 OBJECT poly
 name "rect"
 loc 0.558744 -0.0522714 0.0521936
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 texrep 0.9977 1
 numvert 57
 -0.945021 0.355687 -14.4475
@@ -11746,7 +11746,7 @@ kids 0
 OBJECT poly
 name "left_aileron"
 loc 0.558054 -0.190473 0.0502939
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 24
 -0.181522 0.482501 14.3379
 -0.181522 0.380532 14.3379
@@ -12041,7 +12041,7 @@ kids 0
 OBJECT poly
 name "right_aileron"
 loc 0.55897 -0.0422364 0.0525188
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 24
 -0.182843 0.334782 -14.4459
 -0.182843 0.232813 -14.4459
@@ -12336,7 +12336,7 @@ kids 0
 OBJECT poly
 name "left_outbound_flap"
 loc 0.55896 -0.151532 0.0524616
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 8
 0.246127 0.212311 10.1725
 0.246127 0.320512 10.1725
@@ -12423,7 +12423,7 @@ kids 0
 OBJECT poly
 name "right_outbound_flap"
 loc 0.558534 -0.151532 0.0521231
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 8
 0.246566 0.212311 -10.2823
 0.246566 0.320513 -10.2823
@@ -12510,7 +12510,7 @@ kids 0
 OBJECT poly
 name "left_inbound_flap"
 loc 0.55845 -0.244482 0.0523901
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 8
 1.25116 0.0410959 3.08515
 0.632342 0.144409 3.08604
@@ -12597,7 +12597,7 @@ kids 0
 OBJECT poly
 name "right_inbound_flap"
 loc 0.558968 -0.244349 0.0525513
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 8
 0.661241 0.0414169 -3.18853
 0.67209 0.227696 -3.18853
@@ -12878,7 +12878,7 @@ kids 2
 OBJECT poly
 name "rect"
 loc -0.0400758 6.75067 0.0517257
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 21
 11.9842 -8.81877 -5.00304e-06
 11.6715 -8.82586 -0.032685
@@ -13068,7 +13068,7 @@ kids 0
 OBJECT poly
 name "rect"
 loc 0.0400758 -6.75067 -0.0517257
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 17
 11.904 4.68257 0.103446
 11.5913 4.67547 0.0707664
@@ -13206,7 +13206,7 @@ kids 0
 OBJECT poly
 name "left_spinner"
 loc -2.75913 0.323325 8.00491
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 65
 -0.832842 -0.472347 -4.72108
 -0.832842 -0.359269 -4.64432
@@ -13950,7 +13950,7 @@ kids 0
 OBJECT poly
 name "right_spinner"
 loc -2.07125 0.320877 0.789325
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 65
 -1.5205 -0.469899 -4.07728
 -1.5205 -0.35682 -4.15403
@@ -14705,7 +14705,7 @@ kids 0
 OBJECT poly
 name "left_inner_gear_bay"
 loc 0.718057 23.3275 1.98631
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 116
 -1.02978 -23.6172 1.10729
 -1.02978 -23.8423 1.12546
@@ -15986,7 +15986,7 @@ kids 0
 OBJECT poly
 name "left_outer_gear_bay"
 loc -1.76569 3.26928 2.07186
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 123
 0.720883 -4.07598 1.89298
 0.945333 -3.8097 2.02243
@@ -17268,7 +17268,7 @@ kids 0
 OBJECT poly
 name "left_inner_gear_door"
 loc 3.86854 -2.01846 1.81196
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 10
 -1.47855 1.16895 1.45911
 -1.47855 1.10094 1.5608
@@ -17830,7 +17830,7 @@ kids 0
 OBJECT poly
 name "right_inner_gear_bay"
 loc 0.718164 23.3275 -5.37638
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 116
 -1.02978 -23.6172 2.28363
 -1.02978 -23.8423 2.26545
@@ -19111,7 +19111,7 @@ kids 0
 OBJECT poly
 name "right_inner_gear_door"
 loc 3.86865 -2.01844 -5.55073
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 10
 -1.47855 1.16895 2.28051
 -1.47855 1.10094 2.17882
@@ -19176,7 +19176,7 @@ kids 0
 OBJECT poly
 name "right_outer_gear_bay"
 loc -1.75685 -5.4224 -4.93454
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 texoff 0 0.0005
 numvert 123
 0.712094 4.61569 0.970555
@@ -20467,7 +20467,7 @@ kids 2
 OBJECT poly
 name "rect"
 loc -1.18947 -0.0255775 1.31211
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 120
 0.0262127 2.76344 -1.38945
 -0.0420847 2.85931 -1.38945
@@ -21854,7 +21854,7 @@ kids 0
 OBJECT poly
 name "rect"
 loc 1.18947 0.0255775 -1.31211
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 12
 -2.43053 2.59722 1.33169
 -2.55176 2.77634 1.33169
@@ -21937,7 +21937,7 @@ kids 2
 OBJECT poly
 name "rect"
 loc -1.18947 -0.0255775 1.31211
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 120
 0.0262127 2.76344 -1.30983
 -0.0420847 2.85931 -1.30983
@@ -23324,7 +23324,7 @@ kids 0
 OBJECT poly
 name "rect"
 loc 1.18947 0.0255775 -1.31211
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 12
 -2.43053 2.59722 1.21744
 -2.55176 2.77634 1.21744
@@ -23411,7 +23411,7 @@ kids 2
 OBJECT poly
 name "rect"
 loc -1.65764 -0.035646 1.96045
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 120
 0.0365304 3.85113 -2.07602
 -0.0586497 3.98473 -2.07602
@@ -24798,7 +24798,7 @@ kids 0
 OBJECT poly
 name "rect"
 loc 1.65764 0.0356455 -1.96045
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 12
 -3.38718 3.61947 1.98972
 -3.55613 3.8691 1.98972
@@ -24881,7 +24881,7 @@ kids 2
 OBJECT poly
 name "rect"
 loc -1.65764 -0.0356464 1.96045
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 120
 0.0365304 3.85113 -1.95706
 -0.0586497 3.98472 -1.95706
@@ -26268,7 +26268,7 @@ kids 0
 OBJECT poly
 name "rect"
 loc 1.65764 0.0356455 -1.96045
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 12
 -3.38718 3.61947 1.81902
 -3.55613 3.8691 1.81902
@@ -26355,7 +26355,7 @@ kids 2
 OBJECT poly
 name "rect"
 loc -1.65764 -0.0356464 1.96045
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 120
 0.0365297 3.85113 -1.95706
 -0.0586504 3.98473 -1.95706
@@ -27742,7 +27742,7 @@ kids 0
 OBJECT poly
 name "rect"
 loc 1.65764 0.035646 -1.96045
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 12
 -3.38718 3.61947 1.98972
 -3.55613 3.8691 1.98972
@@ -27825,7 +27825,7 @@ kids 2
 OBJECT poly
 name "rect"
 loc -1.65764 -0.0356464 1.96045
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 120
 0.0365297 3.85113 -2.07602
 -0.0586504 3.98472 -2.07602
@@ -29212,7 +29212,7 @@ kids 0
 OBJECT poly
 name "rect"
 loc 1.65764 0.035646 -1.96045
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 12
 -3.38718 3.61947 1.81902
 -3.55613 3.8691 1.81902
@@ -29294,7 +29294,7 @@ loc 1.36262 2.38144 -0.235149
 kids 2
 OBJECT poly
 loc -0.04505 6.74865 0.989261
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 texoff 0 -0.002
 numvert 341
 8.52934 -7.93299 -0.753664
@@ -33368,7 +33368,7 @@ refs 3
 kids 0
 OBJECT poly
 loc 0.04505 -6.74865 -0.989261
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 texoff -0.003 0
 numvert 337
 2.73664 4.36982 1.22054
@@ -37391,7 +37391,7 @@ kids 0
 OBJECT poly
 name "left_fwd_gear_door"
 loc -1.74826 -1.06228 1.58342
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 6
 1.43727 0.0953079 2.03715
 1.43755 0.101778 2.10711
@@ -37428,7 +37428,7 @@ kids 0
 OBJECT poly
 name "right_fwd_gear_door"
 loc 0.578244 -1.06227 -5.48617
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 12
 -0.889359 0.0950445 1.86584
 -0.889068 0.101454 1.7965
@@ -37495,7 +37495,7 @@ kids 0
 OBJECT poly
 name "left_aft_nose_gear_door"
 loc -3.11976 -2.67589 -1.49448
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 texrep -1 1
 numvert 4
 -6.70714 0.271884 1.71989
@@ -37519,7 +37519,7 @@ kids 0
 OBJECT poly
 name "right_aft_nose_gear_door"
 loc -3.11977 -2.54694 -1.49444
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 texrep -1 1
 numvert 4
 -6.707 0.129957 1.49115
@@ -37543,7 +37543,7 @@ kids 0
 OBJECT poly
 name "left_fwd_nose_gear_door"
 loc -3.11974 -2.47561 -1.49448
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 texrep -1 1
 numvert 4
 -6.70689 0.0715947 1.71989
@@ -37567,7 +37567,7 @@ kids 0
 OBJECT poly
 name "right_fwd_nose_gear_door"
 loc -3.11974 -2.4693 -1.49448
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 texrep -1 1
 numvert 4
 -6.70703 0.052319 1.49118
@@ -37591,7 +37591,7 @@ kids 0
 OBJECT poly
 name "right_elevator"
 loc 14.0261 -3.64325 9.76745
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 8
 -2.37111 4.03792 -14.4215
 -2.37111 3.94947 -14.4215
@@ -37666,7 +37666,7 @@ kids 0
 OBJECT poly
 name "left_elevator"
 loc 14.0265 -2.53975 9.76736
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 9
 -2.37154 2.93442 -5.09089
 -2.37154 2.84596 -5.09089
@@ -37742,7 +37742,7 @@ kids 0
 OBJECT poly
 name "fuselage_wing_top"
 loc 0.693236 -0.569242 0.0398835
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 16
 0.686923 0.489234 -0.619912
 -0.015989 0.633894 -0.6199
@@ -37849,7 +37849,7 @@ kids 0
 OBJECT poly
 name "hstab"
 loc 13.999 0.089109 9.69823
-texture "fokker50.rgb"
+texture "Liveries/KLC.png"
 numvert 45
 -2.3451 0.305209 -5.02134
 -2.0507 0.262659 -5.02134
