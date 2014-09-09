@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>dme.ac</path>
+
+<!-- Lighting -->
+
+ <animation>
+  <type>material</type>
+    <object-name>digits</object-name>
+    <object-name>DecPoint</object-name>
+    <object-name>face</object-name>
+  <emission>
+    <red>0.9</red>
+    <green>.9</green>
+    <blue>0.9</blue>
+	<factor-prop>systems/electrical/serviceable</factor-prop>
+  </emission>
+</animation>
+ <animation>
+  <type>material</type>
+    <object-name>body</object-name> 
+  <emission>
+    <red>0.07</red>
+    <green>.06</green>
+    <blue>0.05</blue>
+	<factor-prop>controls/lighting/dome-norm</factor-prop>
+  </emission>
+</animation>
+
+	<!-- Digital Display -->
+	
+	<!--Distance readout first-->
+	
+	<animation>
+		<type>textranslate</type>
+		<object-name>distdig1</object-name>
+		<property>instrumentation/dme[1]/indicated-distance-nm[0]</property>
+		<factor>0.001</factor>
+		<step>100</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+		<animation>
+		<type>textranslate</type>
+		<object-name>distdig2</object-name>
+		<property>instrumentation/dme[1]/indicated-distance-nm[0]</property>
+		<factor>0.01</factor>
+		<step>10</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+		<animation>
+		<type>textranslate</type>
+		<object-name>distdig3</object-name>
+		<property>instrumentation/dme[1]/indicated-distance-nm[0]</property>
+		<factor>0.1</factor>
+		<step>1</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	<animation>
+		<type>textranslate</type>
+		<object-name>distdig01</object-name>
+		<property>instrumentation/dme[1]/indicated-distance-nm[0]</property>
+		<factor>1</factor>
+		<step>0.1</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<!-- Now for the relative speed display-->
+	
+	<animation>
+		<type>textranslate</type>
+		<object-name>ktsdig1</object-name>
+		<property>instrumentation/dme[1]/indicated-ground-speed-kt[0]</property>
+		<factor>0.001</factor>
+		<step>100</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	<animation>
+		<type>textranslate</type>
+		<object-name>ktsdig2</object-name>
+		<property>instrumentation/dme[1]/indicated-ground-speed-kt[0]</property>
+		<factor>0.01</factor>
+		<step>10</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	<animation>
+		<type>textranslate</type>
+		<object-name>ktsdig3</object-name>
+		<property>instrumentation/dme[1]/indicated-ground-speed-kt[0]</property>
+		<factor>0.1</factor>
+		<step>1</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+-->
+	<!-- LoD -->
+	<animation>
+		<type>range</type>
+		<min-m>0</min-m>
+		<max-m>30</max-m>
+	</animation>
+
+</PropertyList>
+

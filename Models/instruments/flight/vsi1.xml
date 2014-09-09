@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>vsi.ac</path>
+
+<!-- Illuminate this electrical gauge -->
+
+ <animation>
+  <type>material</type>
+    <object-name>face</object-name>
+    <object-name>pointer</object-name>
+  <emission>
+    <red>0.7</red>
+    <green>0.7</green>
+    <blue>0.7</blue>
+	<factor-prop>systems/electrical/serviceable</factor-prop>
+  </emission>
+</animation>
+ <animation>
+  <type>material</type>
+    <object-name>frame</object-name> 
+    <object-name>thingy</object-name>
+    <object-name>Cylinder</object-name>
+  <emission>
+    <red>0.07</red>
+    <green>.06</green>
+    <blue>0.05</blue>
+	<factor-prop>controls/lighting/dome-norm</factor-prop>
+  </emission>
+</animation>
+	
+<!-- Move the pointer -->
+
+<animation>
+		<type>rotate</type>
+		<object-name>pointer</object-name>
+		<property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
+
+		<interpolation>
+			<entry><ind>-6000</ind><dep>-172</dep></entry>
+			<entry><ind>-5000</ind><dep>-161</dep></entry>
+			<entry><ind>-4000</ind><dep>-147</dep></entry>
+			<entry><ind>-3000</ind><dep>-130</dep></entry>
+			<entry><ind>-2000</ind><dep>-107</dep></entry>
+			<entry><ind>-1000</ind><dep>-66</dep></entry>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1000</ind><dep>66</dep></entry>
+			<entry><ind>2000</ind><dep>107</dep></entry>
+			<entry><ind>3000</ind><dep>130</dep></entry>
+			<entry><ind>4000</ind><dep>147</dep></entry>
+			<entry><ind>5000</ind><dep>161</dep></entry>
+			<entry><ind>6000</ind><dep>172</dep></entry>
+		</interpolation>
+
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+
+	</animation>   
+	
+	
+</PropertyList>
+

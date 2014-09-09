@@ -1,0 +1,744 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>fmp.ac</path>
+
+<!-- Lighting!  -->
+ <animation>
+  <type>material</type>
+    <object-name>buttonborder</object-name>
+    <object-name>crs1</object-name>
+    <object-name>crs2</object-name>
+    <object-name>hdgknob</object-name>
+    <object-name>frame</object-name>
+  <emission>
+    <red>0.07</red>
+    <green>.06</green>
+    <blue>0.05</blue>
+	<factor-prop>controls/lighting/dome-norm</factor-prop>
+  </emission>
+</animation>
+
+ <animation>
+  <type>material</type>
+    <object-name>dig1</object-name>
+    <object-name>dig2</object-name>
+    <object-name>dig3</object-name>
+    <object-name>dig4</object-name>
+    <object-name>dig5</object-name>
+    <object-name>apengagebtn</object-name>
+  <emission>
+    <red>0.9</red>
+    <green>.9</green>
+    <blue>0.9</blue>
+	<factor-prop>systems/electrical/serviceable</factor-prop>
+  </emission>
+</animation>
+ <animation>
+  <type>material</type>
+    <object-name>leftcommand</object-name>
+    <object-name>rightcommand</object-name>
+    <object-name>sby</object-name>
+    <object-name>hdg</object-name>
+    <object-name>nav</object-name>
+    <object-name>bc</object-name>
+    <object-name>vapp</object-name>
+    <object-name>asel</object-name>
+    <object-name>alt</object-name>
+    <object-name>gs</object-name>
+    <object-name>vs</object-name>
+    <object-name>ias</object-name>
+    <object-name>apengagebtn</object-name>
+  <emission>
+    <red>0.7</red>
+    <green>0.7</green>
+    <blue>0.7</blue>
+	<factor-prop>controls/lighting/instruments-norm</factor-prop>
+  </emission>
+</animation>
+
+<!-- Twiddle the knobs to make stuff happen- CRS1 first -->
+<animation>
+	<type>pick</type>
+	<object-name>crs1</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>instrumentation/nav/radials/selected-deg</property>
+			<step>1</step>
+			<min>0</min>
+			<max>359</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+	<action>
+		<button>1</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>instrumentation/nav/radials/selected-deg</property>
+			<step>-1</step>
+			<min>0</min>
+			<max>359</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+	<action>
+		<button>3</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>instrumentation/nav/radials/selected-deg</property>
+			<step>10</step>
+			<min>0</min>
+			<max>359</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+	<action>
+		<button>4</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>instrumentation/nav/radials/selected-deg</property>
+			<step>-10</step>
+			<min>0</min>
+			<max>359</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+</animation> 
+
+<!-- Now CRS2 -->
+<animation>
+	<type>pick</type>
+	<object-name>crs2</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>instrumentation/nav[1]/radials/selected-deg</property>
+			<step>1</step>
+			<min>0</min>
+			<max>359</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+	<action>
+		<button>1</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>instrumentation/nav[1]/radials/selected-deg</property>
+			<step>-1</step>
+			<min>0</min>
+			<max>359</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+	<action>
+		<button>3</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>instrumentation/nav[1]/radials/selected-deg</property>
+			<step>10</step>
+			<min>0</min>
+			<max>359</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+	<action>
+		<button>4</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>instrumentation/nav[1]/radials/selected-deg</property>
+			<step>-10</step>
+			<min>0</min>
+			<max>359</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+</animation>
+
+<!-- Now for the heading bug -->
+<animation>
+	<type>pick</type>
+	<object-name>hdgknob</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>autopilot/settings/heading-bug-deg</property>
+			<step>1</step>
+			<min>0</min>
+			<max>359</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+	<action>
+		<button>1</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>autopilot/settings/heading-bug-deg</property>
+			<step>-1</step>
+			<min>0</min>
+			<max>359</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+	<action>
+		<button>3</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>autopilot/settings/heading-bug-deg</property>
+			<step>10</step>
+			<min>0</min>
+			<max>359</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+	<action>
+		<button>4</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>autopilot/settings/heading-bug-deg</property>
+			<step>-10</step>
+			<min>0</min>
+			<max>359.99999999999999999999999999999999</max>
+			<wrap>true</wrap>
+		</binding>	
+	</action>
+</animation>
+
+<!-- Now let's rotate the pointers on the knobs for cosmetic effect -->
+
+  <animation>
+	<type>texrotate</type> 
+    	<object-name>crs1</object-name>
+    		<property>instrumentation/nav/radials/selected-deg</property>
+    		<center>
+     		<x>0.25</x>
+     		<y>0.75</y>
+   		</center>
+    		<axis>
+      		<x>0</x>
+      		<y>0</y>
+      		<z>100</z>
+    </axis>
+</animation>
+  <animation>
+	<type>texrotate</type> 
+    	<object-name>crs2</object-name>
+    		<property>instrumentation/nav[1]/radials/selected-deg</property>
+    		<center>
+     		<x>0.25</x>
+     		<y>0.75</y>
+   		</center>
+    		<axis>
+      		<x>0</x>
+      		<y>0</y>
+      		<z>100</z>
+    </axis>
+</animation>
+  <animation>
+	<type>texrotate</type> 
+    	<object-name>hdgknob</object-name>
+    		<property>autopilot/settings/heading-bug-deg</property>
+    		<center>
+     		<x>0.75</x>
+     		<y>0.25</y>
+   		</center>
+    		<axis>
+      		<x>0</x>
+      		<y>0</y>
+      		<z>100</z>
+    </axis>
+</animation>
+
+<!-- Button illumination animations -->
+
+<animation>
+	<type>textranslate</type>
+	<object-name>sby</object-name>
+	<property>systems/fokker50/fmp/sby</property>
+	<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.4</ind><dep>0.0</dep></entry>
+			<entry><ind>0.6</ind><dep>0.5</dep></entry>
+			<entry><ind>2.0</ind><dep>0.5</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>textranslate</type>
+	<object-name>hdg</object-name>
+	<property>systems/fokker50/fmp/hdg</property>
+	<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.4</ind><dep>0.0</dep></entry>
+			<entry><ind>0.6</ind><dep>0.5</dep></entry>
+			<entry><ind>2.0</ind><dep>0.5</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>textranslate</type>
+	<object-name>nav</object-name>
+	<property>systems/fokker50/fmp/navbtn</property>
+	<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>0.5</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>textranslate</type>
+	<object-name>bc</object-name>
+	<property>systems/fokker50/fmp/bc</property>
+	<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.4</ind><dep>0.0</dep></entry>
+			<entry><ind>0.6</ind><dep>0.5</dep></entry>
+			<entry><ind>2.0</ind><dep>0.5</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>textranslate</type>
+	<object-name>vapp</object-name>
+	<property>systems/fokker50/fmp/vapp</property>
+	<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.4</ind><dep>0.0</dep></entry>
+			<entry><ind>0.6</ind><dep>0.5</dep></entry>
+			<entry><ind>2.0</ind><dep>0.5</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>textranslate</type>
+	<object-name>asel</object-name>
+	<property>systems/fokker50/fmp/asel</property>
+	<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.4</ind><dep>0.0</dep></entry>
+			<entry><ind>0.6</ind><dep>0.5</dep></entry>
+			<entry><ind>2.0</ind><dep>0.5</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>textranslate</type>
+	<object-name>alt</object-name>
+	<property>systems/fokker50/fmp/alt</property>
+	<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.4</ind><dep>0.0</dep></entry>
+			<entry><ind>0.6</ind><dep>0.5</dep></entry>
+			<entry><ind>2.0</ind><dep>0.5</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>textranslate</type>
+	<object-name>gs</object-name>
+	<property>systems/fokker50/fmp/gs</property>
+	<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.4</ind><dep>0.0</dep></entry>
+			<entry><ind>0.6</ind><dep>0.5</dep></entry>
+			<entry><ind>2.0</ind><dep>0.5</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>textranslate</type>
+	<object-name>vs</object-name>
+	<property>systems/fokker50/fmp/vs</property>
+	<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.4</ind><dep>0.0</dep></entry>
+			<entry><ind>0.6</ind><dep>0.5</dep></entry>
+			<entry><ind>2.0</ind><dep>0.5</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>textranslate</type>
+	<object-name>ias</object-name>
+	<property>systems/fokker50/fmp/ias</property>
+	<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.4</ind><dep>0.0</dep></entry>
+			<entry><ind>0.6</ind><dep>0.5</dep></entry>
+			<entry><ind>2.0</ind><dep>0.5</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<!-- Animation for selected alt in the window -->
+
+<animation>
+<type>select</type>
+    <object-name>dig1</object-name>
+    <condition>
+	    <greater-than>
+            <property>systems/fokker50/fmp/window-alt</property>
+		<value>9999</value>
+	    </greater-than>
+    </condition>
+</animation>
+
+<animation>
+<type>select</type>
+    <object-name>dig2</object-name>
+    <condition>
+	    <greater-than>
+            <property>systems/fokker50/fmp/window-alt</property>
+		<value>999</value>
+	    </greater-than>
+    </condition>
+</animation>
+
+<animation>
+<type>select</type>
+    <object-name>dig3</object-name>
+    <condition>
+	    <greater-than>
+            <property>systems/fokker50/fmp/window-alt</property>
+		<value>99</value>
+	    </greater-than>
+    </condition>
+</animation>
+
+<animation>
+<type>textranslate</type>
+	<object-name>dig3</object-name>
+	<property>systems/fokker50/fmp/window-alt</property>
+	<factor>0.001</factor>
+	<step>100</step>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+<type>textranslate</type>
+	<object-name>dig2</object-name>
+	<property>systems/fokker50/fmp/window-alt</property>
+	<factor>0.0001</factor>
+	<step>1000</step>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+<type>textranslate</type>
+	<object-name>dig1</object-name>
+	<property>systems/fokker50/fmp/window-alt</property>
+	<factor>0.00001</factor>
+	<step>10000</step>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<!-- Make the Alt-Sel knob work -->
+
+<animation>
+	<type>pick</type>
+	<object-name>altsel</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>systems/fokker50/fmp/window-alt</property>
+			<step>100</step>
+			<min>0</min>
+			<max>30000</max>
+			<wrap>false</wrap>
+		</binding>	
+	</action>
+	<action>
+		<button>1</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>systems/fokker50/fmp/window-alt</property>
+			<step>-100</step>
+			<min>0</min>
+			<max>30000</max>
+			<wrap>false</wrap>
+		</binding>	
+	</action>
+	<action>
+		<button>3</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>systems/fokker50/fmp/window-alt</property>
+			<step>1000</step>
+			<min>0</min>
+			<max>30000</max>
+			<wrap>false</wrap>
+		</binding>	
+	</action>
+	<action>
+		<button>4</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>systems/fokker50/fmp/window-alt</property>
+			<step>-1000</step>
+			<min>0</min>
+			<max>30000</max>
+			<wrap>false</wrap>
+		</binding>	
+	</action>
+</animation>
+
+<!-- Engage / disengage AP using button.  Normally, disengagement is possible only by button on yoke, but that's not practical in our model. -->
+
+<animation>
+	<type>pick</type>
+	<object-name>apengagebtn</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-toggle</command>
+			<property>autopilot/locks/passive-mode</property>
+		</binding>	
+	</action>
+</animation>
+
+<animation>
+	<type>textranslate</type>
+	<object-name>apengagebtn</object-name>
+	<property>autopilot/locks/passive-mode</property>
+	<interpolation>
+			<entry><ind>0</ind><dep>0.75</dep></entry>
+			<entry><ind>1</ind><dep>0.25</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<!-- Pick animations to deal with FD mode selections -->
+<animation>
+	<type>pick</type>
+	<object-name>sby</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>fokker50.fmpsby()</script>
+		</binding>	
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>hdg</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>fokker50.fmphdg()</script>
+		</binding>	
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>nav</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>fokker50.fmpnav()</script>
+		</binding>	
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>bc</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>fokker50.fmpbc()</script>
+		</binding>	
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>vapp</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>fokker50.fmpvapp()</script>
+		</binding>	
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>asel</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>fokker50.fmpasel()</script>
+		</binding>	
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>alt</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>fokker50.fmpalt()</script>
+		</binding>	
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>gs</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>fokker50.fmpgs()</script>
+		</binding>	
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>vs</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>fokker50.fmpvs()</script>
+		</binding>	
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>ias</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>fokker50.fmpias()</script>
+		</binding>	
+	</action>
+</animation>
+
+
+</PropertyList>
+

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>pressure.ac</path>
+
+<!-- Lighting  -->
+<animation>
+  <type>material</type>
+    <object-name>UpDown</object-name>
+    <object-name>backpanel</object-name>
+    <object-name>but</object-name>
+    <object-name>buttonAutoMan</object-name>
+    <object-name>frameControl</object-name>
+    <object-name>frameInd</object-name>
+    <object-name>knob1</object-name>
+    <object-name>knob2</object-name>
+    <object-name>knob3</object-name>
+    <object-name>knobManRate</object-name>
+    <object-name>warning</object-name>
+  <emission>
+    <red>0.07</red>
+    <green>.06</green>
+    <blue>0.05</blue>
+	<factor-prop>controls/lighting/dome-norm</factor-prop>
+  </emission>
+</animation>
+
+ <animation>
+  <type>material</type>
+    <object-name>needleCabAlt</object-name>
+    <object-name>needleDiff</object-name>
+    <object-name>needleROC</object-name>
+    <object-name>faceInd</object-name>
+    <object-name>controlPointer</object-name>
+    <object-name>controlFace</object-name>
+  <emission>
+    <red>0.7</red>
+    <green>0.7</green>
+    <blue>0.7</blue>
+	<factor-prop>controls/lighting/instruments-norm</factor-prop>
+  </emission>
+</animation>
+
+
+</PropertyList>
+

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>efiscp.ac</path>
+
+<!-- Lighting!  -->
+
+ <animation>
+  <type>material</type>
+    <object-name>buttonfullarc</object-name> 
+    <object-name>buttonmap</object-name>
+    <object-name>buttongspdttg</object-name> 
+    <object-name>buttonfdcmd</object-name> 
+    <object-name>buttonnav1</object-name>
+    <object-name>buttonnav2</object-name> 
+  <emission>
+    <red>0.7</red>
+    <green>0.7</green>
+    <blue>0.7</blue>
+	<factor-prop>controls/lighting/instruments-norm</factor-prop>
+  </emission>
+</animation>
+ <animation>
+  <type>material</type>
+    <object-name>Cube</object-name>
+    <object-name>knob1</object-name>
+    <object-name>knob2</object-name>
+  <!--  <object-name>knobpointer1</object-name>
+    <object-name>knobpointer2</object-name> -->
+  <emission>
+    <red>0.07</red>
+    <green>.06</green>
+    <blue>0.05</blue>
+	<factor-prop>controls/lighting/dome-norm</factor-prop>
+  </emission>
+</animation>
+
+</PropertyList>
+

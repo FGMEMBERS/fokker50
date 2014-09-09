@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+
+	<path>np.ac</path>
+
+<!-- No prop is modelled on the F50, so the animations will have to wait! -->
+
+ <animation>
+  <type>material</type>
+    <object-name>casing</object-name> 
+    <object-name>needle</object-name>
+  <emission>
+    <red>0.7</red>
+    <green>0.7</green>
+    <blue>0.7</blue>
+	<factor-prop>controls/lighting/instruments-norm</factor-prop>
+  </emission>
+</animation>
+
+</PropertyList>
+

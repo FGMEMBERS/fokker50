@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>trq.ac</path>
+
+<!-- Lighting!  -->
+
+ <animation>
+  <type>material</type>
+    <object-name>face</object-name> 
+    <object-name>tape</object-name>
+    <object-name>bug</object-name>
+  <emission>
+    <red>0.7</red>
+    <green>0.7</green>
+    <blue>0.7</blue>
+	<factor-prop>controls/lighting/instruments-norm</factor-prop>
+  </emission>
+</animation>
+ <animation>
+  <type>material</type>
+    <object-name>Cylinder</object-name>
+    <object-name>body</object-name>
+  <emission>
+    <red>0.07</red>
+    <green>.06</green>
+    <blue>0.05</blue>
+	<factor-prop>controls/lighting/dome-norm</factor-prop>
+  </emission>
+</animation>
+ <animation>
+  <type>material</type>
+    <object-name>digits</object-name>
+  <emission>
+    <red>0.9</red>
+    <green>.9</green>
+    <blue>0.9</blue>
+	<factor-prop>systems/electrical/serviceable</factor-prop>
+  </emission>
+</animation>
+
+<!--Tq tape animation.  Currently based only on throttle position.-->
+	<animation>
+		<type>textranslate</type>
+		<object-name>tape</object-name>
+		<property>systems/fokker50/erp/acttqpc[0]</property>
+		<factor>0.289</factor>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+<!-- Digital display animation-->
+
+	<animation>
+		<type>textranslate</type>
+		<object-name>digit1</object-name>
+		<property>systems/fokker50/erp/acttqpc[0]</property>
+		<factor>0.1</factor>
+		<step>1</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	<animation>
+		<type>textranslate</type>
+		<object-name>digit2</object-name>
+		<property>systems/fokker50/erp/acttqpc[0]</property>
+		<factor>1</factor>
+		<step>.1</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	<animation>
+		<type>textranslate</type>
+		<object-name>digit3</object-name>
+		<property>systems/fokker50/erp/acttqpc[0]</property>
+		<factor>10</factor>
+		<step>0.01</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	<animation>
+		<type>textranslate</type>
+		<object-name>digit4</object-name>
+		<property>systems/fokker50/erp/acttqpc[0]</property>
+		<factor>100</factor>
+		<step>0.001</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+
+	
+	
+	<!-- LoD -->
+	<animation>
+		<type>range</type>
+		<min-m>0</min-m>
+		<max-m>30</max-m>
+	</animation>
+
+</PropertyList>
+

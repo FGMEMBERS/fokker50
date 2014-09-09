@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>lightingpanel.ac</path>
+
+<!-- Lighting - light up the lighting panel!  -->
+<animation>
+  <type>material</type>
+    <object-name>main</object-name>
+    <object-name>buttonv1</object-name>
+    <object-name>landsw1</object-name>
+    <object-name>landsw2</object-name>
+    <object-name>taxisw</object-name>
+    <object-name>winginspsw</object-name>
+    <object-name>beaconsw</object-name>
+    <object-name>anticollsw</object-name>
+    <object-name>navsw</object-name>
+    <object-name>strobesw</object-name>
+    <object-name>seatbeltsw</object-name>
+    <object-name>smkgsw</object-name>
+  <emission>
+    <red>0.07</red>
+    <green>.06</green>
+    <blue>0.05</blue>
+	<factor-prop>controls/lighting/dome-norm</factor-prop>
+  </emission>
+</animation>
+
+
+</PropertyList>
+

@@ -1,0 +1,632 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>pfd.ac</path>
+	
+<!-- Illumintate this screen, whenever the electrical system is serviceable -->
+
+ <animation>
+  <type>material</type>
+    <object-name>Backgrnd</object-name> 
+    <object-name>Plane</object-name>
+    <object-name>aobpointer</object-name>
+    <object-name>slipball</object-name>
+    <object-name>wings</object-name>
+    <object-name>risingrunway</object-name>
+    <object-name>gsserv</object-name>
+    <object-name>gscross</object-name>
+    <object-name>gsbug</object-name>
+    <object-name>locbars</object-name>
+    <object-name>locbug</object-name>
+    <object-name>hdgcaption</object-name>
+    <object-name>navcaption</object-name>
+    <object-name>vappcaption</object-name>
+    <object-name>loccaption</object-name>
+    <object-name>aselcaption</object-name>
+    <object-name>altcaption</object-name>
+    <object-name>gscaption</object-name>
+    <object-name>vscaption</object-name>
+    <object-name>iascaption</object-name>
+    <object-name>gacaption</object-name>
+  <emission>
+    <red>0.9</red>
+    <green>0.9</green>
+    <blue>0.9</blue>
+	<factor-prop>systems/electrical/serviceable</factor-prop>
+  </emission>
+</animation>
+ <animation>
+  <type>material</type>
+    <object-name>ra</object-name>
+    <object-name>radalt1</object-name>
+    <object-name>radalt2</object-name>
+    <object-name>radalt3</object-name>
+    <object-name>radalt4</object-name>
+  <emission>
+    <red>1.3</red>
+    <green>1.3</green>
+    <blue>1.3</blue>
+	<factor-prop>systems/electrical/serviceable</factor-prop>
+  </emission>
+</animation>
+ <animation>
+  <type>material</type>
+    <object-name>EADI.bezel</object-name> 
+  <emission>
+    <red>0.07</red>
+    <green>.06</green>
+    <blue>0.05</blue>
+	<factor-prop>controls/lighting/dome-norm</factor-prop>
+  </emission>
+</animation>
+
+  <animation>
+  <type>texmultiple</type>
+    <object-name>Backgrnd</object-name>
+  <transform>
+    <property>orientation/pitch-deg</property>
+    <subtype>textranslate</subtype>
+    <factor>0.004833</factor>
+    <axis>
+     <x>0</x>
+     <y>1</y>
+     <z>0</z>
+   </axis>
+  </transform>
+  <transform>
+    <property>orientation/roll-deg</property>
+    <subtype>texrotate</subtype>
+    <center>
+     <x>0.25</x>
+     <y>0.5</y>
+   </center>
+    <axis>
+     <x>0</x>
+     <y>0</y>
+     <z>-1</z>
+   </axis>
+  </transform>
+ </animation>
+
+<!-- Animations- starting with the AOB pointer near the top of the screen -->
+<animation>
+		<type>rotate</type>
+		<object-name>aobpointer</object-name>
+		<property>orientation/roll-deg</property>
+
+		<interpolation>
+			<entry><ind>-179</ind><dep>-179</dep></entry>
+			<entry><ind>179</ind><dep>179</dep></entry>
+		</interpolation>
+
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+
+	</animation> 
+	
+	<animation>
+  <type>translate</type>
+  <object-name>slipball</object-name>
+  <property>instrumentation/slip-skid-ball/indicated-slip-skid</property>
+  <min>-1.0</min>
+  <max>1.0</max>
+  <interpolation>
+    <entry>
+      <ind>-8.3</ind>
+      <dep>-0.01</dep>
+    </entry>
+    <entry>
+      <ind>8.3</ind>
+      <dep>0.01</dep>
+    </entry>
+  </interpolation>
+  <axis>
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+  </axis>
+  <center>
+    <x-m>0.0</x-m>
+    <y-m>0.0</y-m>
+    <z-m>0.0</z-m>
+  </center>
+</animation>
+
+<!--  Here's the 'rising runway' symbol.  It appears when RADALT<200', and touches the PFD wings when on the ground --> 
+<animation> 
+<type>textranslate</type>
+	<object-name>risingrunway</object-name>
+	<property>position/altitude-agl-ft</property>  <!-- This isn't ideal, as it reads about 7 when the aircraft is on the ground! -->  
+	<interpolation>
+    		<entry>
+     		<ind>0</ind>
+      		<dep>0</dep>
+    		</entry> 
+    		<entry>
+     		<ind>7.</ind>
+      		<dep>0</dep>
+    		</entry>  
+    		<entry>
+     		<ind>207</ind>
+      		<dep>0.40</dep>
+    		</entry>
+   		<entry>
+     		<ind>208</ind>
+      		<dep>0.65</dep>
+    		</entry>
+    		<entry>
+     		<ind>50000</ind>
+      		<dep>0.65</dep>
+    		</entry>   
+	</interpolation>  
+    <axis>
+     <x>0</x>
+     <y>1</y>
+     <z>0</z>
+   </axis>
+</animation>
+
+<!-- Animation for the RADALT display -->
+
+<animation>
+<type>textranslate</type>
+    <object-name>ra</object-name>
+    <property>position/altitude-agl-ft</property>
+	<interpolation>
+    	<entry>
+     	<ind>-1500</ind>
+      	<dep>0</dep>
+    	</entry>
+    	<entry>
+     	<ind>2487</ind>
+      	<dep>0</dep>
+    	</entry>
+    	<entry>
+     	<ind>2487.001</ind>
+      	<dep>0.125</dep>
+    	</entry>
+        </interpolation>
+    <axis>
+     <x>0</x>
+     <y>1</y>
+     <z>0</z>
+   </axis>
+</animation>
+
+<animation>
+<type>texmultiple</type>
+    <object-name>radalt1</object-name>
+    <transform>
+    <subtype>textranslate</subtype>
+    <property>position/altitude-agl-ft</property>
+    <offset>-7</offset> 
+	<interpolation>
+    	<entry>
+     	<ind>-1500</ind>
+      	<dep>0</dep>
+    	</entry>
+    	<entry>
+     	<ind>999.9</ind>
+      	<dep>0</dep>
+    	</entry>
+    	<entry>
+     	<ind>1000</ind>
+      	<dep>0.25</dep>
+    	</entry>
+    	<entry>
+     	<ind>2487</ind>
+      	<dep>0.25</dep>
+    	</entry>
+    	<entry>
+     	<ind>2487.001</ind>
+      	<dep>0</dep>
+    	</entry>
+        </interpolation>
+    <axis>
+     <x>-1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+    </transform>
+    <transform>
+    <subtype>textranslate</subtype>
+    <property>position/altitude-agl-ft</property>
+        <offset>-7</offset>
+        <factor>0.0001</factor>
+        <step>1000</step>
+    <axis>
+     <x>0</x>
+     <y>-1</y>
+     <z>0</z>
+   </axis>
+    </transform>
+</animation> 
+
+<animation>
+<type>texmultiple</type>
+    <object-name>radalt2</object-name>
+    <transform>
+    <subtype>textranslate</subtype>
+    <property>position/altitude-agl-ft</property>
+    <offset>-7</offset> 
+	<interpolation>
+    	<entry>
+     	<ind>-1500</ind>
+      	<dep>0</dep>
+    	</entry>
+    	<entry>
+     	<ind>99.9</ind>
+      	<dep>0</dep>
+    	</entry>
+    	<entry>
+     	<ind>100</ind>
+      	<dep>0.25</dep>
+    	</entry>
+    	<entry>
+     	<ind>2487</ind>
+      	<dep>0.25</dep>
+    	</entry>
+    	<entry>
+     	<ind>2487.001</ind>
+      	<dep>0</dep>
+    	</entry>
+        </interpolation>
+    <axis>
+     <x>-1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+    </transform>
+    <transform>
+    <subtype>textranslate</subtype>
+    <property>position/altitude-agl-ft</property>
+        <offset>-7</offset>
+        <factor>0.001</factor>
+        <step>100</step>
+    <axis>
+     <x>0</x>
+     <y>-1</y>
+     <z>0</z>
+   </axis>
+    </transform>
+</animation> 
+
+<animation>
+<type>texmultiple</type>
+    <object-name>radalt3</object-name>
+    <transform>
+    <subtype>textranslate</subtype>
+    <property>position/altitude-agl-ft</property>
+    <offset>-7</offset> 
+	<interpolation>
+    	<entry>
+     	<ind>-1500</ind>
+      	<dep>0</dep>
+    	</entry>
+    	<entry>
+     	<ind>9.99</ind>
+      	<dep>0</dep>
+    	</entry>
+    	<entry>
+     	<ind>10</ind>
+      	<dep>0.25</dep>
+    	</entry>
+    	<entry>
+     	<ind>2487</ind>
+      	<dep>0.25</dep>
+    	</entry>
+    	<entry>
+     	<ind>2487.001</ind>
+      	<dep>0</dep>
+    	</entry>
+        </interpolation>
+    <axis>
+     <x>-1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+    </transform>
+    <transform>
+    <subtype>textranslate</subtype>
+    <property>position/altitude-agl-ft</property>
+        <offset>-7</offset>
+        <factor>0.01</factor>
+        <step>10</step>
+    <axis>
+     <x>0</x>
+     <y>-1</y>
+     <z>0</z>
+   </axis>
+    </transform>
+</animation>   
+
+<animation>
+<type>textranslate</type>
+    <object-name>radalt4</object-name>
+    <property>position/altitude-agl-ft</property>
+	<interpolation>
+    	<entry>
+     	<ind>-1500</ind>
+      	<dep>0.25</dep>
+    	</entry>
+    	<entry>
+     	<ind>2487</ind>
+      	<dep>0.25</dep>
+    	</entry>
+    	<entry>
+     	<ind>2487.001</ind>
+      	<dep>0</dep>
+    	</entry>
+        </interpolation>
+    <axis>
+     <x>-1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+</animation>
+
+<!--  Here's the animations for the ILS display on the PFD.  Start with selecting which display is required! -->
+
+<animation>
+<type>select</type>
+    <object-name>gscross</object-name>
+    <condition>
+        <and>
+            <property>instrumentation/nav/has-gs</property>
+            <not>
+                <property>instrumentation/nav/in-range</property>
+            </not>
+        </and>
+    </condition>
+</animation>
+
+<animation>
+<type>select</type>
+    <object-name>gsserv</object-name>
+    <condition>
+        <and>
+            <property>instrumentation/nav/has-gs</property>
+            <property>instrumentation/nav/in-range</property>
+        </and>
+    </condition>
+</animation>
+
+<animation>
+<type>select</type>
+    <object-name>gsbug</object-name>
+    <condition>
+        <and>
+            <property>instrumentation/nav/has-gs</property>
+            <property>instrumentation/nav/in-range</property>
+        </and>
+    </condition>
+</animation>
+
+<animation>
+<type>select</type>
+    <object-name>locbug</object-name>
+    <condition>
+        <and>
+            <property>instrumentation/nav/has-gs</property>
+            <property>instrumentation/nav/in-range</property>
+        </and>
+    </condition>
+</animation>
+
+<animation>
+<type>select</type>
+    <object-name>locbars</object-name>
+    <condition>
+        <property>instrumentation/nav/has-gs</property>
+    </condition>
+</animation>
+
+
+<!-- Make the GS bug move -->
+ <animation>
+	 <type>translate</type>
+	 <object-name>gsbug</object-name>
+	<property>instrumentation/nav/gs-needle-deflection</property>
+        <interpolation>
+        <entry>
+            <ind>-3.5</ind>
+            <dep>-0.0145</dep>
+        </entry>
+        <entry>
+            <ind>3.5</ind>
+            <dep>0.0145</dep>
+        </entry>
+        </interpolation>
+	 <axis>
+		 <x>0</x>
+		 <y>0</y>
+		 <z>1</z>
+	 </axis>
+ </animation>
+
+ <animation>
+	 <type>translate</type>
+	 <object-name>locbug</object-name>
+	<property>instrumentation/nav/heading-needle-deflection</property>
+        <interpolation><!--
+        <entry>
+            <ind>-3</ind>
+            <dep>-0.0130</dep>
+        </entry> -->
+        <entry>
+            <ind>-10</ind>
+            <dep>-0.0110</dep>
+        </entry>
+        <entry>
+            <ind>10</ind>
+            <dep>0.0110</dep>
+        </entry>
+        </interpolation>
+	 <axis>
+		 <x>0</x>
+		 <y>1</y>
+		 <z>0</z>
+	 </axis>
+ </animation>
+
+<!--Animations for FMA - flight mode annunciators - captions... -->
+
+<animation>
+<type>select</type>
+    <object-name>hdgcaption</object-name>
+    <condition>
+            <property>systems/fokker50/fmp/hdg</property>
+    </condition>
+</animation>
+
+<animation>
+<type>select</type>
+    <object-name>navcaption</object-name>
+    <condition>
+            <property>systems/fokker50/fmp/nav</property>
+    </condition>
+</animation>
+
+<animation>
+<type>select</type>
+    <object-name>vappcaption</object-name>
+    <condition>
+            <property>systems/fokker50/fmp/vapp</property>
+    </condition>
+</animation>
+
+<animation>
+<type>select</type>
+    <object-name>loccaption</object-name>
+    <condition>
+            <property>systems/fokker50/fmp/loc</property>
+    </condition>
+</animation>
+
+<animation>
+<type>select</type>
+    <object-name>aselcaption</object-name>
+    <condition>
+            <property>systems/fokker50/fmp/asel</property>
+    </condition>
+</animation>
+
+<animation>
+<type>select</type>
+    <object-name>altcaption</object-name>
+    <condition>
+            <property>systems/fokker50/fmp/alt</property>
+    </condition>
+</animation>
+
+<animation>
+<type>select</type>
+    <object-name>gscaption</object-name>
+    <condition>
+            <property>systems/fokker50/fmp/gs</property>
+    </condition>
+</animation>
+
+<animation>
+<type>select</type>
+    <object-name>vscaption</object-name>
+    <condition>
+            <property>systems/fokker50/fmp/vs</property>
+    </condition>
+</animation>
+
+<animation>
+<type>select</type>
+    <object-name>iascaption</object-name>
+    <condition>
+            <property>systems/fokker50/fmp/ias</property>
+    </condition>
+</animation>
+
+<animation>
+<type>select</type>
+    <object-name>gacaption</object-name>
+    <condition>
+            <property>systems/fokker50/fmp/ga</property>
+    </condition>
+</animation>
+
+<!-- Animation for FD command bars.  First, decide whther they're visible, then work out the rest! -->
+
+<animation>
+<type>select</type>
+    <object-name>fdpitchbar</object-name>
+    <condition>
+            <property>systems/fokker50/fmp/fdpitchbar_visible</property>
+    </condition>
+</animation>
+
+<animation>
+<type>select</type>
+    <object-name>fdrollbar</object-name>
+    <condition>
+            <property>systems/fokker50/fmp/fdrollbar_visible</property>
+    </condition>
+</animation>
+
+<animation>
+<type>textranslate</type>
+	<object-name>fdrollbar</object-name>
+	<property>systems/fokker50/fmp/fdbar_roll</property>
+	<interpolation>
+	<entry>
+            <ind>-25</ind>  
+            <dep>-0.06</dep>
+        </entry>
+	<entry>
+            <ind>0</ind>
+            <dep>0</dep>
+        </entry>
+	<entry>
+            <ind>25</ind>
+            <dep>0.06</dep>
+        </entry>
+        </interpolation>
+	 <axis>
+		 <x>-1</x>
+		 <y>0</y>
+		 <z>0</z>
+	 </axis>
+</animation>
+
+<animation>
+<type>textranslate</type>
+	<object-name>fdpitchbar</object-name>
+	<property>systems/fokker50/fmp/fdbar_pitch</property>
+	<interpolation>
+	<entry>
+            <ind>-15</ind>  
+            <dep>-0.2</dep>
+        </entry>
+	<entry>
+            <ind>0</ind>
+            <dep>0</dep>
+        </entry>
+	<entry>
+            <ind>15</ind>
+            <dep>0.2</dep>
+        </entry>
+        </interpolation>
+	 <axis>
+		 <x>-1</x>
+		 <y>0</y>
+		 <z>0</z>
+	 </axis>
+</animation>
+
+</PropertyList>
+

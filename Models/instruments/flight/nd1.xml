@@ -1,0 +1,667 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ <path>nd.ac</path>
+
+<!-- Illumintate this screen, whenever the electrical system is serviceable -->
+
+ <animation>
+  <type>material</type>
+    <object-name>compass</object-name> 
+    <object-name>CRSlabel</object-name>
+    <object-name>HDGlabel</object-name>
+    <object-name>NMlabel</object-name>
+    <object-name>VORlabel</object-name>
+    <object-name>acsymbol</object-name>
+    <object-name>bugdig1</object-name>
+    <object-name>bugdig2</object-name>
+    <object-name>bugdig3</object-name>
+    <object-name>cdibar</object-name>
+    <object-name>cdibarfail</object-name>
+    <object-name>cdidig1</object-name>
+    <object-name>cdidig2</object-name>
+    <object-name>cdidig3</object-name>  
+    <object-name>cdipointer</object-name> 
+    <object-name>hdgbracket</object-name> 
+    <object-name>hdgbug</object-name> 
+    <object-name>hdgdig1</object-name> 
+    <object-name>hdgdig2</object-name>
+    <object-name>hdgdig3</object-name> 
+    <object-name>adf1</object-name>
+    <object-name>adf2</object-name>
+    <object-name>dmedig1</object-name>
+    <object-name>dmedig2</object-name>
+    <object-name>dmedig3</object-name>
+    <object-name>dmedig01</object-name>
+    <object-name>dmepoint</object-name>
+    <object-name>gsserv</object-name>
+    <object-name>gscross</object-name>
+    <object-name>gsbug</object-name>
+    <object-name>tofromflag</object-name>
+  <emission>
+    <red>0.9</red>
+    <green>0.9</green>
+    <blue>0.9</blue>
+	<factor-prop>systems/electrical/serviceable</factor-prop>
+  </emission>
+</animation>
+ <animation>
+  <type>material</type>
+    <object-name>EADI.bezel</object-name> 
+  <emission>
+    <red>0.07</red>
+    <green>.06</green>
+    <blue>0.05</blue>
+	<factor-prop>controls/lighting/dome-norm</factor-prop>
+  </emission>
+</animation>
+
+  
+<!-- First to animate the compass card. -->
+  <animation>
+    <type>texrotate</type>
+    <object-name>compass</object-name>
+    <property>orientation/heading-magnetic-deg</property>
+    <center>
+     <x>0.5</x>
+     <y>0.5</y>
+   </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>-1</z>
+    </axis>
+  </animation>
+
+<!-- Animation for ADF pointer 1 -->
+  <animation>
+	<type>texrotate</type> 
+    	<object-name>adf1</object-name>
+    		<property>instrumentation/adf/indicated-bearing-deg</property>
+    		<center>
+     		<x>0.5</x>
+     		<y>0.5</y>
+   		</center>
+    		<axis>
+      		<x>0</x>
+      		<y>0</y>
+      		<z>1</z>
+    </axis>
+</animation>
+
+<!-- Animation for ADF pointer 2 -->
+  <animation>
+	<type>texrotate</type> 
+    	<object-name>adf2</object-name>
+    		<property>instrumentation/adf[1]/indicated-bearing-deg</property>
+    		<center>
+     		<x>0.5</x>
+     		<y>0.5</y>
+   		</center>
+    		<axis>
+      		<x>0</x>
+      		<y>0</y>
+      		<z>1</z>
+    </axis>
+</animation>
+
+<!-- Here's how we rotate the heading bug, using my nasal bugoff property. -->
+
+  <animation>
+    <type>texrotate</type>
+    <object-name>hdgbug</object-name>
+    <property>autopilot/internal/fdm-heading-bug-error-deg</property>
+		<interpolation>
+			<entry><ind>-180</ind><dep>-120</dep></entry>
+			<entry><ind>-35.01</ind><dep>-120</dep></entry>
+			<entry><ind>-35</ind><dep>-35</dep></entry>
+			<entry><ind>35</ind><dep>35</dep></entry>
+			<entry><ind>35.01</ind><dep>120</dep></entry>
+			<entry><ind>179.99</ind><dep>120</dep></entry>
+		</interpolation>
+    <center>
+     <x>0.5</x>
+     <y>0.5</y>
+   </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+
+<!--  Current heading digits   -->
+ 	<animation>
+		<type>textranslate</type>
+		<object-name>hdgdig1</object-name>
+		<property>orientation/heading-magnetic-deg</property>
+		<factor>0.001</factor>
+		<step>100</step>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+ 	<animation>
+		<type>textranslate</type>
+		<object-name>hdgdig2</object-name>
+		<property>orientation/heading-magnetic-deg</property>
+		<factor>0.01</factor>
+		<step>10</step>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+ 	<animation>
+		<type>textranslate</type>
+		<object-name>hdgdig3</object-name>
+		<property>orientation/heading-magnetic-deg</property>
+		<factor>0.1</factor>
+		<step>1</step>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+
+<!-- Selected heading digits  -->
+ 	<animation>
+		<type>textranslate</type>
+		<object-name>bugdig1</object-name>
+		<property>autopilot/settings/heading-bug-deg</property>
+		<factor>0.001</factor>
+		<step>100</step>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+ 	<animation>
+		<type>textranslate</type>
+		<object-name>bugdig2</object-name>
+		<property>autopilot/settings/heading-bug-deg</property>
+		<factor>0.01</factor>
+		<step>10</step>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+ 	<animation>
+		<type>textranslate</type>
+		<object-name>bugdig3</object-name>
+		<property>autopilot/settings/heading-bug-deg</property>
+		<factor>0.1</factor>
+		<step>1</step>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+<!--  CDI digit animations  -->
+ 	<animation>
+		<type>textranslate</type>
+		<object-name>cdidig1</object-name>
+		<property>instrumentation/nav/radials/selected-deg</property>
+		<factor>0.001</factor>
+		<step>100</step>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+ 	<animation>
+		<type>textranslate</type>
+		<object-name>cdidig2</object-name>
+		<property>instrumentation/nav/radials/selected-deg</property>
+		<factor>0.01</factor>
+		<step>10</step>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+ 	<animation>
+		<type>textranslate</type>
+		<object-name>cdidig3</object-name>
+		<property>instrumentation/nav/radials/selected-deg</property>
+		<factor>0.1</factor>
+		<step>1</step>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+<!-- Here's the animation for the CDI pointer -->
+  <animation>
+    <type>texmultiple</type>
+
+    <object-name>cdipointer</object-name>
+<transform>
+    <subtype>texrotate</subtype>
+
+    <property>orientation/heading-magnetic-deg</property>
+    <center>
+     <x>0.5</x>
+     <y>0.5</y>
+   </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>-1</z>
+    </axis>
+</transform>
+
+    <object-name>cdipointer</object-name>
+<transform>
+    <subtype>texrotate</subtype>
+    <property>instrumentation/nav/radials/selected-deg</property>
+    <center>
+     <x>0.5</x>
+     <y>0.5</y>
+   </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+</transform>
+  </animation>
+
+<!-- Here's the animation for the CDI deviation bar --> 
+
+<animation>
+<type>select</type>
+    <object-name>cdibar</object-name>
+    <condition>
+          <property>instrumentation/nav/in-range</property>
+    </condition>
+</animation>
+
+  <animation>
+	<type>texmultiple</type> 
+
+	<object-name>cdibar</object-name>
+	<transform>
+		<subtype>textranslate</subtype>
+			<property>instrumentation/nav/heading-needle-deflection</property>
+			<factor>0.028</factor>
+			<axis>
+ 			<x>-1</x>
+			<y>0</y>
+ 			<z>0</z>
+			</axis>
+	</transform>
+
+    <object-name>cdibar</object-name>
+	<transform>
+   		<subtype>texrotate</subtype>
+    		<property>orientation/heading-magnetic-deg</property>
+    		<center>
+     		<x>0.5</x>
+     		<y>0.5</y>
+   		</center>
+    		<axis>
+      		<x>0</x>
+      		<y>0</y>
+      		<z>-1</z>
+    </axis>
+</transform>
+<transform>
+    <subtype>texrotate</subtype>
+    <property>instrumentation/nav/radials/selected-deg</property>
+    <center>
+     <x>0.5</x>
+     <y>0.5</y>
+   </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+</transform>
+  </animation>  
+
+<!-- Animation for the red-cross fail indication for the CDI -->
+
+<animation>
+<type>select</type>
+    <object-name>cdibarfail</object-name>
+    <condition> <not>
+          <property>instrumentation/nav/in-range</property>
+		</not>
+    </condition>
+</animation>
+
+  <animation>  
+    <type>texmultiple</type>
+    <object-name>cdibarfail</object-name>
+<transform>
+    <subtype>texrotate</subtype>
+    <property>orientation/heading-magnetic-deg</property>
+    <center>
+     <x>0.5</x>
+     <y>0.5</y>
+   </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>-1</z>
+    </axis>
+</transform>
+
+    <object-name>cdibarfail</object-name>
+<transform>
+    <subtype>texrotate</subtype>
+    <property>instrumentation/nav/radials/selected-deg</property>
+    <center>
+     <x>0.5</x>
+     <y>0.5</y>
+   </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+</transform>
+  </animation>  
+
+<!-- Animation for DME readout in top-right-hand corner  -->
+
+  <animation>  
+    <type>texmultiple</type>
+	<object-name>dmedig1</object-name> 
+	<transform>     
+		<subtype>textranslate</subtype>
+			<property>instrumentation/dme/indicated-distance-nm</property>
+			<interpolation>
+    				<entry>
+     				<ind>0</ind>
+      				<dep>0</dep>
+    				</entry>
+    				<entry>
+     				<ind>0.09999</ind>
+      				<dep>0</dep>
+    				</entry>
+    				<entry>
+     				<ind>0.1</ind>
+      				<dep>0.25</dep>
+    				</entry>
+    				<entry>
+     				<ind>99.99</ind>
+      				<dep>0.25</dep>  <!--Change from dash, to blank, to figure at 100 nm -->
+    				</entry>
+    				<entry>
+     				<ind>100</ind>
+      				<dep>0.84</dep>
+    				</entry>
+    				<entry>
+     				<ind>999</ind>
+      				<dep>0.84</dep>
+    				</entry>
+			</interpolation>
+			<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+			</axis>
+	</transform>
+    <transform>
+    <subtype>textranslate</subtype>
+    <property>instrumentation/dme/indicated-distance-nm</property>
+        <factor>0.001</factor>
+        <step>100</step>
+    <axis>
+     <x>0</x>
+     <y>-1</y>
+     <z>0</z>
+   </axis>
+    </transform>
+</animation>
+
+  <animation>  
+    <type>texmultiple</type>
+	<object-name>dmedig2</object-name> 
+	<transform>     
+		<subtype>textranslate</subtype>
+			<property>instrumentation/dme/indicated-distance-nm</property>
+			<interpolation>
+    				<entry>
+     				<ind>0</ind>
+      				<dep>0</dep>
+    				</entry>
+    				<entry>
+     				<ind>0.09999</ind>
+      				<dep>0</dep>
+    				</entry>
+    				<entry>
+     				<ind>0.1</ind>
+      				<dep>0.25</dep>
+    				</entry>
+    				<entry>
+     				<ind>9.999</ind>
+      				<dep>0.25</dep> 
+    				</entry>
+    				<entry>
+     				<ind>10</ind>
+      				<dep>0.84</dep>
+    				</entry>
+    				<entry>
+     				<ind>999</ind>
+      				<dep>0.84</dep>
+    				</entry>
+			</interpolation>
+			<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+			</axis>
+	</transform>
+    <transform>
+    <subtype>textranslate</subtype>
+    <property>instrumentation/dme/indicated-distance-nm</property>
+        <factor>0.01</factor>
+        <step>10</step>
+    <axis>
+     <x>0</x>
+     <y>-1</y>
+     <z>0</z>
+   </axis>
+    </transform>
+</animation>
+
+  <animation>  
+    <type>texmultiple</type>
+	<object-name>dmedig3</object-name> 
+	<transform>     
+		<subtype>textranslate</subtype>
+			<property>instrumentation/dme/indicated-distance-nm</property>
+			<interpolation>
+    				<entry>
+     				<ind>0</ind>
+      				<dep>0</dep>
+    				</entry>
+    				<entry>
+     				<ind>0.09999</ind>
+      				<dep>0</dep>
+    				</entry>
+    				<entry>
+     				<ind>0.1</ind>
+      				<dep>0.84</dep>
+    				</entry>
+    				<entry>
+     				<ind>999</ind>
+      				<dep>0.84</dep>
+    				</entry>
+			</interpolation>
+			<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+			</axis>
+	</transform>
+    <transform>
+    <subtype>textranslate</subtype>
+    <property>instrumentation/dme/indicated-distance-nm</property>
+        <factor>0.1</factor>
+        <step>1</step>
+    <axis>
+     <x>0</x>
+     <y>-1</y>
+     <z>0</z>
+   </axis>
+    </transform>
+</animation>
+
+  <animation>  
+    <type>texmultiple</type>
+	<object-name>dmedig01</object-name> 
+	<transform>     
+		<subtype>textranslate</subtype>
+			<property>instrumentation/dme/indicated-distance-nm</property>
+			<interpolation>
+    				<entry>
+     				<ind>0</ind>
+      				<dep>0</dep>
+    				</entry>
+    				<entry>
+     				<ind>0.09999</ind>
+      				<dep>0</dep>
+    				</entry>
+    				<entry>
+     				<ind>0.1</ind>
+      				<dep>0.84</dep>
+    				</entry>
+    				<entry>
+     				<ind>999</ind>
+      				<dep>0.84</dep>
+    				</entry>
+			</interpolation>
+			<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+			</axis>
+	</transform>
+    <transform>
+    <subtype>textranslate</subtype>
+    <property>instrumentation/dme/indicated-distance-nm</property>
+        <factor>1</factor>
+        <step>0.1</step>
+    <axis>
+     <x>0</x>
+     <y>-1</y>
+     <z>0</z>
+   </axis>
+    </transform>
+</animation>
+
+<!--  Here's the animations for the glideslope display on the ND.  Start with selecting which display is required! -->
+
+<animation>
+<type>select</type>
+    <object-name>gscross</object-name>
+    <condition>
+        <and>
+            <property>instrumentation/nav/has-gs</property>
+            <not>
+                <property>instrumentation/nav/in-range</property>
+            </not>
+        </and>
+    </condition>
+</animation>
+
+<animation>
+<type>select</type>
+    <object-name>gsserv</object-name>
+    <condition>
+        <and>
+            <property>instrumentation/nav/has-gs</property>
+            <property>instrumentation/nav/in-range</property>
+        </and>
+    </condition>
+</animation>
+
+<animation>
+<type>select</type>
+    <object-name>gsbug</object-name>
+    <condition>
+        <and>
+            <property>instrumentation/nav/has-gs</property>
+            <property>instrumentation/nav/in-range</property>
+        </and>
+    </condition>
+</animation>
+
+<!-- Make the GS bug move -->
+ <animation>
+	 <type>translate</type>
+	 <object-name>gsbug</object-name>
+	<property>instrumentation/nav/gs-needle-deflection</property>
+        <interpolation>
+        <entry>
+            <ind>-3.5</ind>
+            <dep>-0.0145</dep>
+        </entry>
+        <entry>
+            <ind>3.5</ind>
+            <dep>0.0145</dep>
+        </entry>
+        </interpolation>
+	 <axis>
+		 <x>0</x>
+		 <y>0</y>
+		 <z>1</z>
+	 </axis>
+ </animation>
+
+<!-- To/From flag pointer animation -->
+<animation>
+	<type>select</type>
+    <object-name>tofromflag</object-name>
+    <condition>
+        <and>
+	    <not>
+            <property>instrumentation/nav/has-gs</property>
+	    </not>
+            <property>instrumentation/nav/in-range</property>
+        </and>
+    </condition>
+</animation>
+
+  <animation>  
+    <type>texrotate</type>
+    <object-name>tofromflag</object-name>
+    <property>instrumentation/nav/to-from/direction</property>
+    <center>
+     <x>0.5</x>
+     <y>0.5</y>
+   </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>-1</z>
+    </axis>
+  </animation> 
+
+</PropertyList>

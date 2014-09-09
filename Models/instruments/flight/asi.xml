@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>asi.ac</path>
+
+<!-- Lighting -->
+
+ <animation>
+  <type>material</type>
+    <object-name>barber</object-name> 
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+  <emission>
+    <red>0.7</red>
+    <green>0.7</green>
+    <blue>0.7</blue>
+	<factor-prop>controls/lighting/instruments-norm</factor-prop>
+  </emission>
+</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>needle</object-name>
+		<property>instrumentation/airspeed-indicator/indicated-speed-kt[0]</property>
+
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>40</ind><dep>9.2</dep></entry>
+			<entry><ind>100</ind><dep>90</dep></entry>
+			<entry><ind>160</ind><dep>180</dep></entry>
+			<entry><ind>224</ind><dep>265</dep></entry>
+			<entry><ind>300</ind><dep>350</dep></entry>
+		</interpolation>
+
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>barber</object-name>
+		<property>instrumentation/altimeter/indicated-altitude-ft[0]</property>
+
+		<interpolation>
+			<entry><ind>21000</ind><dep>0</dep></entry>
+			<entry><ind>25000</ind><dep>20.5</dep></entry>
+
+		</interpolation>
+
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+
+	</animation>
+
+	<!-- LoD -->
+	<animation>
+		<type>range</type>
+		<min-m>0</min-m>
+		<max-m>30</max-m>
+	</animation>
+
+</PropertyList>
+

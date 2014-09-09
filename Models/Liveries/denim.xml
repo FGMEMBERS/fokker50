@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ <sim>
+  <model>
+   <livery>
+    <name type="string">Denim Airways</name>
+    <texture>Liveries/f50denim.rgb</texture>
+   </livery>
+   <livery-logo>
+    <texture>Liveries/f50denim_trans.rgb</texture>
+   </livery-logo>
+  </model>
+ </sim>
+</PropertyList>

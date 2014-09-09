@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>rmiswitches.ac</path>
+
+<!-- Lighting!  -->
+
+ <animation>
+  <type>material</type>
+    <object-name>buttonv1</object-name> 
+    <object-name>buttonv2</object-name>
+    <object-name>buttona1</object-name> 
+    <object-name>buttona2</object-name> 
+  <emission>
+    <red>0.7</red>
+    <green>0.7</green>
+    <blue>0.7</blue>
+	<factor-prop>controls/lighting/instruments-norm</factor-prop>
+  </emission>
+</animation>
+ <animation>
+  <type>material</type>
+    <object-name>frame</object-name>
+  <emission>
+    <red>0.07</red>
+    <green>.06</green>
+    <blue>0.05</blue>
+	<factor-prop>controls/lighting/dome-norm</factor-prop>
+  </emission>
+</animation>
+
+<!-- OSG Pick animations, see radionav.nas. Choose between VOR and ADF for each pointer. -->
+
+<animation>
+	<type>pick</type>
+	<object-name>buttonv1</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-assign</command>
+			<property>instrumentation/rmi/foswitch1</property>
+			<value>0</value>
+		</binding>
+	</action>
+</animation> 
+
+<animation>
+	<type>pick</type>
+	<object-name>buttonv2</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-assign</command>
+			<property>instrumentation/rmi/foswitch2</property>
+			<value>0</value>
+		</binding>
+	</action>
+</animation> 
+
+<animation>
+	<type>pick</type>
+	<object-name>buttona1</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-assign</command>
+			<property>instrumentation/rmi/foswitch1</property>
+			<value>1</value>
+		</binding>
+	</action>
+</animation> 
+
+<animation>
+	<type>pick</type>
+	<object-name>buttona2</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-assign</command>
+			<property>instrumentation/rmi/foswitch2</property>
+			<value>1</value>
+		</binding>
+	</action>
+</animation> 
+
+<!-- Now to illumninate the correct arrows -->
+
+<animation>
+	<type>textranslate</type>
+	<object-name>buttonv1</object-name>
+	<object-name>buttona1</object-name>
+	<property>instrumentation/rmi/foswitch1</property>
+	<interpolation>
+			<entry><ind>1</ind><dep>0.5</dep></entry>
+			<entry><ind>0</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>textranslate</type>
+	<object-name>buttonv2</object-name>
+	<object-name>buttona2</object-name>
+	<property>instrumentation/rmi/foswitch2</property>
+	<interpolation>
+			<entry><ind>1</ind><dep>0.5</dep></entry>
+			<entry><ind>0</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+</PropertyList>
+

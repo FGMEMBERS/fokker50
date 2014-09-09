@@ -1,0 +1,908 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>cockpit.ac</path>
+
+<!-- Let's shed some light in the cockpit:  -->
+
+ <animation>
+  <type>material</type>
+    <object-name>Panel_1</object-name> 
+    <object-name>Panel_0</object-name> 
+    <object-name>PL.001</object-name> 
+    <object-name>RT</object-name> 
+    <object-name>FL1</object-name>
+    <object-name>FL2</object-name>
+    <object-name>PL1</object-name>
+    <object-name>PL2</object-name>
+    <object-name>flaplever</object-name>
+  <emission>
+    <red>0.07</red>
+    <green>.06</green>
+    <blue>0.05</blue>
+	<factor-prop>controls/lighting/dome-norm</factor-prop>
+  </emission>
+</animation>
+
+<!-- Overhead panel models -->
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/aircon.xml</path>
+	<offsets>
+		<x-m>-8.252</x-m>
+		<y-m>0.078</y-m>
+		<z-m>-0.466</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/prop.xml</path>
+	<offsets>
+		<x-m>-8.307</x-m>
+		<y-m>-0.075</y-m>
+		<z-m>-0.486</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/engine.xml</path>
+	<offsets>
+		<x-m>-8.422</x-m>
+		<y-m>-0.075</y-m>
+		<z-m>-0.527</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/antiice.xml</path>
+	<offsets>
+		<x-m>-8.422</x-m>
+		<y-m>0.078</y-m>
+		<z-m>-0.527</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/autopilot.xml</path>
+	<offsets>
+		<x-m>-8.008</x-m>
+		<y-m>-0.075</y-m>
+		<z-m>-0.378</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/hydraulics.xml</path>
+	<offsets>
+		<x-m>-8.099</x-m>
+		<y-m>-0.075</y-m>
+		<z-m>-0.411</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/fuel.xml</path>
+	<offsets>
+		<x-m>-8.250</x-m>
+		<y-m>-0.075</y-m>
+		<z-m>-0.466</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/gpws.xml</path>
+	<offsets>
+		<x-m>-7.954</x-m>
+		<y-m>-0.228</y-m>
+		<z-m>-0.359</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/compass2.xml</path>
+	<offsets>
+		<x-m>-7.992</x-m>
+		<y-m>0.078</y-m>
+		<z-m>-0.373</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/compass1.xml</path>
+	<offsets>
+		<x-m>-7.992</x-m>
+		<y-m>-0.228</y-m>
+		<z-m>-0.373</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/fire2.xml</path>
+	<offsets>
+		<x-m>-8.064</x-m>
+		<y-m>0.078</y-m>
+		<z-m>-0.399</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/fire1.xml</path>
+	<offsets>
+		<x-m>-8.064</x-m>
+		<y-m>-0.228</y-m>
+		<z-m>-0.399</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/avionics.xml</path>
+	<offsets>
+		<x-m>-8.138</x-m>
+		<y-m>-0.228</y-m>
+		<z-m>-0.425</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/electrics.xml</path>
+	<offsets>
+		<x-m>-8.361</x-m>
+		<y-m>-0.228</y-m>
+		<z-m>-0.505</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/emerglights.xml</path>
+	<offsets>
+		<x-m>-8.422</x-m>
+		<y-m>-0.228</y-m>
+		<z-m>-0.527</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/pressure.xml</path>
+	<offsets>
+		<x-m>-8.511</x-m>
+		<y-m>-0.228</y-m>
+		<z-m>-0.559</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/overhead/lighting.xml</path>
+	<offsets>
+		<x-m>-8.577</x-m>
+		<y-m>0</y-m>
+		<z-m>-0.583</z-m>
+		<pitch-deg>70.2</pitch-deg>
+	</offsets>
+</model>
+
+<!-- panel models -->
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/general/fmp.xml</path>
+	<offsets>
+		<x-m>-8.635</x-m>
+		<y-m>-0.177</y-m>
+		<z-m>-0.905</z-m>
+		<pitch-deg>-3</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/engine/afapr.xml</path>
+	<offsets>
+		<x-m>-8.889</x-m>
+		<y-m>-0.078</y-m>
+		<z-m>-1.336</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/general/cap.xml</path>
+	<offsets>
+		<x-m>-8.904</x-m>
+		<y-m>-0.180</y-m>
+		<z-m>-1.222</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/general/rmiswitches2.xml</path>
+	<offsets>
+		<x-m>-8.902</x-m>
+		<y-m>0.287</y-m>
+		<z-m>-1.237</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/general/rmiswitches1.xml</path>
+	<offsets>
+		<x-m>-8.902</x-m>
+		<y-m>-0.691</y-m>
+		<z-m>-1.237</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/intlights.xml</path>
+	<offsets>
+		<x-m>-8.412</x-m>
+		<y-m>-0.038</y-m>
+		<z-m>-1.481</z-m>
+		<pitch-deg>-90</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/flight/nd2.xml</path>
+	<offsets>
+		<x-m>-8.899</x-m>
+		<y-m>0.486</y-m>
+		<z-m>-1.261</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/flight/nd1.xml</path>
+	<offsets>
+		<x-m>-8.899</x-m>
+		<y-m>-0.488</y-m>
+		<z-m>-1.261</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/flight/vsi1.xml</path>
+	<offsets>
+		<x-m>-8.903</x-m>
+		<y-m>-0.36</y-m>
+		<z-m>-1.233</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/flight/vsi2.xml</path>
+	<offsets>
+		<x-m>-8.903</x-m>
+		<y-m>0.616</y-m>
+		<z-m>-1.233</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/general/efiscp1.xml</path>
+	<offsets>
+		<x-m>-8.635</x-m>
+		<y-m>-0.4</y-m>
+		<z-m>-0.905</z-m>
+		<pitch-deg>-3</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/general/efiscp2.xml</path>
+	<offsets>
+		<x-m>-8.635</x-m>
+		<y-m>0.256</y-m>
+		<z-m>-0.905</z-m>
+		<pitch-deg>-3</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/general/tat.xml</path>
+	<offsets>
+		<x-m>-8.891</x-m>
+		<y-m>0.100</y-m>
+		<z-m>-1.319</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/general/radio2.xml</path>
+	<offsets>
+		<x-m>-8.412</x-m>
+		<y-m>0.129</y-m>
+		<z-m>-1.481</z-m>
+		<pitch-deg>-90</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/general/radio1.xml</path>
+	<offsets>
+		<x-m>-8.412</x-m>
+		<y-m>-0.183</y-m>
+		<z-m>-1.481</z-m>
+		<pitch-deg>-90</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/general/adf2.xml</path>
+	<offsets>
+		<x-m>-8.412</x-m>
+		<y-m>0.064</y-m>
+		<z-m>-1.481</z-m>
+		<pitch-deg>-90</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/general/adf1.xml</path>
+	<offsets>
+		<x-m>-8.412</x-m>
+		<y-m>-0.118</y-m>
+		<z-m>-1.481</z-m>
+		<pitch-deg>-90</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/engine/trq1.xml</path>
+	<offsets>
+		<x-m>-8.924</x-m>
+		<y-m>-0.023</y-m>
+		<z-m>-1.072</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/engine/trq2.xml</path>
+	<offsets>
+		<x-m>-8.924</x-m>
+		<y-m>0.023</y-m>
+		<z-m>-1.072</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/general/nav1.xml</path>
+	<offsets>
+		<x-m>-8.635</x-m>
+		<y-m>-0.248</y-m>
+		<z-m>-0.920</z-m>
+		<pitch-deg>-3</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/general/nav2.xml</path>
+	<offsets>
+		<x-m>-8.635</x-m>
+		<y-m>0.185</y-m>
+		<z-m>-0.920</z-m>
+		<pitch-deg>-3</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/general/rmi2.xml</path>
+	<offsets>
+		<x-m>-8.903</x-m>
+		<y-m>0.359</y-m>
+		<z-m>-1.234</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/general/rmi1.xml</path>
+	<offsets>
+		<x-m>-8.903</x-m>
+		<y-m>-0.616</y-m>
+		<z-m>-1.234</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/general/dme.xml</path>
+	<offsets>
+		<x-m>-8.893</x-m>
+		<y-m>-0.616</y-m>
+		<z-m>-1.307</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/general/dmefo.xml</path>
+	<offsets>
+		<x-m>-8.893</x-m>
+		<y-m>0.359</y-m>
+		<z-m>-1.307</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/flight/pfdfo.xml</path>
+	<offsets>
+		<x-m>-8.918</x-m>
+		<y-m>0.486</y-m>
+		<z-m>-1.120</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/flight/pfd.xml</path>
+	<offsets>
+		<x-m>-8.918</x-m>
+		<y-m>-0.488</y-m>
+		<z-m>-1.120</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/engine/erp.xml</path>
+	<offsets>
+		<x-m>-8.889</x-m>
+		<y-m>-0.000</y-m>
+		<z-m>-1.336</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/engine/lopitch1.xml</path>
+	<offsets>
+		<x-m>-8.931</x-m>
+		<y-m>-0.077</y-m>
+		<z-m>-1.023</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/engine/lopitch2.xml</path>
+	<offsets>
+		<x-m>-8.931</x-m>
+		<y-m>0.077</y-m>
+		<z-m>-1.023</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/engine/fuelflow.xml</path>
+	<offsets>
+		<x-m>-8.898</x-m>
+		<y-m>0</y-m>
+		<z-m>-1.265</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/general/brakepnorm.xml</path>
+	<offsets>
+		<x-m>-8.887</x-m>
+		<y-m>-0.183</y-m>
+		<z-m>-1.351</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/general/brakepalt.xml</path>
+	<offsets>
+		<x-m>-8.887</x-m>
+		<y-m>-0.127</y-m>
+		<z-m>-1.351</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+ 
+<model>
+	<path>Aircraft/fokker50/Models/instruments/general/lg.xml</path>
+	<offsets>
+		<x-m>-8.916</x-m>
+		<y-m>0.164</y-m>
+		<z-m>-1.130</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+ 
+<model>
+	<path>Aircraft/fokker50/Models/instruments/general/flapind.xml</path>
+	<offsets>
+		<x-m>-8.891</x-m>
+		<y-m>0.158</y-m>
+		<z-m>-1.319</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+ 
+<model>
+	<path>Aircraft/fokker50/Models/instruments/engine/oilt1.xml</path>
+	<offsets>
+		<x-m>-8.907</x-m>
+		<y-m>-0.023</y-m>
+		<z-m>-1.203</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/engine/oilt2.xml</path>
+	<offsets>
+		<x-m>-8.907</x-m>
+		<y-m>0.023</y-m>
+		<z-m>-1.203</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+ 
+<model>
+	<path>Aircraft/fokker50/Models/instruments/engine/oilp1.xml</path>
+	<offsets>
+		<x-m>-8.913</x-m>
+		<y-m>-0.023</y-m>
+		<z-m>-1.155</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/fokker50/Models/instruments/engine/oilp2.xml</path>
+	<offsets>
+		<x-m>-8.913</x-m>
+		<y-m>0.023</y-m>
+		<z-m>-1.155</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+</model>
+ 
+<model>
+	<path>Aircraft/fokker50/Models/instruments/flight/alt.xml</path>
+	<offsets>
+		<x-m>-8.915</x-m>
+		<y-m>-0.360</y-m>
+		<z-m>-1.142</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+ </model>
+ 
+ <model>
+	<path>Aircraft/fokker50/Models/instruments/flight/altfo.xml</path>
+	<offsets>
+		<x-m>-8.915</x-m>
+		<y-m>0.616</y-m>
+		<z-m>-1.142</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+ </model> 
+ 
+<model>
+	<path>Aircraft/fokker50/Models/instruments/flight/asi.xml</path>
+	<offsets>
+		<x-m>-8.902</x-m>
+		<y-m>-0.617</y-m>
+		<z-m>-1.142</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+ </model>
+ 
+    <model>
+	<path>Aircraft/fokker50/Models/instruments/flight/asifo.xml</path>
+	<offsets>
+		<x-m>-8.915</x-m>
+		<y-m>0.360</y-m>
+		<z-m>-1.142</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+ </model>
+ 
+   <model>
+	<path>Aircraft/fokker50/Models/instruments/engine/nh1.xml</path>
+	<offsets>
+		<x-m>-8.907</x-m>
+		<y-m>-0.084</y-m>
+		<z-m>-1.202</z-m>
+		<pitch-deg>-7.7</pitch-deg>
+	</offsets>
+ </model>
+ 
+  <model>
+	<path>Aircraft/fokker50/Models/instruments/engine/nh2.xml</path>
+	<offsets>
+		<x-m>-8.907</x-m>
+		<y-m>0.084</y-m>
+		<z-m>-1.202</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+ </model>
+ 
+
+ 
+
+  <model>
+	<path>Aircraft/fokker50/Models/instruments/engine/nl1.xml</path>
+	<offsets>
+		<x-m>-8.898</x-m>
+		<y-m>-0.084</y-m>
+		<z-m>-1.265</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+ </model>
+ 
+   <model>
+	<path>Aircraft/fokker50/Models/instruments/engine/nl2.xml</path>
+	<offsets>
+		<x-m>-8.898</x-m>
+		<y-m>0.084</y-m>
+		<z-m>-1.265</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+ </model>
+ 
+
+  <model>
+	<path>Aircraft/fokker50/Models/instruments/engine/np1.xml</path>
+	<offsets>
+		<x-m>-8.924</x-m>
+		<y-m>-0.084</y-m>
+		<z-m>-1.076</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+ </model>
+ 
+   <model>
+	<path>Aircraft/fokker50/Models/instruments/engine/np2.xml</path>
+	<offsets>
+		<x-m>-8.924</x-m>
+		<y-m>0.084</y-m>
+		<z-m>-1.076</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+ </model>
+ 
+ 
+  <model>
+  <path>Aircraft/fokker50/Models/instruments/engine/fueltot.xml</path>
+  <offsets>
+   <x-m>-8.899</x-m>
+   <y-m>0.155</y-m>
+   <z-m>-1.263</z-m>
+   <pitch-deg>-7.56</pitch-deg>
+  </offsets>
+ </model>
+ 
+ 
+  <model>
+  <path>Aircraft/fokker50/Models/instruments/flight/sbyalt.xml</path>
+  <offsets>
+   <x-m>-8.917</x-m>
+   <y-m>-0.282</y-m>
+   <z-m>-1.128</z-m>
+   <pitch-deg>-7.56</pitch-deg>
+  </offsets>
+ </model>
+ 
+ 
+  <model>
+  <path>Aircraft/fokker50/Models/instruments/flight/sbyasi.xml</path>
+  <offsets>
+   <x-m>-8.925</x-m>
+   <y-m>-0.282</y-m>
+   <z-m>-1.066</z-m>
+   <pitch-deg>-7.56</pitch-deg>
+  </offsets>
+ </model>
+ 
+  <model>
+  <path>Aircraft/fokker50/Models/instruments/engine/itt1.xml</path>
+  <offsets>
+   <x-m>-8.915</x-m>
+   <y-m>-0.083</y-m>
+   <z-m>-1.139</z-m>
+   <pitch-deg>-7.56</pitch-deg>
+  </offsets>
+ </model>
+ 
+  <model>
+  <path>Aircraft/fokker50/Models/instruments/engine/itt2.xml</path>
+  <offsets>
+   <x-m>-8.915</x-m>
+   <y-m>0.083</y-m>
+   <z-m>-1.139</z-m>
+   <pitch-deg>-7.56</pitch-deg>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/fokker50/Models/instruments/flight/sbyai.xml</path>
+  <offsets>
+   <x-m>-8.925</x-m>
+   <y-m>-0.182</y-m>
+   <z-m>-1.063</z-m>
+   <pitch-deg>-7.56</pitch-deg>
+  </offsets>
+ </model>
+ 
+ 
+ <model>
+	<path>Aircraft/fokker50/Models/instruments/general/chrono.xml</path>
+	<offsets>
+		<x-m>-8.891</x-m>
+		<y-m>-0.291</y-m>
+		<z-m>-1.323</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+ </model>
+
+ 
+  <model>
+	<path>Aircraft/fokker50/Models/instruments/general/chronofo.xml</path>
+	<offsets>
+		<x-m>-8.891</x-m>
+		<y-m>0.706</y-m>
+		<z-m>-1.323</z-m>
+		<pitch-deg>-7.56</pitch-deg>
+	</offsets>
+ </model>
+	
+<!-- Animation for power lever quadrant -->
+
+<animation>
+	<type>rotate</type>
+	<object-name>flaplever</object-name>
+	<property>controls/flight/flaps[0]</property>
+ 		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>45</dep></entry>
+		</interpolation>
+	<center>
+		<x-m>-8.520</x-m>
+		<y-m>0.0</y-m>
+		<z-m>-1.495</z-m>
+	</center>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>	
+	
+<animation>
+	<type>rotate</type>
+	<object-name>PL1</object-name>
+	<property>controls/engines/engine[2]/throttle</property>
+ 		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>65</dep></entry>
+		</interpolation>
+	<center>
+		<x-m>-8.520</x-m>
+		<y-m>0.0</y-m>
+		<z-m>-1.495</z-m>
+	</center>
+	<axis>
+		<x>0</x>
+		<y>-1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>PL2</object-name>
+	<property>controls/engines/engine[2]/throttle</property>
+ 		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>65</dep></entry>
+		</interpolation>
+	<center>
+		<x-m>-8.520</x-m>
+		<y-m>0.0</y-m>
+		<z-m>-1.495</z-m>
+	</center>
+	<axis>
+		<x>0</x>
+		<y>-1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<!--  Animation for control column and wheel -->
+
+<animation>
+ <type>rotate</type>
+ <object-name>focc</object-name>
+ <property>controls/flight/elevator[0]</property>
+ 		<interpolation>
+			<entry><ind>-1</ind><dep>-7</dep></entry>
+			<entry><ind>1</ind><dep>7</dep></entry>
+		</interpolation>
+ <center>
+  <x-m>-8.435</x-m>
+  <y-m>0.467</y-m>
+  <z-m>-1.95</z-m>
+ </center>
+ <axis>
+  <x>0</x>
+  <y>-1</y>
+  <z>0</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>focc</object-name>
+ <property>controls/flight/elevator-trim[0]</property>
+ 		<interpolation>
+			<entry><ind>-1</ind><dep>-3</dep></entry>
+			<entry><ind>1</ind><dep>3</dep></entry>
+		</interpolation>
+ <center>
+  <x-m>-8.435</x-m>
+  <y-m>0.467</y-m>
+  <z-m>-1.95</z-m>
+ </center>
+ <axis>
+  <x>0</x>
+  <y>-1</y>
+  <z>0</z>
+ </axis>
+</animation>
+
+
+<animation>
+ <type>rotate</type>
+ <object-name>fowheel</object-name>
+ <property>controls/flight/aileron[0]</property>
+ 		<interpolation>
+			<entry><ind>-1</ind><dep>-90</dep></entry>
+			<entry><ind>1</ind><dep>90</dep></entry>
+		</interpolation>
+ <center>
+  <x-m>-.8435</x-m>
+  <y-m>0.467</y-m>
+  <z-m>-1.149-</z-m>
+ </center>
+ <axis>
+  <x>-1</x>
+  <y>0</y>
+  <z>0</z>
+ </axis>
+</animation>
+	
+</PropertyList>
+

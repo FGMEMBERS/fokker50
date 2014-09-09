@@ -1,0 +1,236 @@
+
+<PropertyList>
+
+ <sim>
+
+  <description>Fokker 50</description>
+  <author>Erik Hofman / Charlie Andrews / The FlightGear community</author>
+  <status>early development</status>
+
+  <flight-model>jsb</flight-model>
+  <aero>fokker50</aero>
+
+  <fuel-fraction>0.5</fuel-fraction>
+  
+  <sound>
+   <path>Aircraft/fokker50/Sounds/fokker50-sound.xml</path>
+  </sound>
+
+  <instrumentation>
+    <path>Aircraft/fokker50/Systems/instrumentation.xml</path>
+  </instrumentation>
+
+  <virtual-cockpit archive="y">true</virtual-cockpit>
+  <allow-toggle-cockpit archive="y">false</allow-toggle-cockpit>
+
+		<systems>
+			<autopilot>
+				<path>Aircraft/fokker50/Systems/autopilot.xml</path>
+			</autopilot>
+		</systems>
+
+  <model>
+   <path>Aircraft/fokker50/Models/fokker50.xml</path>
+   <livery>
+    <file type="string"/>
+   </livery>
+  </model>
+
+  <chase-distance-m type="double" archive="y">-50.0</chase-distance-m>
+  <view n="0">
+    <internal archive="y">true</internal>
+    <config>
+      <pitch-offset-deg>-10.0</pitch-offset-deg>
+      <x-offset-m archive="y">-0.47</x-offset-m> <!--Right - was -0.50-->
+      <y-offset-m archive="y">0.4</y-offset-m> <!--Up  028, 0.31-->
+      <z-offset-m archive="y">-7.7</z-offset-m> <!--Forward was 7.6-->
+    </config>
+  </view>
+
+  <view n="101">
+   <name>Panel View</name>
+   <type>lookfrom</type>
+   <internal type="bool">true</internal>
+   <config>
+    <from-model type="bool">true</from-model>
+    <from-model-idx type="int">0</from-model-idx>
+    <ground-level-nearplane-m type="double">0.5</ground-level-nearplane-m>
+    <default-field-of-view-deg type="double">38.93482116</default-field-of-view-deg>
+    <default-pitch-deg type="double">0</default-pitch-deg>
+    <default-heading-deg type="double">0</default-heading-deg>
+    <front-direction-deg type="double">0</front-direction-deg>
+    <front-left-direction-deg type="double">45</front-left-direction-deg>
+    <left-direction-deg type="double">90</left-direction-deg>
+    <back-left-direction-deg type="double">135</back-left-direction-deg>
+    <back-direction-deg type="double">180</back-direction-deg>
+    <back-right-direction-deg type="double">225</back-right-direction-deg>
+    <right-direction-deg type="double">270</right-direction-deg>
+    <front-right-direction-deg type="double">315</front-right-direction-deg>
+    <x-offset-m archive="y">-0.23</x-offset-m>  <!-- -0.26921875 -->
+<!--    <y-offset-m archive="y">0.2834661355</y-offset-m>  -->
+    <y-offset-m archive="y">0.19</y-offset-m> <!-- Up  -->
+    <z-offset-m archive="y">-7.55</z-offset-m> <!-- Forward, 7.7-->
+    <heading-offset-deg>0</heading-offset-deg>
+    <pitch-offset-deg>-8</pitch-offset-deg>  <!---10.17928287 -->
+    <roll-offset-deg type="double">0</roll-offset-deg>
+   </config>
+  </view>
+
+  <menubar>
+   <default>
+    <menu n="100">
+     <label>Fokker 50</label>
+     <enabled type="bool">true</enabled>
+     <item>
+      <label>Select Livery</label>
+      <binding>
+       <command>nasal</command>
+       <script>aircraft.livery.dialog.toggle()</script>
+      </binding>
+     </item>
+    </menu>
+   </default>
+  </menubar>
+
+  <help>
+   <title>Fokker 50</title>   <text>
+---  Information   ---
+This model is in development, one outstanding aspect is the FDM, so it won't perform like a proper Fokker!
+If you'd like to contribute, then please make yourself known on the FlightGear forums.  Go on!
+
+---  General Handling  ---
+In the absence of a refined FDM, you can take off with flaps set 5.  Rotate at approx 95 kts.
+Vref (target speed for crossing the threshold on landing) will be fine at about 95 kts again, with flap 25.
+35 is the max flap setting, use it for steep approaches, and/or short runways.
+
+---  The ERP  ---
+The ERP is located at the bottom centre of the main instrument panel ahead of you.
+
+Use the ERP to control engine power, and prop RPM.  You can set GA (go-around, max available) or TO (takeoff) for takeoff.  That will give you 100% Np, and 86-97% Tq at MSL.  At aroung 800', set ERP CLB (climb).  That will reduce Np to a less noisy and more efficient level for the climb.  It will also reduce thrust.  When you have levelled off in the cruise and finished accelerating, set ERP CRZ (cruise).  This will reduce power again, for cruising efficiency.
+
+Leave CRZ set until you are established on the glide path towards your destination, then set GA after you select landing gear down, ready for a go-around if required.  You'll also got higher Np, which offers more drag at low Tq settings.
+
+---  Using the cockpit  ---
+The cockpit lighting can be switched on and off on the central console.  Look down and right!  You can also press 'l'
+
+To twiddle knobs:
+Use LMB to increment by 1, MMB to decrement by 1.  The scroll wheel increases and decreases in larger steps.
+At least it will if your mouse buttons are mapped in the same way that mine are!
+Hold the mouse cursor over the standby digits of NAV/COM/ADF boxes to adjust, then press the button to flip the freqs.  You can also adjust CDIs and the heading bug using the FMP on the glareshield.
+I invite feedback on this.
+
+---  The Autopilot ---
+The AP in the Fokker 50 is controlled using the Flight Mode Panel (FMP) in the centre of the glareshield.  The flight director can work for you (commanding pitch and roll via the pink X-bars on the PFD) whether or not the AP is engaged.  Click on the mode buttons to arm AP modes:
+
+SBY - clears all FMP modes, clears the FD command bars.
+HDG - commands roll to fly heading set with bug (in centre of FMP)
+NAV - when armed (white), will monitor the CDI.  When the selected course is approached, will become acitve (green) and command roll to maintain the selected radial.  Will also track an ILS localiser course.  Maintains previously set lateral mode until radial is established.
+BC / VAPP - as NAV mode, but for tracking ILS back-course and a VOR approach to an airfield respectively.
+ASEL - Alitude select mode.  When white, will compare your current altitude with the selected altitude (in the window, set using knob below).  When the altitude is approached, will go green, and command pitch to level at the selected altitude.  Will then set ALT hold mode.
+ALT - Maintains current altitude.  Only maintains the alt in the window if used with ASEL.
+GS - Only when an ILS frequency is tuned in NAV 1.  Button also arms 'LOC' for ILS tracking.  When established on an ILS inbound track, will monitor glideslope information.  Maintains previously set vertical mode until glideslope is intercepted.
+VS - Vertical speed hold.  Commands pitch to maintain current vertical speed, displayed in bottom left corner of PFD.  Target VS can be adjusted with your trim controls when AP is engaged.
+IAS - Indicated airspeed hold.  As VS, but with IAS!
+
+Engage / disengage AP with button in centre of FMP.
+
+- TCS mode -
+In the air, your brake button/key changes function to control TCS - touch-control-steering.
+When you hold down the TCS button, the AP is disengaged.  When you release the button, the AP is re-engaged and returns to previously selected lateral settings, but maintains new new vertical datum.  A good way of changing target VS / IAS / pitch.
+
+
+---  Some keys  ---
+l	Adjust internal lighting.
+
+---  Most important  ---
+Have fun!</text>
+	</help>
+ </sim>
+
+ <input>
+ <!-- set 7% or 5deg flap adjustment with each detent -->
+  <keyboard>
+   <key n="91">
+    <name>[</name>
+    <desc>Decrease flaps.</desc>
+    <binding>
+     <command>property-adjust</command>
+     <property>/controls/flight/flaps</property>
+     <step type="double">-0.143</step>
+    </binding>
+   </key>
+   <key n="93">
+    <name>]</name>
+    <desc>Increase flaps.</desc>
+    <binding>
+     <command>property-adjust</command>
+     <property>/controls/flight/flaps</property>
+     <step type="double">0.143</step>
+    </binding>
+   </key>
+<!-- Adjust internal lighting for people without osg -->
+			<key n="108">
+				<name>l</name>
+				<desc>Cockpit lighting adjust</desc>
+				<binding>
+			<command>property-adjust</command>
+			<property>controls/lighting/instruments-norm</property>
+			<step>0.25</step>
+			<min>0</min>
+			<max>1</max>
+			<wrap>true</wrap>
+		</binding>
+		<binding>
+			<command>property-adjust</command>
+			<property>controls/lighting/dome-norm</property>
+			<step>0.25</step>
+			<min>0</min>
+			<max>1</max>
+			<wrap>true</wrap>
+				</binding>
+			</key>
+		</keyboard>
+ </input>
+
+ <engines>
+  <engine n="0">
+    <running>true</running>
+  </engine>
+  <engine n="1">
+    <running>true</running>
+  </engine>
+ </engines>
+
+ <consumables>
+  <fuel> <!-- 13365 litres -->
+   <tank n="0">
+    <level-gal_us archive="y">497.0715</level-gal_us>
+   </tank>
+   <tank n="1">
+    <level-gal_us archive="y">497.0715</level-gal_us>
+   </tank>
+  </fuel>
+ </consumables>
+
+    <controls>
+    <gear>
+      <brake-parking>1</brake-parking>
+    </gear>
+    </controls>
+ 
+  <nasal>
+  <fokker50>
+   <file>Aircraft/fokker50/Systems/startup.nas</file>
+   <file>Aircraft/fokker50/Systems/units.nas</file>
+   <file>Aircraft/fokker50/Systems/radionav.nas</file>
+   <file>Aircraft/fokker50/Systems/instruments.nas</file>
+   <file>Aircraft/fokker50/Models/liveries.nas</file>
+   <file>Aircraft/fokker50/Systems/eec.nas</file>
+   <file>Aircraft/fokker50/Systems/alerts.nas</file>
+   <file>Aircraft/fokker50/Systems/fmp.nas</file>
+   <file>Aircraft/fokker50/Systems/efis.nas</file>
+<!--   <file>Aircraft/fokker50/Systems/pec.nas</file> -->
+  </fokker50>
+ </nasal>
+
+</PropertyList>

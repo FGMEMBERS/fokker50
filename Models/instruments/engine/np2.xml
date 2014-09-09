@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+
+	<path>np.ac</path>
+
+ <animation>
+  <type>material</type>
+    <object-name>casing</object-name> 
+    <object-name>needle</object-name>
+  <emission>
+    <red>0.7</red>
+    <green>0.7</green>
+    <blue>0.7</blue>
+	<factor-prop>controls/lighting/instruments-norm</factor-prop>
+  </emission>
+</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>needle</object-name>
+		<property>engines/engine[1]/thruster/rpm</property>
+
+		<interpolation> 
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>600</ind><dep>99</dep></entry>
+			<entry><ind>1200</ind><dep>191</dep></entry>
+			<entry><ind>1440</ind><dep>231</dep></entry>
+		</interpolation>
+
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+<!-- animations for the Np digital display, starting with select for first two digits. -->
+
+<animation>
+<type>select</type>
+    <object-name>digit1</object-name>
+    <condition>
+            <greater-than>
+            	<property>engines/engine[1]/thruster/rpm</property>
+                <value>1199.999</value>
+            </greater-than>
+    </condition>
+</animation>
+
+<animation>
+<type>select</type>
+    <object-name>digit2</object-name>
+    <condition>
+            <greater-than>
+            	<property>engines/engine[1]/thruster/rpm</property>
+                <value>119.9</value>
+            </greater-than>
+    </condition>
+</animation>
+
+	<animation>
+		<type>textranslate</type>
+		<object-name>digit1</object-name>
+		<property>engines/engine[1]/thruster/rpm</property>
+		<factor>0.00008333</factor>
+		<step>1200</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>textranslate</type>
+		<object-name>digit2</object-name>
+		<property>engines/engine[1]/thruster/rpm</property>
+		<factor>0.0008333</factor>
+		<step>120</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>textranslate</type>
+		<object-name>digit3</object-name>
+		<property>engines/engine[1]/thruster/rpm</property>
+		<factor>0.008333</factor>
+		<step>12</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>textranslate</type>
+		<object-name>digit4</object-name>
+		<property>engines/engine[1]/thruster/rpm</property>
+		<factor>0.08333</factor>
+		<step>1.2</step>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+</PropertyList>
+

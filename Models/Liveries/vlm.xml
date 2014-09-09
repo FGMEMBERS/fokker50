@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ <sim>
+  <model>
+   <livery>
+    <name type="string">VLM</name>
+    <texture>fokker50.rgb</texture>
+   </livery>
+   <livery-logo>
+    <texture>fokker50_trans.rgb</texture>
+   </livery-logo>
+  </model>
+ </sim>
+</PropertyList>
