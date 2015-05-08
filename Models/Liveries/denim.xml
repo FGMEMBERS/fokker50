@@ -5,10 +5,10 @@
   <model>
    <livery>
     <name type="string">Denim Airways</name>
-    <texture>Liveries/f50denim.rgb</texture>
+    <texture>Liveries/f50denim.png</texture>
    </livery>
    <livery-logo>
-    <texture>Liveries/f50denim_trans.rgb</texture>
+    <texture>Liveries/f50denim_trans.png</texture>
    </livery-logo>
   </model>
  </sim>

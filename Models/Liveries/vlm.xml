@@ -5,10 +5,10 @@
   <model>
    <livery>
     <name type="string">VLM</name>
-    <texture>fokker50.rgb</texture>
+    <texture>fokker50.png</texture>
    </livery>
    <livery-logo>
-    <texture>fokker50_trans.rgb</texture>
+    <texture>fokker50_trans.png</texture>
    </livery-logo>
   </model>
  </sim>

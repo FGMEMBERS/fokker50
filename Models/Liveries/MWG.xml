@@ -5,10 +5,10 @@
   <model>
    <livery>
     <name type="string">MASwings</name>
-    <texture>Liveries/MWG.rgb</texture>
+    <texture>Liveries/MWG.png</texture>
    </livery>
    <livery-logo>
-    <texture>Liveries/MWG_trans.rgb</texture>
+    <texture>Liveries/MWG_trans.png</texture>
    </livery-logo>
   </model>
  </sim>

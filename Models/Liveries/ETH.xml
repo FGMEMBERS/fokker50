@@ -5,10 +5,10 @@
   <model>
    <livery>
     <name type="string">Ethiopian Airlines</name>
-    <texture>Liveries/ETH.rgb</texture>
+    <texture>Liveries/ETH.png</texture>
    </livery>
    <livery-logo>
-    <texture>Liveries/ETH_trans.rgb</texture>
+    <texture>Liveries/ETH_trans.png</texture>
    </livery-logo>
   </model>
  </sim>

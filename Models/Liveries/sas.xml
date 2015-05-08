@@ -5,10 +5,10 @@
   <model>
    <livery>
     <name type="string">SAS</name>
-    <texture>Liveries/f50sas.rgb</texture>
+    <texture>Liveries/f50sas.png</texture>
    </livery>
    <livery-logo>
-    <texture>Liveries/f50denim_trans.rgb</texture>
+    <texture>Liveries/f50denim_trans.png</texture>
    </livery-logo>
   </model>
  </sim>

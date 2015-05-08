@@ -5,10 +5,10 @@
   <model>
    <livery>
     <name type="string">KLM Cityhopper</name>
-    <texture>Liveries/f50klm.rgb</texture>
+    <texture>Liveries/f50klm.png</texture>
    </livery>
    <livery-logo>
-    <texture>Liveries/f50klm_trans.rgb</texture>
+    <texture>Liveries/f50klm_trans.png</texture>
    </livery-logo>
   </model>
  </sim>

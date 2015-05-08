@@ -5,10 +5,10 @@
   <model>
    <livery>
     <name type="string">Air Astana</name>
-    <texture>Liveries/KZR.rgb</texture>
+    <texture>Liveries/KZR.png</texture>
    </livery>
    <livery-logo>
-    <texture>Liveries/KZR_trans.rgb</texture>
+    <texture>Liveries/KZR_trans.png</texture>
    </livery-logo>
   </model>
  </sim>
