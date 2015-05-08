@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ <sim>
+  <model>
+   <livery>
+    <name type="string">AirBaltic</name>
+    <texture>Liveries/BTI.png</texture>
+   </livery>
+   <livery-logo>
+    <texture>Liveries/BTI_trans.png</texture>
+   </livery-logo>
+  </model>
+ </sim>
+</PropertyList>

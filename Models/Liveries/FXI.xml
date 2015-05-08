@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ <sim>
+  <model>
+   <livery>
+    <name type="string">Air Iceland</name>
+    <texture>Liveries/FXI.png</texture>
+   </livery>
+   <livery-logo>
+    <texture>Liveries/FXI_trans.png</texture>
+   </livery-logo>
+  </model>
+ </sim>
+</PropertyList>

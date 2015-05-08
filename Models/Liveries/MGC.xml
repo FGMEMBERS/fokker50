@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ <sim>
+  <model>
+   <livery>
+    <name type="string">Magic Bird Cargo</name>
+    <texture>Liveries/MGC.png</texture>
+   </livery>
+   <livery-logo>
+    <texture>Liveries/MGC_trans.png</texture>
+   </livery-logo>
+  </model>
+ </sim>
+</PropertyList>

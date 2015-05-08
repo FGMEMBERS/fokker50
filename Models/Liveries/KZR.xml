@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ <sim>
+  <model>
+   <livery>
+    <name type="string">Air Astana</name>
+    <texture>Liveries/KZR.rgb</texture>
+   </livery>
+   <livery-logo>
+    <texture>Liveries/KZR_trans.rgb</texture>
+   </livery-logo>
+  </model>
+ </sim>
+</PropertyList>
