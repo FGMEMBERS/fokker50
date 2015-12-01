@@ -264,10 +264,12 @@
     </propulsion>
 
 
-
     <flight_control name="Fokker50">
 
-<channel name="EEC">
+      <property value="0" type="float">/systems/fokker50/erp/settingn</property>
+      <property value="0" type="float">/systems/fokker50/erp/settinggi</property>
+
+      <channel name="EEC">
 
 	<switch name="fcs/eec-throttle-multiplier">
                 <default value="0.825"/>
@@ -621,7 +623,7 @@
                     <property>metrics/Sw-sqft</property>
                     <property>aero/cl-squared</property>
                     <property>aero/function/kCDge</property>
-                    <value>0.0390</value>
+                    <value>0.0300</value>
                 </product>
             </function>
             <function name="aero/coefficient/CDmach">
@@ -634,7 +636,7 @@
                           <independentVar>velocities/mach</independentVar>
                           <tableData>
                               0.0000	0.0000
-                              0.7000	0.0000
+                              0.5200	0.0000
                               1.1000	0.0230
                               1.8000	0.0150
                           </tableData>
@@ -657,16 +659,7 @@
                     <property>aero/qbar-psf</property>
                     <property>metrics/Sw-sqft</property>
                     <property>gear/gear-pos-norm</property>
-                    <value>0.0230</value>
-                </product>
-            </function>
-            <function name="aero/coefficient/CDsb">
-                <description>Drag_due_to_speedbrakes</description>
-                <product>
-                    <property>aero/qbar-psf</property>
-                    <property>metrics/Sw-sqft</property>
-                    <property>fcs/speedbrake-pos-norm</property>
-                    <value>0.0250</value>
+                    <value>0.0460</value>
                 </product>
             </function>
             <function name="aero/coefficient/CDbeta">
@@ -677,8 +670,8 @@
                       <table>
                           <independentVar>aero/beta-rad</independentVar>
                           <tableData>
-                              -1.5700	1.2300
-                              -0.2600	0.0500
+                             -1.5700	1.2300
+                             -0.2600	0.0500
                               0.0000	0.0000
                               0.2600	0.0500
                               1.5700	1.2300
@@ -692,7 +685,7 @@
                     <property>aero/qbar-psf</property>
                     <property>metrics/Sw-sqft</property>
                     <abs><property>fcs/elevator-pos-norm</property></abs>
-                    <value>0.0350</value>
+                    <value>0.0400</value>
                 </product>
             </function>
         </axis>
@@ -704,9 +697,38 @@
                     <property>aero/qbar-psf</property>
                     <property>metrics/Sw-sqft</property>
                     <property>aero/beta-rad</property>
-                    <value>-1.0000</value>
+                    <value>-0.4157</value>
                 </product>
             </function>
+            <function name="aero/force/Side_roll_rate">
+                <description>Side_force_due_to_roll_rate</description>
+                <product>
+                    <property>aero/qbar-psf</property>
+                    <property>metrics/Sw-sqft</property>
+                    <property>aero/bi2vel</property>
+                    <property>velocities/p-aero-rad_sec</property>
+                    <value> -0.0031 </value>
+                </product>
+             </function>
+             <function name="aero/force/Side_yaw_rate">
+                <description>Side_force_due_to_yaw_rate</description>
+                <product>
+                    <property>aero/qbar-psf</property>
+                    <property>metrics/Sw-sqft</property>
+                    <property>aero/bi2vel</property>
+                    <property>velocities/r-aero-rad_sec</property>
+                    <value> 0.3618 </value>
+                </product>
+             </function>
+             <function name="aero/force/Side_rudder">
+                <description>Side_force_due_to_rudder</description>
+                <product>
+                    <property>aero/qbar-psf</property>
+                    <property>metrics/Sw-sqft</property>
+                    <property>fcs/rudder-pos-rad</property>
+                    <value> 0.2532 </value>
+                </product>
+             </function>
         </axis>
 
         <axis name="LIFT">
@@ -719,10 +741,10 @@
                       <table>
                           <independentVar>aero/alpha-rad</independentVar>
                           <tableData>
-                              -0.2000	-0.7400
+                              -0.2000	-0.9210
                               0.0000	0.2400
-                              0.2400	1.4000
-                              0.6000	0.7040
+                              0.2400	1.8432
+                              0.6000	0.8813
                           </tableData>
                       </table>
                 </product>
@@ -737,22 +759,13 @@
                     <value>0.6000</value>
                 </product>
             </function>
-            <function name="aero/coefficient/dCLsb">
-                <description>Delta_Lift_due_to_speedbrake</description>
-                <product>
-                    <property>aero/qbar-psf</property>
-                    <property>metrics/Sw-sqft</property>
-                    <property>fcs/speedbrake-pos-norm</property>
-                    <value>0.0000</value>
-                </product>
-            </function>
             <function name="aero/coefficient/CLde">
                 <description>Lift_due_to_Elevator_Deflection</description>
                 <product>
                     <property>aero/qbar-psf</property>
                     <property>metrics/Sw-sqft</property>
                     <property>fcs/elevator-pos-rad</property>
-                    <value>0.2000</value>
+                    <value>0.2732</value>
                 </product>
             </function>
         </axis>
@@ -765,8 +778,7 @@
                     <property>metrics/Sw-sqft</property>
                     <property>metrics/bw-ft</property>
                     <property>aero/beta-rad</property>
-  <!--                  <value>-0.1000</value>-->
-                    <value>-0.1000</value>
+                    <value>-0.0257</value>
                 </product>
             </function>
             <function name="aero/coefficient/Clp">
@@ -777,7 +789,7 @@
                     <property>metrics/bw-ft</property>
                     <property>aero/bi2vel</property>
                     <property>velocities/p-aero-rad_sec</property>
-                    <value>-0.4000</value>
+                    <value>-0.6965</value>
                 </product>
             </function>
             <function name="aero/coefficient/Clr">
@@ -788,7 +800,7 @@
                     <property>metrics/bw-ft</property>
                     <property>aero/bi2vel</property>
                     <property>velocities/r-aero-rad_sec</property>
-                    <value>0.1500</value>
+                    <value>0.2013</value>
                 </product>
             </function>
             <function name="aero/coefficient/Clda">
@@ -802,7 +814,7 @@
                           <independentVar>velocities/mach</independentVar>
                           <tableData>
                               0.0000	0.1500
-                              2.0000	0.0500
+                              2.0000	0.0375
                           </tableData>
                       </table>
                 </product>
@@ -827,7 +839,7 @@
                     <property>metrics/Sw-sqft</property>
                     <property>metrics/cbarw-ft</property>
                     <property>aero/alpha-rad</property>
-                    <value>-0.4000</value>
+                    <value>-1.0164</value>
                 </product>
             </function>
             <function name="aero/coefficient/Cmde">
@@ -840,8 +852,8 @@
                       <table>
                           <independentVar>velocities/mach</independentVar>
                           <tableData>
-                              0.0000	-1.0000
-                              2.0000	-0.2500
+                              0.0000	-1.9536
+                              2.0000	-0.4884
                           </tableData>
                       </table>
                 </product>
@@ -854,7 +866,7 @@
                     <property>metrics/cbarw-ft</property>
                     <property>aero/ci2vel</property>
                     <property>velocities/q-aero-rad_sec</property>
-                    <value>-22.0000</value>
+                    <value>-28.8281</value>
                 </product>
             </function>
             <function name="aero/coefficient/Cmadot">
@@ -865,7 +877,7 @@
                     <property>metrics/cbarw-ft</property>
                     <property>aero/ci2vel</property>
                     <property>aero/alphadot-rad_sec</property>
-                    <value>-8.0000</value>
+                    <value>-8.2366</value>
                 </product>
             </function>
         </axis>
@@ -878,8 +890,7 @@
                     <property>metrics/Sw-sqft</property>
                     <property>metrics/bw-ft</property>
                     <property>aero/beta-rad</property>
-                    <value>0.1200</value>
-<!--                    <value>0.1200</value>  -->
+                    <value>0.1809</value>
                 </product>
             </function>
             <function name="aero/coefficient/Cnr">
@@ -890,7 +901,7 @@
                     <property>metrics/bw-ft</property>
                     <property>aero/bi2vel</property>
                     <property>velocities/r-aero-rad_sec</property>
-                    <value>-0.1500</value>
+                    <value>-0.1575</value>
                 </product>
             </function>
             <function name="aero/coefficient/Cndr">
@@ -900,7 +911,7 @@
                     <property>metrics/Sw-sqft</property>
                     <property>metrics/bw-ft</property>
                     <property>fcs/rudder-pos-rad</property>
-                    <value>-0.1000</value>
+                    <value>-0.1102</value>
                 </product>
             </function>
             <function name="aero/coefficient/Cnda">
