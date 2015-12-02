@@ -741,14 +741,34 @@
                       <table>
                           <independentVar>aero/alpha-rad</independentVar>
                           <tableData>
-                              -0.2000	-0.9210
-                              0.0000	0.2400
-                              0.2400	1.8432
-                              0.6000	0.8813
+                             -0.2000  -0.9210
+                              0.0000   0.2400
+                              0.2400   1.8432
+                              0.6000   0.8813
                           </tableData>
                       </table>
                 </product>
             </function>
+            <function name="aero/force/Lift_pitch_rate">
+                <description>Lift_due_to_pitch_rate</description>
+                <product>
+                    <property>aero/qbar-psf</property>
+                    <property>metrics/Sw-sqft</property>
+                    <property>velocities/q-aero-rad_sec</property>
+                    <property>aero/ci2vel</property>
+                    <value> 6.2426 </value>
+                </product>
+              </function>
+              <function name="ero/force/Lift_alpha_rate">
+                <description>Lift_due_to_alpha_rate</description>
+                <product>
+                    <property>aero/qbar-psf</property>
+                    <property>metrics/Sw-sqft</property>
+                    <property>aero/alphadot-rad_sec</property>
+                    <property>aero/ci2vel</property>
+                    <value> 1.7836 </value>
+                </product>
+              </function>
             <function name="aero/coefficient/dCLflap">
                 <description>Delta_Lift_due_to_flaps</description>
                 <product>
