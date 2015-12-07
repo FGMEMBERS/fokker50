@@ -34,7 +34,8 @@
   <betarangeend>                 64     </betarangeend>
   <reversemaxpower>              60     </reversemaxpower>
 
-  <table name="EnginePowerVC">
+  <function name="EnginePowerVC">
+   <table>
     <description> Engine power, function of airspeed and pressure </description>
     <independentVar lookup="row">atmosphere/P-sl-psf</independentVar>
     <independentVar lookup="column">velocities/ve-kts</independentVar>
@@ -48,8 +49,9 @@
      1896   0.914  0.929  0.946  0.971  1      1.057
      2135   1      1.011  1.029  1.043  1.083  1.150
      2213   1.029  1.043  1.057  1.079  1.114  1.171
-   </tableData>
-  </table>
+    </tableData>
+   </table>
+  </function>
 
   <table name="EnginePowerRPM_N1" type="internal">
     <description> Engine Power, function of RPM and N1 </description>
