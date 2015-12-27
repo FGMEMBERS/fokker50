@@ -731,7 +731,10 @@
                        <independentVar lookup="row">aero/Re</independentVar>
                        <tableData>
                           942960  -0.3163
-                        16369802  -0.0082
+                         2923178  -0.1295
+                         5846357  -0.0324
+                         7775656  -0.0183
+                        11595374  -0.0082
                        </tableData>
                     </table>
                 </product>
@@ -860,7 +863,10 @@
                        <independentVar lookup="row">aero/Re</independentVar>
                        <tableData>
                           942960  -0.1083
-                        16369802  -0.0270
+                         2923178  -0.0590
+                         5846357  -0.0334
+                         7775656  -0.0297
+                        11595374  -0.0270
                        </tableData>
                     </table>
                 </product>
@@ -888,7 +894,10 @@
                        <independentVar lookup="row">aero/Re</independentVar>
                        <tableData>
                           942960   4.6533
-                        16369802   0.2744
+                         2923178   1.9977
+                         5846357   0.6175
+                         7775656   0.4175
+                        11595374   0.2744
                        </tableData>
                     </table>
                 </product>
@@ -1016,7 +1025,10 @@
                        <independentVar lookup="row">aero/Re</independentVar>
                        <tableData>
                           942960  -2.2479
-                        16369802  -0.0585
+                         2923178  -0.9201
+                         5846357  -0.2300
+                         7775656  -0.1300
+                        11595374  -0.0585
                        </tableData>
                     </table>
                </product>
