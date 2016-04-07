@@ -628,9 +628,9 @@
                           <independentVar>aero/alpha-rad</independentVar>
                           <tableData>
                              -1.5700	1.4083
-                             -0.3400	0.0806
+                             -0.3400	0.0811
                               0.0000	0.0250
-                              0.3400	0.0806
+                              0.3400	0.0811
                               1.5700	1.4083
                           </tableData>
                       </table>
@@ -730,7 +730,7 @@
                     <table>
                        <independentVar lookup="row">aero/Re</independentVar>
                        <tableData>
-                          942960  -0.3163
+                          698545  -2.2671
                          2923178  -0.1295
                          5846357  -0.0324
                          7775656  -0.0183
@@ -860,14 +860,13 @@
                     <property>metrics/bw-ft</property>
                     <property>aero/beta-rad</property>
                     <table>
-                       <independentVar lookup="row">aero/Re</independentVar>
-                       <tableData>
-                          942960  -0.1083
-                         2923178  -0.0590
-                         5846357  -0.0334
-                         7775656  -0.0297
-                        11595374  -0.0270
-                       </tableData>
+                        <independentVar lookup="row">aero/alpha-rad</independentVar>
+                        <independentVar lookup="column">aero/Re</independentVar>
+                        <tableData>
+                                    698545  5846357  7775656 11595374
+                          -0.1745  -0.0247  -0.0247  -0.0247  -0.0225
+                           0.3491   1.1852   0.0065  -0.0009  -0.0084
+                        </tableData>
                     </table>
                 </product>
             </function>
@@ -879,7 +878,7 @@
                     <property>metrics/bw-ft</property>
                     <property>aero/bi2vel</property>
                     <property>velocities/p-aero-rad_sec</property>
-                    <value>-0.6965</value>
+                    <value>-0.5138</value>
                 </product>
             </function>
             <function name="aero/coefficient/Clr">
@@ -891,13 +890,12 @@
                     <property>aero/bi2vel</property>
                     <property>velocities/r-aero-rad_sec</property>
                     <table>
-                       <independentVar lookup="row">aero/Re</independentVar>
+                       <independentVar lookup="row">aero/alpha-rad</independentVar>
+                       <independentVar lookup="column">aero/Re</independentVar>
                        <tableData>
-                          942960   4.6533
-                         2923178   1.9977
-                         5846357   0.6175
-                         7775656   0.4175
-                        11595374   0.2744
+                                     698545  5846357  7775656 11595374
+                           -0.1745  -0.0958  -0.0958  -0.0958   0.0211
+                            0.3491  65.1158   1.5842   1.1842   0.7810
                        </tableData>
                     </table>
                 </product>
@@ -959,7 +957,7 @@
                     <property>metrics/Sw-sqft</property>
                     <property>metrics/cbarw-ft</property>
                     <property>aero/alpha-rad</property>
-                    <value>-0.8495</value>
+                    <value>-1.8763</value>
                 </product>
             </function>
             <function name="aero/coefficient/Cmde">
@@ -1024,7 +1022,7 @@
                    <table>
                        <independentVar lookup="row">aero/Re</independentVar>
                        <tableData>
-                          942960  -2.2479
+                          698545 -16.1129
                          2923178  -0.9201
                          5846357  -0.2300
                          7775656  -0.1300
@@ -1041,7 +1039,7 @@
                     <property>metrics/bw-ft</property>
                     <property>aero/bi2vel</property>
                     <property>velocities/r-aero-rad_sec</property>
-                    <value>-0.1575</value>
+                    <value>-0.1739</value>
                 </product>
             </function>
             <function name="aero/coefficient/Cndr">
