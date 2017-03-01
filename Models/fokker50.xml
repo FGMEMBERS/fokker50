@@ -943,6 +943,41 @@
  </axis>
 </animation>
 
+<effect>
+ <inherits-from>Aircraft/fokker50/Models/Effects/fuselage</inherits-from>
+ <object-name>fuselage</object-name>
+ <object-name>left_spinner</object-name>
+ <object-name>right_spinner</object-name>
+ <object-name>left_outer_gear_bay</object-name>
+ <object-name>right_outer_gear_bay</object-name>
+ <object-name>left_fwd_gear_door</object-name>
+ <object-name>right_fwd_gear_door</object-name>
+ <object-name>left_inbound_flap</object-name>
+ <object-name>right_inbound_flap</object-name>
+ <object-name>left_outbound_flap</object-name>
+ <object-name>right_outbound_flap</object-name>
+ <object-name>left_aileron</object-name>
+ <object-name>right_aileron</object-name>
+ <object-name>left_fwd_nose_gear_door</object-name>
+ <object-name>right_fwd_nose_gear_door</object-name>
+ <object-name>left_aft_nose_gear_door</object-name>
+ <object-name>right_aft_nose_gear_door</object-name>
+ <object-name>left_fwd_front_door</object-name>
+ <object-name>right_fwd_front_door</object-name>
+ <object-name>left_elevator</object-name>
+ <object-name>right_elevator</object-name>
+ <object-name>hstabr</object-name>
+ <object-name>rudder</object-name>
+ <object-name>hstab</object-name>
+ <object-name>fuselage_wing_top</object-name>
+<!--
+ <object-name>left_outer_gear_door</object-name>
+ <object-name>right_outer_gear_door</object-name>
+-->
+ <object-name>right_aft_nose_gear_door</object-name>
+ <object-name>left_aft_nose_gear_door</object-name>
+</effect>
+
 <animation>
  <type>material</type>
  <object-name>left_spinner</object-name>
