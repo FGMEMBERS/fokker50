@@ -970,10 +970,6 @@
  <object-name>rudder</object-name>
  <object-name>hstab</object-name>
  <object-name>fuselage_wing_top</object-name>
-<!--
- <object-name>left_outer_gear_door</object-name>
- <object-name>right_outer_gear_door</object-name>
--->
  <object-name>right_aft_nose_gear_door</object-name>
  <object-name>left_aft_nose_gear_door</object-name>
 </effect>
