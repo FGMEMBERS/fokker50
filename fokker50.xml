@@ -183,7 +183,7 @@
 
 
     <propulsion>
-        <engine file="PW125BX">  -->
+        <engine file="PW125B">  -->
             <location unit="IN">
                 <x> 497.072 </x>
                 <y> -190.298 </y>
@@ -195,7 +195,7 @@
                 <yaw> 0 </yaw>
             </orient>
             <feed>0</feed>
-            <thruster file="dowty-rotol-aero">   
+            <thruster file="dowty-rotol">   
                 <location unit="IN">
                     <x> 497.072 </x>
                     <y> -190.298 </y>
@@ -208,7 +208,7 @@
                 </orient>
             </thruster>
         </engine>
-        <engine file="PW125BX">  
+        <engine file="PW125B">  
             <location unit="IN">
                 <x> 497.072 </x>
                 <y> 190.298 </y>
@@ -220,7 +220,7 @@
                 <yaw> 0 </yaw>
             </orient>
             <feed>1</feed>
-            <thruster file="dowty-rotol-aero">  
+            <thruster file="dowty-rotol">  
                 <location unit="IN">
                     <x> 497.072 </x>
                     <y> 190.298 </y>
