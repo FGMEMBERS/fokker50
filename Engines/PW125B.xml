@@ -1,54 +1,94 @@
 <?xml version="1.0"?>
+
 <!--
   File:     PW125B.xml
-  Author:   Aero-Matic v 0.8
+  Author:   AeromatiC++ v 3.1.1
+
+  See: http://wiki.flightgear.org/JSBSim_Engines#FGTurboprop
 
   Inputs:
-    name:           PW125B
-    type:           turboprop
-    power:          2500 hp
-    augmented?      no
-    injected?       no
+    name:                   PW125B
+    type:                   Turboprop Engine
+    power:                  2699.4 hp
+    inlet temperature:      816.0 degrees C
+    overall pressure ratio: 15.0:1
+
+  Outputs:
+    psfc:                   0.491 lbs/hr/hp
+    engine weight:          1464.3 lbs
+    engine length:          8.9 ft
+    engine diameter:        2.7 ft
 -->
 
-<turbine_engine name="PW125B">
-  <milthrust>    5600.00 </milthrust>
-  <tsfc>            0.55 </tsfc>
-  <idlen2>         60.0  </idlen2>
-  <maxn2>         100.0  </maxn2>
-  <augmented>         0  </augmented>
-  <injected>          0  </injected>
+<turboprop_engine name="PW125B">
+  <milthrust unit="LBS">       6046.7   </milthrust>
+  <idlen1>                       60.0   </idlen1>
+  <maxn1>                       100.0   </maxn1>
+  <maxpower unit="HP">         2699.4   </maxpower>
+  <psfc unit="LBS/HR/HP">         0.491 </psfc>
+  <n1idle_max_delay>              1     </n1idle_max_delay>
+  <maxstartingtime>              20     </maxstartingtime>
+  <startern1>                    20     </startern1>
+  <ielumaxtorque unit="FT*LB"> 9708.3   </ielumaxtorque>
+  <itt_delay>                     0.05  </itt_delay>
+  <betarangeend>                 64     </betarangeend>
+  <reversemaxpower>              60     </reversemaxpower>
 
-  <function name="IdleThrust">
-   <table>
-    <independentVar lookup="row">velocities/mach</independentVar>
-    <independentVar lookup="column">atmosphere/density-altitude</independentVar>
-    <tableData>
-         -10000       0   10000   20000   30000   40000   50000
-     0.0  0.0430  0.0488  0.0528  0.0694  0.0899  0.1183  0.1467
-     0.2  0.0500  0.0501  0.0335  0.0544  0.0797  0.1049  0.1342
-     0.4  0.0040  0.0047  0.0020  0.0272  0.0595  0.0891  0.1203
-     0.6  0.0     0.0     0.0     0.0276  0.0718  0.0430  0.0
-     0.8  0.0     0.0     0.0     0.0     0.0174  0.0086  0.0
-     1.0  0.0     0.0     0.0     0.0     0.0     0.0     0.0
-   </tableData>
+  <function name="EnginePowerVC">
+    <table>
+      <description> Engine power, function of airspeed and pressure </description>
+      <independentVar lookup="row">atmosphere/P-psf</independentVar>
+      <independentVar lookup="column">velocities/ve-kts</independentVar>
+      <tableData>
+              0      50    100    150    200    250
+        503   0.357  0.380  0.400  0.425  0.457  0.486
+       1048   0.586  0.589  0.600  0.621  0.650  0.686
+       1328   0.707  0.721  0.731  0.757  0.786  0.821
+       1496   0.779  0.786  0.808  0.821  0.857  0.900
+       1684   0.850  0.857  0.874  0.900  0.943  0.979
+       1896   0.914  0.929  0.946  0.971  1      1.057
+       2135   1      1.011  1.029  1.043  1.083  1.150
+       2213   1.029  1.043  1.057  1.079  1.114  1.171
+     </tableData>
    </table>
   </function>
 
-  <function name="MilThrust">
-   <table>
-    <independentVar lookup="row">velocities/mach</independentVar>
-    <independentVar lookup="column">atmosphere/density-altitude</independentVar>
+  <table name="EnginePowerRPM_N1" type="internal">
+    <description> Engine Power, function of RPM and N1 </description>
     <tableData>
-         -10000       0   10000   20000   30000   40000   50000
-     0.0  1.1260  1.0000  0.7400  0.5340  0.3720  0.2410  0.1490
-     0.2  1.1000  0.9340  0.6970  0.5060  0.3550  0.2310  0.1430
-     0.4  1.0000  0.6410  0.6120  0.4060  0.3570  0.2330  0.1450
-     0.6  0.4430  0.3510  0.2710  0.2020  0.1780  0.1020  0.0640
-     0.8  0.0240  0.0200  0.0160  0.0130  0.0110  0.0100  0.0
-     1.0  0.0     0.0     0.0     0.0     0.0     0.0     0.0
+              0       5       60      86      94      95      96      97      98      99     100     101
+      0.0     0.0     1.9     1.9     1.9     1.9     1.9     1.9     1.9     1.9     1.9     1.9     1.9
+    568.8     0.0     1.9   127.1   726.7  1271.7  1380.5  1526.0  1671.2  1816.4  1925.5  2107.2  2252.7
+    851.6     0.0     1.9   109.1   835.7  1453.4  1562.2  1707.7  1834.8  1998.1  2143.6  2325.3  2470.5
+   1136.0     0.0     1.9    18.1   871.9  1598.6  1725.7  1852.9  1998.1  2161.7  2288.8  2470.5  2615.8
+   1420.4     0.0     0.3     0.3   817.4  1635.0  1798.4  1907.4  2052.6  2216.2  2361.5  2543.1  2706.7
+   1562.6     0.0     0.3     0.3   744.8  1598.6  1743.8  1871.0  2034.6  2198.1  2343.4  2525.0  2699.4
     </tableData>
-   </table>
-  </function>
+  </table>
 
-</turbine_engine>
+  <table name="ITT_N1" type="internal">
+    <description> Inter-Turbine Temperature ITT [deg C] depending on N1 and engine run (0=off / 1=running) </description>
+    <tableData>
+              0     1
+        0     0     0
+       15   118.3   118.3
+       60   212.2   615.3
+       96   319.1   804.6
+      100   331.3   889.4
+    </tableData>
+  </table>
+
+  <table name="CombustionEfficiency_N1" type="internal">
+    <description>Dependency of fuel efficiency coefficient on N1 (and RPM)</description>
+    <tableData>
+      90    0.1221
+      91.2  0.2834
+      92.2  0.5336
+      93.4  0.7188
+      94.1  0.7741
+      95.2  0.8471
+      96.5  0.9001
+     100    1
+      </tableData>
+  </table>
+</turboprop_engine>
