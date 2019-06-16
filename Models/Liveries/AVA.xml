@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ <sim>
+  <model>
+   <livery>
+    <name type="string">Avianca</name>
+    <texture>Liveries/AVA-Livery.png</texture>
+   </livery>
+   <livery-logo>
+    <texture>Liveries/AVA_trans.png</texture>
+   </livery-logo>
+  </model>
+ </sim>
+</PropertyList>

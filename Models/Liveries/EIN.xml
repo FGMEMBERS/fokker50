@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ <sim>
+  <model>
+   <livery>
+    <name type="string">Aer Lingus</name>
+    <texture>Liveries/EIN.png</texture>
+   </livery>
+   <livery-logo>
+    <texture>Liveries/EIN_trans.png</texture>
+   </livery-logo>
+  </model>
+ </sim>
+</PropertyList>
