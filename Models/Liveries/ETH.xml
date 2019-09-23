@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0"?>
 
 <PropertyList>
@@ -13,3 +14,20 @@
   </model>
  </sim>
 </PropertyList>
+=======
+<?xml version="1.0"?>
+
+<PropertyList>
+ <sim>
+  <model>
+   <livery>
+    <name type="string">Ethiopian Airlines</name>
+    <texture>Liveries/ETH.rgb</texture>
+   </livery>
+   <livery-logo>
+    <texture>Liveries/ETH_trans.rgb</texture>
+   </livery-logo>
+  </model>
+ </sim>
+</PropertyList>
+>>>>>>> fgaddon

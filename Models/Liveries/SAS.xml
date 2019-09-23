@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0"?> <PropertyList>
  <sim>
   <model>
@@ -9,4 +10,17 @@
     <texture>Liveries/SAS_trans.png</texture>
    </livery-logo>
   </model>
+=======
+<?xml version="1.0"?> <PropertyList>
+ <sim>
+  <model>
+   <livery>
+    <name type="string">SAS</name>
+    <texture>Liveries/SAS.PNG</texture>
+   </livery>
+   <livery-logo>
+    <texture>Liveries/SAS_trans.png</texture>
+   </livery-logo>
+  </model>
+>>>>>>> fgaddon
  </sim> </PropertyList> 

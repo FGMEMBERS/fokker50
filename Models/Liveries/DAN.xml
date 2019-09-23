@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0"?>
 
 <PropertyList>
@@ -14,3 +15,21 @@
  </sim>
  
 </PropertyList>
+=======
+<?xml version="1.0"?>
+
+<PropertyList>
+ <sim>
+  <model>
+   <livery>
+    <name type="string">Maersk Air</name>
+    <texture>Liveries/DAN.png</texture>
+   </livery>
+   <livery-logo>
+    <texture>Liveries/DAN_trans.png</texture>
+   </livery-logo>
+  </model>
+ </sim>
+ 
+</PropertyList>
+>>>>>>> fgaddon

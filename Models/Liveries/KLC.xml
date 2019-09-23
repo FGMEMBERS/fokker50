@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0"?>
 
 <PropertyList>
@@ -13,3 +14,20 @@
   </model>
  </sim>
 </PropertyList>
+=======
+<?xml version="1.0"?>
+
+<PropertyList>
+ <sim>
+  <model>
+   <livery>
+    <name type="string">KLM Cityhopper</name>
+    <texture>Liveries/KLC.png</texture>
+   </livery>
+   <livery-logo>
+    <texture>Liveries/KLC_trans.png</texture>
+   </livery-logo>
+  </model>
+ </sim>
+</PropertyList>
+>>>>>>> fgaddon
