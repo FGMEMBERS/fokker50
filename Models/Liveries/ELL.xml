@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0"?>
 
 <PropertyList>
@@ -15,21 +14,3 @@
  </sim>
  
 </PropertyList>
-=======
-<?xml version="1.0"?>
-
-<PropertyList>
- <sim>
-  <model>
-   <livery>
-    <name type="string">Estonian Air</name>
-    <texture>Liveries/ELL.png</texture>
-   </livery>
-   <livery-logo>
-    <texture>Liveries/ELL_trans.png</texture>
-   </livery-logo>
-  </model>
- </sim>
- 
-</PropertyList>
->>>>>>> fgaddon
